@@ -31,7 +31,7 @@
 
     &__title {
         color: global.$color-white;
-        font-weight: 100;
+        font-weight: 300;
         font-size: global.rem(60);
         font-family: global.$font-base-en;
     }
@@ -43,8 +43,8 @@
     &__text {
         color: global.$color-white;
         margin-left: 20px;
-        font-weight: normal;
-        font-size: global.rem(16);
+        font-weight: 300;
+        font-size: global.rem(20);
         line-height: calc(24 / 16);
     }
 }

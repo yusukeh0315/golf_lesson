@@ -5,8 +5,9 @@ import Footer from "./footer"
 
 import "../styles/main.scss"
 
-// import "typeface-notosans-jp"
-// import "typeface-lato"
+import "typeface-notosans-jp"
+import "typeface-lato"
+import "@fontsource/kaisei-decol"
 
 import BurgerMenu from "./burgermenu/menu"
 

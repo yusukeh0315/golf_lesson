@@ -1073,6 +1073,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/kaisei-decol@^4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/kaisei-decol/-/kaisei-decol-4.5.11.tgz#e98b682dfc1e6f491518473cf422214002cc07c0"
+  integrity sha512-ZWu957s/oNsCNE0L/OjRNqF27i0qAErKVPSVN5OcjuCyvyxUsB8LRQ1GfB6zA3EYdeXtFWXC25Y6cQ+1v98uzQ==
+
 "@gatsbyjs/parcel-namer-relative-to-cwd@1.7.0":
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/@gatsbyjs/parcel-namer-relative-to-cwd/-/parcel-namer-relative-to-cwd-1.7.0.tgz#ddc6cbe8f703a2ca5bf42ca19b603044e094d266"
@@ -9395,6 +9400,16 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==
+
+typeface-lato@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-lato/-/typeface-lato-1.1.13.tgz#630ec75394d7fd2c63148005e6e23f2d8014e931"
+  integrity sha512-sTn5k3+fagGOi8FQfN2MPeUiTdvG0Z3LVqCaQdsg2sYa0fzNteFZussizdwiPxF45OoFN3zdU/ci+PtjolNSPQ==
+
+typeface-notosans-jp@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/typeface-notosans-jp/-/typeface-notosans-jp-1.0.1.tgz#acfcc0aaf0dd3ffd83e537d8db017bb4c0dc96e3"
+  integrity sha512-ZC047CdXPdryXV1Q782HEOM7BA0T83Uu/jDU6WE+Vcyn3LZjKY+z3FoAMI+yWi1mS9/u8C2qAX9iSAf0GZPzTw==
 
 ua-parser-js@^0.7.30:
   version "0.7.31"
