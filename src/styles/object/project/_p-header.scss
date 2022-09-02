@@ -95,12 +95,11 @@
 
 @include global.media(sp) {
     .p-header-nav {
+            display: none;
             flex-direction: column;
 
         &__item {
-            &:last-child {
-                margin-right: 0;
-            }
+            display: none;
         }
 
         &__list {

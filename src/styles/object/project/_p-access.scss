@@ -37,39 +37,79 @@
     z-index: 10;
   }
 
-  &__text{
+  &__text {
     color: global.$color-white;
     padding-bottom: 20px;
     font-size: global.rem(24);
   }
 
-  &__address{
+  &__address {
     color: global.$color-white;
     padding-bottom: 20px;
     font-style: normal;
     font-size: global.rem(18);
   }
 
-  &__tel{
+  &__tel {
     color: global.$color-white;
     padding-bottom: 20px;
     font-size: global.rem(18);
   }
 
-  &__table{
+  &__table {
     color: global.$color-white;
     width: 60%;
     margin-bottom: 40px;
   }
 
-  &__tbody{
+  &__tbody {
     color: global.$color-white;
     border-top: solid 1px global.$color-white;
     border-bottom: solid 1px global.$color-white;
   }
-  &__td{
+  &__td {
     color: global.$color-white;
     padding: 10px 5px;
   }
+}
 
+@include global.media(sp) {
+  .p-access {
+    &__inner {
+      width: 80%;
+      height: 500px;
+      padding: 5px 5px;
+    }
+    &__text {
+      color: global.$color-white;
+      padding-bottom: 15px;
+      font-size: global.rem(22);
+    }
+
+    &__address {
+      color: global.$color-white;
+      padding-bottom: 15px;
+      font-style: normal;
+      font-size: global.rem(16);
+    }
+
+    &__tel {
+      color: global.$color-white;
+      padding-bottom: 15px;
+      font-size: global.rem(16);
+    }
+    &__table {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    &__tr {
+      border-bottom: solid 1px global.$color-white;
+    }
+
+    &__td {
+      text-align: center;
+      display: block;
+    }
+  }
 }

@@ -23,7 +23,9 @@
     "gatsby-source-filesystem": "^4.22.0",
     "gatsby-transformer-sharp": "^4.22.0",
     "react": "^18.1.0",
+    "react-burger-menu": "^3.0.8",
     "react-dom": "^18.1.0",
+    "reactjs-popup": "^2.0.5",
     "sass": "^1.54.8"
   },
   "devDependencies": {

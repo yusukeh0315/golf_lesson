@@ -30,5 +30,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    `reactjs-popup`,
   ],
 }
