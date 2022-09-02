@@ -19,7 +19,8 @@ const Access = ({ data }) => {
               不明な点など、お気軽にお問い合わせください。
             </p>
             <address className="p-access__address">
-              〒XXX-XXX 東京都港区新橋XXX-XXX
+              〒XXX-XXX <br />
+              東京都港区新橋XXX-XXX
             </address>
             <tel className="p-access__tel">XXX-XXX-XXXX</tel>
             <table className="p-access__table">
@@ -34,14 +35,15 @@ const Access = ({ data }) => {
                 </tr>
               </tbody>
             </table>
-            <a className="p-access__link">
+            <div className="p-access__link">
               <button className="c-reservation_button">ご予約</button>
-            </a>
+            </div>
           </div>
         </div>
       </section>
       <div>
         <iframe
+          title="access-map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.4311940485604!2d139.75615111557033!3d35.666383338392905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188be9d1ae11e1%3A0x5851f1d35efc45b9!2z5paw5qmL6aeF!5e0!3m2!1sja!2sjp!4v1662092709917!5m2!1sja!2sjp"
           width="100%"
           height="450"

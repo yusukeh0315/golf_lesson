@@ -6,6 +6,13 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `CocoLEa GOLF Studio`,
+    description: `ココレアゴルフスタジオ`,
+    lang: `ja`,
+    siteUrl: `https://stunning-florentine-0bd6f1.netlify.app/`,
+    local: `ja_JP`,
+  },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,

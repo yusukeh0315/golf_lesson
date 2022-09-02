@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import FirstView from "../components/firstview"
 import TopMessage from "../components/topmessage"
 import Service from "../components/service"
@@ -10,6 +11,7 @@ import { graphql } from "gatsby"
 const Home = ({ data }) => {
   return (
     <Layout>
+      <Seo />
       <FirstView data={data} />
       <TopMessage />
       <Service />
