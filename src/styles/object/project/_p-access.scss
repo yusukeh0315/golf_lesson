@@ -1,0 +1,75 @@
+@use "../../global" as global;
+
+.p-access {
+  display: flex;
+  flex-direction: column;
+
+  &__image-wrapper {
+    position: absolute;
+    height: 600px;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &__inner {
+    @include global.inner(global.$width-access);
+    background-color: rgb(100, 100, 100, 0.6);
+    height: 400px;
+    padding: 20px 20px;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  &__container {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+  }
+
+  &__text{
+    color: global.$color-white;
+    padding-bottom: 20px;
+    font-size: global.rem(24);
+  }
+
+  &__address{
+    color: global.$color-white;
+    padding-bottom: 20px;
+    font-style: normal;
+    font-size: global.rem(18);
+  }
+
+  &__tel{
+    color: global.$color-white;
+    padding-bottom: 20px;
+    font-size: global.rem(18);
+  }
+
+  &__table{
+    color: global.$color-white;
+    width: 60%;
+    margin-bottom: 40px;
+  }
+
+  &__tbody{
+    color: global.$color-white;
+    border-top: solid 1px global.$color-white;
+    border-bottom: solid 1px global.$color-white;
+  }
+  &__td{
+    color: global.$color-white;
+    padding: 10px 5px;
+  }
+
+}
