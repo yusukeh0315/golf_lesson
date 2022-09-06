@@ -3,15 +3,15 @@
 $col_num: 2;
 $card_margin: 30px;
 
-.p-cards-skills {
+.p-cards-instructors {
     display: flex;
     flex-wrap: wrap;
 }
 
-.p-cards-skills--col2 {
+.p-cards-instructors--col2 {
     margin-bottom: -40px;
 
-    & > .p-cards-skills__item {
+    & > .p-cards-instructors__item {
         // カラム数、カード間マージンから、カードの幅を算出
         width: calc(#{percentage(calc(100 / $col_num) * 0.01)} - #{$card_margin} * calc(#{$col_num - 1} / #{$col_num}));
 
@@ -31,15 +31,15 @@ $card_margin: 30px;
     $col_num: 1;
     $card_margin: 30px;
 
-    .p-cards-skills {
+    .p-cards-instructors {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .p-cards-skills--col2 {
+    .p-cards-instructors--col2 {
         margin-bottom: -40px;
 
-        & > .p-cards-skills__item {
+        & > .p-cards-instructors__item {
             // カラム数、カード間マージンから、カードの幅を算出
             width: calc(#{percentage(calc(100 / $col_num) * 0.01)} - #{$card_margin} * calc(#{$col_num - 1} / #{$col_num}));
 

@@ -9,7 +9,7 @@ const FirstView = ({ data }) => {
             <figure className="p-fv__image-wrapper">
               <GatsbyImage
                 className="p-fv__image"
-                image={data.firstview_1.childImageSharp.gatsbyImageData}
+                image={data.firstview.childImageSharp.gatsbyImageData}
                 alt=""
                 style={{ height: "100%" }}
               />

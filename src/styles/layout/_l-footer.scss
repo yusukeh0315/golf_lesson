@@ -2,7 +2,7 @@
 
 .l-footer {
     height: 80px;
-    background-color: #47BFDB;
+    background-color: global.$color-lightblue;
 
     &__inner {
         @include global.inner(global.$width-base);

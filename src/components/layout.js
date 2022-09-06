@@ -11,10 +11,10 @@ import "@fontsource/kaisei-decol"
 
 import BurgerMenu from "./burgermenu/menu"
 
-const Layout = ({ children }) => (
+const Layout = ({ children, page }) => (
   <>
     <BurgerMenu />
-    <Header />
+    <Header page={page} />
 
     {children}
 

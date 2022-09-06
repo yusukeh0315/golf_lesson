@@ -1,5 +1,9 @@
 import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
+
+import Address from "./address"
+import Reservation from "./reservation"
 
 const Access = ({ data }) => {
   return (
@@ -18,25 +22,15 @@ const Access = ({ data }) => {
             <p className="p-access__text">
               不明な点など、お気軽にお問い合わせください。
             </p>
-            <address className="p-access__address">
-              〒XXX-XXX <br />
-              東京都港区新橋XXX-XXX
-            </address>
-            <tel className="p-access__tel">XXX-XXX-XXXX</tel>
-            <table className="p-access__table">
-              <tbody className="p-access__tbody">
-                <tr className="p-access__tr">
-                  <td className="p-access__td">月曜日～金曜</td>
-                  <td className="p-access__td">12:00～20:00</td>
-                </tr>
-                <tr className="p-access__tr">
-                  <td className="p-access__td">土曜日、日曜日、祝日</td>
-                  <td className="p-access__td">10:00～21:00</td>
-                </tr>
-              </tbody>
-            </table>
+
+            <Address />
+
             <div className="p-access__link">
-              <button className="c-reservation_button">ご予約</button>
+              <Link to="#">
+                <button className="c-contact_button">お問い合わせ</button>
+              </Link>
+              <div className="u-margin-center"></div>
+              <Reservation />
             </div>
           </div>
         </div>

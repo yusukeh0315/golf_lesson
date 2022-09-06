@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import Reservation from "./reservation"
+
 const Header = ({ page }) => {
 
   return (
@@ -15,7 +17,7 @@ const Header = ({ page }) => {
           <ul className="p-header-nav__list">
             <li className="p-header-nav__item">
               <Link
-                to={`/price/`}
+                to={`#`}
                 className={`p-header-nav__link ${
                   page === "price" ? "current" : ""
                 }`}
@@ -25,7 +27,7 @@ const Header = ({ page }) => {
             </li>
             <li className="p-header-nav__item">
               <Link
-                to={`/instructor/`}
+                to={`#`}
                 className={`p-header-nav__link ${
                   page === "instructor" ? "current" : ""
                 }`}
@@ -35,7 +37,7 @@ const Header = ({ page }) => {
             </li>
             <li className="p-header-nav__item">
               <Link
-                to={`/facility/`}
+                to={`#`}
                 className={`p-header-nav__link ${
                   page === "facility" ? "current" : ""
                 }`}
@@ -45,7 +47,7 @@ const Header = ({ page }) => {
             </li>
             <li className="p-header-nav__item">
               <Link
-                to={`/contact/`}
+                to={`#`}
                 className={`p-header-nav__link ${
                   page === "contact" ? "current" : ""
                 }`}
@@ -54,9 +56,7 @@ const Header = ({ page }) => {
               </Link>
             </li>
             <li className="p-header-nav__item">
-              <Link to={`/contact/`}>
-                <button className="c-reservation_button">ご予約</button>
-              </Link>
+              <Reservation />
             </li>
           </ul>
         </nav>

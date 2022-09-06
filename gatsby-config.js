@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `CocoLEa GOLF Studio`,
+    title: `CocoLea GOLF Studio`,
     description: `ココレアゴルフスタジオ`,
     lang: `ja`,
     siteUrl: `https://stunning-florentine-0bd6f1.netlify.app/`,

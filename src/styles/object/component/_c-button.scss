@@ -27,9 +27,9 @@
     height: 40px;
     max-width: 100%;
     padding: 10px 10px 10px 10px;
-    border: 1px solid global.$color-black;
+    border: 1px solid global.$color-lightblue;
     background-color: global.$color-white;
-    color: global.$color-black;
+    color: global.$color-lightblue;
     font-weight: bold;
     font-weight: normal;
     font-size: global.rem(16);
@@ -38,10 +38,11 @@
     text-align: center;
     cursor: pointer;
     transition: .25s;
+    border-radius:30px !important;
 
     &:hover, &:focus, &:active {
         border: 1px solid global.$color-white;
-        background-color: global.$color-black;
+        background-color: global.$color-lightblue;
         color: global.$color-white;
     }
 
@@ -51,7 +52,7 @@
         cursor: default;
 
         &:hover, &:focus, &:active {
-            border: 1px solid global.$color-black;
+            border: 1px solid global.$color-lightblue;
             background-color: global.$color-hovergray;
             color: global.$color-gray;
             cursor: default;
@@ -87,5 +88,30 @@
         border: 1px solid global.$color-orange;
         background-color: global.$color-white;
         color: global.$color-orange;
+    }
+}
+
+.c-contact_button{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    max-width: 100%;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid global.$color-lightblue;
+    background-color: global.$color-lightblue;
+    color: global.$color-white;
+    font-weight: bold;
+    font-weight: normal;
+    font-size: global.rem(16);
+    line-height: 20px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: .25s;
+
+    &:hover, &:focus, &:active {
+        border: 1px solid global.$color-lightblue;
+        background-color: global.$color-white;
+        color: global.$color-lightblue;
     }
 }

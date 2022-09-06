@@ -1,0 +1,51 @@
+@use "../../global" as global;
+
+.p-qa {
+  &__wrapper {
+    padding: 0 40px;
+  }
+
+  &__body {
+    margin-bottom: 40px;
+  }
+
+  &__question{
+    color: global.$color-lightblue;
+    font-size: global.rem(24);
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+  }
+
+  &__answer {
+    color: global.$color-blue;
+    font-size: global.rem(24);
+    padding-left: 2rem;
+    word-wrap: break-word;
+  }
+}
+
+@include global.media(sp) {
+  .p-qa {
+    &__wrapper {
+      padding: 0;
+    }
+
+    &__body {
+      margin-bottom: 20px;
+    }
+
+    &__question{
+      color: global.$color-lightblue;
+      font-size: global.rem(24);
+      margin-bottom: 0.5rem;
+      word-wrap: break-word;
+    }
+
+    &__answer {
+      color: global.$color-blue;
+      font-size: global.rem(24);
+      padding-left: 1rem;
+      word-wrap: break-word;
+    }
+  }
+}

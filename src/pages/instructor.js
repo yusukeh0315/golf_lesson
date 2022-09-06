@@ -1,23 +1,15 @@
 import React from "react"
 import Layout from "../components/layout"
-import Seo from "../components/seo"
-import FirstView from "../components/firstview"
-import TopMessage from "../components/topmessage"
-import Service from "../components/service"
-import Access from "../components/access"
-import Customer from "../components/customer"
+import SubView from "../components/subview"
+import Instructors from "../components/instructors"
 
 import { graphql } from "gatsby"
 
-const Home = ({ data }) => {
+const Instructor = ({ data }) => {
   return (
-    <Layout>
-      <Seo />
-      <FirstView data={data} />
-      <TopMessage />
-      <Service />
-      <Customer data={data} />
-      <Access data={data} />
+    <Layout page="instructor">
+      <SubView data={data} title="インストラクター" />
+      <Instructors data={data} />
     </Layout>
   )
 }
@@ -97,4 +89,4 @@ export const query = graphql`
   }
 `
 
-export default Home
+export default Instructor

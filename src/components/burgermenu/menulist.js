@@ -1,37 +1,46 @@
 import React from "react"
+import { Link } from "gatsby"
+
+import Reservation from "../reservation"
 
 const MenuList = ({ close }) => (
   <div className="menu">
     <ul>
       <li // eslint-disable-line jsx-a11y/no-static-element-interactions
-      aria-hidden="true" 
-      onClick={close}>
-        Home
+        aria-hidden="true"
+        onClick={close}
+      >
+        <Link to={`/`}>Home</Link>
       </li>
       <li // eslint-disable-line jsx-a11y/no-static-element-interactions
-      aria-hidden="true" 
-      onClick={close}>
-        料金
+        aria-hidden="true"
+        onClick={close}
+      >
+        <Link to={`/price/`}>料金</Link>
       </li>
       <li // eslint-disable-line jsx-a11y/no-static-element-interactions
-      aria-hidden="true" 
-      onClick={close}>
-        インストラクター
+        aria-hidden="true"
+        onClick={close}
+      >
+        <Link to={`/instructor/`}>インストラクター</Link>
       </li>
       <li // eslint-disable-line jsx-a11y/no-static-element-interactions
-      aria-hidden="true" 
-      onClick={close}>
-        施設紹介
+        aria-hidden="true"
+        onClick={close}
+      >
+        <Link to={`/facility/`}>施設紹介</Link>
       </li>
       <li // eslint-disable-line jsx-a11y/no-static-element-interactions
-      aria-hidden="true" 
-      onClick={close}>
-        お問い合わせ
+        aria-hidden="true"
+        onClick={close}
+      >
+        <Link to={`/contact/`}>お問い合わせ</Link>
       </li>
       <li // eslint-disable-line jsx-a11y/no-static-element-interactions
-      aria-hidden="true" 
-      onClick={close}>
-        <button className="c-reservation_button">ご予約</button>
+        aria-hidden="true"
+        onClick={close}
+      >
+        <Reservation />
       </li>
     </ul>
   </div>

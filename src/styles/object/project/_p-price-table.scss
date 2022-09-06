@@ -1,0 +1,101 @@
+@use "../../global" as global;
+
+.p-price-table {
+
+  &__wrapper {
+    // margin-left: auto;
+    // margin-right: auto;
+    // width :auto;
+  }
+
+  &__table {
+    color: global.$color-blue;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  &__tbody {
+    color: global.$color-blue;
+    border-top: solid 1px global.$color-blue;
+    border-bottom: solid 1px global.$color-blue;
+  }
+
+  // &__tr{
+  //   width:100%;
+  // }
+
+  &__thead{
+    background-color: global.$color-blue;
+    color: global.$color-white;
+  }
+
+  &__th{
+    // color: global.$color-blue;
+    padding: 10px 5px;
+  }
+
+  &__td {
+    color: global.$color-blue;
+    padding: 10px 5px;
+    text-align: center;
+  }
+
+  &__link {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@include global.media(sp) {
+  .p-price-table {
+    &__table {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    &__tbody {
+      border-top: unset;
+      border-bottom: unset;
+    }
+
+    &__thead{
+      display: none;
+    }
+
+    &__td--mobile-th{
+      background-color: global.$color-blue;
+      color: global.$color-white;
+    }
+
+    &__td--mobile-price{
+      &:before{
+        content: "料金： "
+      }
+    }
+
+    &__td--mobile-time{
+      &:before{
+        content: "時間： "
+      }
+    }
+
+    &__td--mobile-desc{
+      margin-bottom: 20px;
+      &:before{
+        content: "説明： "
+      }
+    }
+
+
+    &__tr {
+      // border-bottom: solid 1px global.$color-blue;
+    }
+
+    &__td {
+      text-align: center;
+      display: block;
+    }
+  }
+}

@@ -7,11 +7,12 @@
     margin-left: 15px;
     padding: 2px;
     border: none;
-    background-color: global.$color-red;
+    background-color: global.$color-orange;
     color: global.$color-white;
     font-weight: normal;
-    // font-size: rem(16);
+    font-size: global.rem(14);
     line-height: 20px;
     text-decoration: none;
     text-align: center;
+    border-radius:30px;
 }

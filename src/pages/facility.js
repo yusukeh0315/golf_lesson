@@ -1,23 +1,15 @@
 import React from "react"
 import Layout from "../components/layout"
-import Seo from "../components/seo"
-import FirstView from "../components/firstview"
-import TopMessage from "../components/topmessage"
-import Service from "../components/service"
-import Access from "../components/access"
-import Customer from "../components/customer"
+import SubView from "../components/subview"
+import FacilityDesc from "../components/facilitydesc"
 
 import { graphql } from "gatsby"
 
-const Home = ({ data }) => {
+const Facility = ({ data }) => {
   return (
-    <Layout>
-      <Seo />
-      <FirstView data={data} />
-      <TopMessage />
-      <Service />
-      <Customer data={data} />
-      <Access data={data} />
+    <Layout page="facility">
+      <SubView data={data} title="施設紹介" />
+      <FacilityDesc data={data} />
     </Layout>
   )
 }
@@ -84,12 +76,7 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH)
       }
     }
-    entrance_image: file(relativePath: { eq: "entrance_image.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH)
-      }
-    }
-    dummy: file(relativePath: { eq: "dummy.png" }) {
+    entrance_image: file(relativePath: { eq: "entrance_image.png" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }
@@ -97,4 +84,4 @@ export const query = graphql`
   }
 `
 
-export default Home
+export default Facility

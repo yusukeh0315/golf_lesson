@@ -1,13 +1,9 @@
 @use "../../global" as global;
 
-.c-card-skills {
+.c-card-instructors {
     display: flex;
     height: 180px;
     padding: 1rem;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all  0.3s ease;
 
     &__nolink{
         display: flex;
@@ -15,25 +11,20 @@
         padding: 1rem;
     }
 
-    &:hover{
-        background: global.$color-hovergray;
-        border-radius: 8px;
-    }
-
     &__logo-wrapper {
-        flex-basis: 15%;
+        flex-basis: 20%;
         padding: 0 10px;
 
-        &--skill {
+        &--instructor {
             flex-basis: 8%;
             padding: 0;
         }
     }
 
     &__logo {
-        width: 50px;
-        height: 50px;
-        object-fit: contain;
+        width: 80px !important;
+        height: 80px !important;
+        object-fit: contain !important;
     }
 
     &__body {
@@ -42,38 +33,36 @@
         flex-direction: column;
     }
 
-    &__title {
-        margin-bottom: 4px;
-        font-weight: 300;
+    &__janame {
+        font-weight: 600;
         font-size: global.rem(22);
         line-height: calc(26/22);
         font-family: global.$font-base-en;
     }
 
-    &__point {
+    &__enname {
+        margin-bottom: 4px;
+        font-weight: 300;
+        font-size: global.rem(18);
+        line-height: calc(26/18);
+        font-family: global.$font-base-en;
+    }
+
+    &__title {
         display: flex;
         margin-bottom: 4px;
-        font-weight: bold;
-        font-size: global.rem(20);
-        line-height: calc(30/20);
-        letter-spacing: .1em;
-
-        .point-on {
-            color: global.$color-black;
-        }
-        .point-off {
-            color: global.$color-lightgray;
-        }
+        font-size: global.rem(18);
+        line-height: calc(24/18);
     }
 
     &__text {
-        font-size: global.rem(18);
-        line-height: calc(27/18);
+        font-size: global.rem(16);
+        line-height: calc(24/16);
     }
 }
 
 @include global.media(tb) {
-    .c-card-skills {
+    .c-card-instructors {
         height: 250px;
 
         &__nolink{
@@ -85,7 +74,7 @@
 }
 
 @include global.media(sp) {
-    .c-card-skills {
+    .c-card-instructors {
         height: auto;
 
         &__nolink{
@@ -94,19 +83,24 @@
         }
 
         &__logo-wrapper {
-            &--skill {
+            &--instructor {
                 padding-bottom: 0.5rem;
             }
         }
 
-        &__title {
+        &__janame {
             font-size: global.rem(20);
             line-height: calc(24/20);
         }
 
-        &__point {
+        &__enname {
             font-size: global.rem(18);
-            line-height: calc(27/18);
+            line-height: calc(24/18);
+        }
+
+        &__title {
+            font-size: global.rem(16);
+            line-height: calc(27/16);
         }
 
         &__text {

@@ -1,0 +1,33 @@
+@use "../../global" as global;
+
+.p-body {
+  &__wrapper {
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    padding: 1rem 2rem;
+    font-size: global.rem(24);
+    font-weight: normal;
+    color: global.$color-blue;
+    line-height: calc(36/24);
+  }
+
+  &__list{
+    padding: 1rem 4rem;
+    font-size: global.rem(24);
+    font-weight: normal;
+    color: global.$color-blue;
+    list-style-type: square;
+  }
+}
+
+@include global.media(sp) {
+  .p-body {
+    &__text {
+      padding: 0.5rem 1rem;
+      font-size: global.rem(20);
+      line-height: calc(28/20);
+    }
+  }
+}
