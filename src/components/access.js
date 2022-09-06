@@ -26,7 +26,7 @@ const Access = ({ data }) => {
             <Address />
 
             <div className="p-access__link">
-              <Link to="#">
+              <Link to="/contact/">
                 <button className="c-contact_button">お問い合わせ</button>
               </Link>
               <div className="u-margin-center"></div>

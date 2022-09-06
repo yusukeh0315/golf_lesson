@@ -17,7 +17,7 @@ const Header = ({ page }) => {
           <ul className="p-header-nav__list">
             <li className="p-header-nav__item">
               <Link
-                to={`#`}
+                to={`/price/`}
                 className={`p-header-nav__link ${
                   page === "price" ? "current" : ""
                 }`}
@@ -27,7 +27,7 @@ const Header = ({ page }) => {
             </li>
             <li className="p-header-nav__item">
               <Link
-                to={`#`}
+                to={`/instructor/`}
                 className={`p-header-nav__link ${
                   page === "instructor" ? "current" : ""
                 }`}
@@ -37,7 +37,7 @@ const Header = ({ page }) => {
             </li>
             <li className="p-header-nav__item">
               <Link
-                to={`#`}
+                to={`/facility/`}
                 className={`p-header-nav__link ${
                   page === "facility" ? "current" : ""
                 }`}
@@ -47,7 +47,7 @@ const Header = ({ page }) => {
             </li>
             <li className="p-header-nav__item">
               <Link
-                to={`#`}
+                to={`/contact/`}
                 className={`p-header-nav__link ${
                   page === "contact" ? "current" : ""
                 }`}
