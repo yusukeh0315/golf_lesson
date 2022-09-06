@@ -53,9 +53,7 @@ const Instructors = ({ data }) => {
         </div>
         <div className="p-body__wrapper">
           <p className="p-body__text">
-            説明文説明文説明文説明文説明文説明文説明文
-            説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文
-            説明文説明文
+            採用したインストラクターの基準、背景などがここで垣間見えるような紹介が良いかと思います。
           </p>
         </div>
         <div className="p-cards-instructors p-cards-instructors--col2">
