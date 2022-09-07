@@ -113,7 +113,7 @@ const Contact = ({ data, location }) => {
                   onChange={inputMessageHandler}
                 />
               </div>
-              <button
+              <input
                 type="submit"
                 className={`c-submit-button ${
                   disabled ? "c-submit-button--disabled" : ""
