@@ -10,12 +10,6 @@ const MenuList = ({ close }) => (
         aria-hidden="true"
         onClick={close}
       >
-        <Link to={`/`}>Home</Link>
-      </li>
-      <li // eslint-disable-line jsx-a11y/no-static-element-interactions
-        aria-hidden="true"
-        onClick={close}
-      >
         <Link to={`/price/`}>料金</Link>
       </li>
       <li // eslint-disable-line jsx-a11y/no-static-element-interactions

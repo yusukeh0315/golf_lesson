@@ -1,7 +1,17 @@
 @use "../../global" as global;
 
 .c-icon {
-  width: 2.625rem;
+  height: global.rem(42);
   margin-right: 1rem;
   object-fit: contain;
+  color: global.$color-black;
+  position: relative;
+  top: 4px;
+  color: global.$color-blue;
+}
+@include global.media(sp) {
+  .c-icon {
+    height: global.rem(26);
+    margin-right: 0.5rem;
+  }
 }

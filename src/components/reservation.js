@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const Reservation = () => {
   return (
-    <Link to={`/reservation/`}>
+    <Link to={`#`}>
       <button className="c-reservation_button">ご予約</button>
     </Link>
   )

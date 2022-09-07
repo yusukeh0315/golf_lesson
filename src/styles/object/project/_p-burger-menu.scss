@@ -22,7 +22,7 @@
 .bar3 {
   width: 25px;
   height: 3px;
-  background-color: #fff;
+  background-color: global.$color-blue;
   margin: 4px 0;
   transition: 0.4s;
   // box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
@@ -60,7 +60,7 @@
 }
 .menu li {
   list-style: outside none none;
-  margin: 20px 0px;
+  margin: 40px 0px;
   padding: 0;
   cursor: pointer;
 }

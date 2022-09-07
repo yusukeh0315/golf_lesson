@@ -21,10 +21,6 @@
     border-bottom: solid 1px global.$color-blue;
   }
 
-  // &__tr{
-  //   width:100%;
-  // }
-
   &__thead{
     background-color: global.$color-blue;
     color: global.$color-white;
@@ -69,6 +65,10 @@
       color: global.$color-white;
     }
 
+    &__td--mobile-price, &__td--mobile-time, &__td--mobile-desc{
+      padding: 10px 10%;
+      text-align: start;
+    }
     &__td--mobile-price{
       &:before{
         content: "料金： "
@@ -82,7 +82,7 @@
     }
 
     &__td--mobile-desc{
-      margin-bottom: 20px;
+      margin-bottom: 50px;
       &:before{
         content: "説明： "
       }
@@ -94,7 +94,6 @@
     }
 
     &__td {
-      text-align: center;
       display: block;
     }
   }

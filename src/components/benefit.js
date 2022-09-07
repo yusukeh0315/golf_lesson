@@ -1,7 +1,7 @@
 import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-const Service = ({ data }) => {
+const Benefit = ({ data }) => {
   const services = [
     {
       jaName: "駅チカの屋内練習場",
@@ -64,4 +64,4 @@ const Service = ({ data }) => {
   )
 }
 
-export default Service
+export default Benefit

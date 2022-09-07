@@ -1,25 +1,5 @@
 @use "../../global" as global;
 
-@include global.media(sp) {
-    .c-modal-close-button{
-        display: inline-block;
-        width: 100%;
-        padding: 10px 10px 10px 10px;
-        border: 1px solid global.$color-black;
-        background-color: global.$color-white;
-        color: global.$color-black;
-        font-weight: bold;
-        font-weight: normal;
-        // font-size: rem(16);
-        line-height: 20px;
-        text-decoration: none;
-        text-align: center;
-        cursor: pointer;
-        transition: .25s;
-    }
-}
-
-
 // button
 .c-submit-button {
     display: inline-block;
@@ -27,9 +7,9 @@
     height: 40px;
     max-width: 100%;
     padding: 10px 10px 10px 10px;
-    border: 1px solid global.$color-lightblue;
+    border: 1px solid global.$color-gray;
     background-color: global.$color-white;
-    color: global.$color-lightblue;
+    color: global.$color-blue;
     font-weight: bold;
     font-weight: normal;
     font-size: global.rem(16);
@@ -52,7 +32,7 @@
         cursor: default;
 
         &:hover, &:focus, &:active {
-            border: 1px solid global.$color-lightblue;
+            border: 1px solid global.$color-gray;
             background-color: global.$color-hovergray;
             color: global.$color-gray;
             cursor: default;
@@ -89,6 +69,41 @@
         border: 1px solid global.$color-orange;
         background-color: global.$color-white;
         color: global.$color-orange;
+    }
+}
+
+.c-schedule_button{
+    display: inline-block;
+    width: auto;
+    height: 60px;
+    max-width: 100%;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid global.$color-blue;
+    background-color: global.$color-blue;
+    color: global.$color-white;
+    font-weight: bold;
+    font-weight: normal;
+    font-size: global.rem(24);
+    line-height: 20px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: .25s;
+    border-radius: 10px;
+
+    &:hover, &:focus, &:active {
+        border: 1px solid global.$color-blue;
+        background-color: global.$color-white;
+        color: global.$color-blue;
+    }
+}
+
+@include global.media(sp) {
+    .c-schedule_button {
+        width: 100%;
+        height: auto;
+        padding: 20px 10px 20px 10px;
+        font-size: global.rem(18);
     }
 }
 

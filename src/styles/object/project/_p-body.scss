@@ -10,15 +10,16 @@
     font-size: global.rem(24);
     font-weight: normal;
     color: global.$color-blue;
-    line-height: calc(36/24);
+    line-height: calc(36 / 24);
   }
 
-  &__list{
+  &__list {
     padding: 1rem 4rem;
-    font-size: global.rem(24);
+    font-size: global.rem(28);
     font-weight: normal;
     color: global.$color-blue;
     list-style-type: square;
+    line-height: calc(36 / 28);
   }
 }
 
@@ -27,7 +28,12 @@
     &__text {
       padding: 0.5rem 1rem;
       font-size: global.rem(20);
-      line-height: calc(28/20);
+      line-height: calc(28 / 20);
+    }
+
+    &__list {
+      font-size: global.rem(24);
+      line-height: calc(36 / 24);
     }
   }
 }

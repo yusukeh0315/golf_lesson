@@ -40,6 +40,7 @@
         margin-bottom: 10px;
         font-size: global.rem(16);
         line-height: calc(27/16);
+        color: global.$color-blue;
     }
 
     &__input {
@@ -58,7 +59,7 @@
         padding: 15px 5px 5px 15px;
         border: 1px solid global.$color-gray;
         background-color: global.$color-hovergray;
-        border-radius:30px;
+        border-radius:20px;
     }
 }
 

@@ -1,6 +1,6 @@
 import React from "react"
 
-const TopMessage = ({ data }) => {
+const TopMessage = () => {
   return (
     <>
       <section className="l-top-message">

@@ -31,8 +31,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Golf Lesson`,
-        short_name: `Golf Lesson`,
+        name: `CocoLea GOLF Studio`,
+        short_name: `CocoLea GOLF Studio`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#477294`,

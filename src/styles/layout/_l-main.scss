@@ -57,7 +57,7 @@
         $col_num: 1;
         $card_margin: 60px;
         &__inner {
-            padding: 40px 60px;
+            padding: 40px 20px;
         }
     }
 }
@@ -78,7 +78,7 @@
         $col_num: 1;
         $card_margin: 60px;
         &__inner {
-            padding: 40px 60px;
+            padding: 40px 20px;
         }
     }
 }
@@ -98,7 +98,7 @@
         $col_num: 1;
         $card_margin: 60px;
         &__inner {
-            padding: 40px 60px;
+            padding: 40px 20px;
         }
     }
 }
@@ -118,7 +118,7 @@
         $col_num: 1;
         $card_margin: 60px;
         &__inner {
-            padding: 40px 60px;
+            padding: 40px 20px;
         }
     }
 }
@@ -135,7 +135,7 @@
         $col_num: 1;
         $card_margin: 60px;
         &__inner {
-            padding: 40px 60px;
+            padding: 40px 20px;
         }
     }
 }
@@ -152,7 +152,7 @@
         $col_num: 1;
         $card_margin: 60px;
         &__inner {
-            padding: 40px 60px;
+            padding: 40px 20px;
         }
     }
 }
@@ -229,14 +229,14 @@
     &__inner {
         @include global.inner(global.$width-inner);
         height: 100%;
-        padding: 160px 20px 80px 20px;
+        padding: 60px 20px;
     }
 }
 
 @include global.media(sp) {
-    .contact {
+    .l-contact {
         &__inner {
-            padding-top: 190px;
+            padding: 40px 20px;
         }
     }
 }

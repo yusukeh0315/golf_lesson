@@ -57,7 +57,7 @@ const Contact = ({ data, location }) => {
           </div>
 
           <div className="p-contact__lead-wrapper">
-            <p className="p-contact__lead">
+            <p className="p-body__text">
               ご質問・ご要望などございましたら、以下お問い合わせフォームよりお気軽にご連絡ください。
             </p>
           </div>
