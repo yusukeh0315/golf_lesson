@@ -71,6 +71,7 @@ const Contact = ({ data, location }) => {
               data-netlify-honeypot="bot-field"
               action="/contact_done.html"
             >
+              <input type="hidden" name="form-name" value="contact" />
               <div className="p-contact__item">
                 <label className="p-contact__label" htmlFor="name">
                   氏名<span className="c-require-label">必須</span>
