@@ -8,7 +8,6 @@ import HeadingIcon from "../components/heading_icon"
 import { graphql } from "gatsby"
 
 const Contact = ({ data, location }) => {
-
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
@@ -67,9 +66,10 @@ const Contact = ({ data, location }) => {
               className="p-contact__form"
               name="contact"
               id="form"
-              method="post"
+              method="POST"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
+              action="/contact_done.html"
             >
               <div className="p-contact__item">
                 <label className="p-contact__label" htmlFor="name">
@@ -113,12 +113,12 @@ const Contact = ({ data, location }) => {
                   onChange={inputMessageHandler}
                 />
               </div>
-              <input
+              <button
+                type="submit"
                 className={`c-submit-button ${
                   disabled ? "c-submit-button--disabled" : ""
                 }`}
                 disabled={disabled}
-                type="submit"
               />
             </form>
           </div>
