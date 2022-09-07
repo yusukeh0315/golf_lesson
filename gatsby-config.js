@@ -55,5 +55,29 @@ module.exports = {
         ],
       },
     },
+    // {
+    //   resolve: "gatsby-plugin-google-gtag",
+    //   options: {
+    //     trackingIds: ["G-968RDKR176"],
+    //     pluginConfig: {
+    //       head: true,
+    //     },
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-plugin-canonical-urls`,
+    //   options: {
+    //     siteUrl: `https://vitworks.net/`,
+    //     stripQueryString: true,
+    //   },
+    // },
+    // {
+    //   resolve: "gatsby-plugin-robots-txt",
+    //   options: {
+    //     host: "https://vitworks.net/",
+    //     sitemap: "https://vitworks.net/sitemap/sitemap-index.xml",
+    //     policy: [{ userAgent: "*", allow: "/", disallow: ["/contact_done/"] }],
+    //   },
+    // },
   ],
 }
