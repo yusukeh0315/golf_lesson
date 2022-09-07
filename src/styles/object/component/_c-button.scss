@@ -72,6 +72,12 @@
     }
 }
 
+@include global.media(sp) {
+    .c-reservation_button {
+        width: 100%;
+    }
+}
+
 .c-schedule_button{
     display: inline-block;
     width: auto;
@@ -130,5 +136,11 @@
         border: 1px solid global.$color-lightblue;
         background-color: global.$color-white;
         color: global.$color-lightblue;
+    }
+}
+
+@include global.media(sp) {
+    .c-contact_button {
+        width: 100%;
     }
 }
