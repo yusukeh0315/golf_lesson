@@ -1,20 +1,42 @@
 import React from "react"
+import { GatsbyImage } from "gatsby-plugin-image"
 
-const Service = () => {
+const Service = ({ data }) => {
   const services = [
     {
       jaName: "駅チカの屋内練習場",
-      svg: "image",
+      svg: (
+        <GatsbyImage
+          className="c-card-service__image"
+          image={data.benefit.childImageSharp.gatsbyImageData}
+          alt=""
+          style={{ height: "100%" }}
+        />
+      ),
       desc: "新橋駅、有楽町駅から歩いて〇〇分",
     },
     {
       jaName: "楽しく上達",
-      svg: "image",
+      svg: (
+        <GatsbyImage
+          className="c-card-service__image"
+          image={data.benefit.childImageSharp.gatsbyImageData}
+          alt=""
+          style={{ height: "100%" }}
+        />
+      ),
       desc: "インストラクターが丁寧にレクチャーし継続して上達できます。",
     },
     {
       jaName: "気軽に練習",
-      svg: "image",
+      svg: (
+        <GatsbyImage
+          className="c-card-service__image"
+          image={data.benefit.childImageSharp.gatsbyImageData}
+          alt=""
+          style={{ height: "100%" }}
+        />
+      ),
       desc: "手ぶらで練習できます！",
     },
   ]

@@ -1,0 +1,53 @@
+@use "../../global" as global;
+
+.p-topbg {
+  display: flex;
+  flex-direction: column;
+
+  &__image-wrapper {
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &__inner {
+    @include global.inner(global.$width-access);
+    height: 400px;
+    padding: 20px 20px;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  &__text {
+    color: global.$color-white;
+    height: auto;
+    font-size: global.rem(48);
+    text-shadow: 2px 2px 3px #808080;
+    letter-spacing: 0.2rem;
+  }
+}
+
+@include global.media(sp) {
+  .p-topbg {
+    &__inner {
+      width: 100%;
+      // height: 500px;
+      padding: 5px 5px;
+    }
+    &__text {
+      width: 100%;
+      font-size: global.rem(28);
+      text-align: center;
+    }
+  }
+}

@@ -24,8 +24,8 @@ const QuestionAndAnswer = () => {
   ]
 
   return (
-    <section className="l-service">
-      <div className="l-service__inner">
+    <section className="l-subsection">
+      <div className="l-subsection__inner">
         <div className="p-section__title-wrapper">
           <h2 className="p-section__title">
             <HeadingIcon type="green" />

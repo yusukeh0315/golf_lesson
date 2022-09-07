@@ -1,0 +1,95 @@
+@use "../../global" as global;
+
+.c-card-customers {
+    background-color: global.$color-white;
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.2);
+
+    &__logo-wrapper {
+        flex-basis: 20%;
+        padding: 0 10px;
+        margin-bottom: 10px;
+    }
+
+    &__logo {
+        width: 80px !important;
+        height: 80px !important;
+        object-fit: contain !important;
+    }
+
+    &__body {
+        display: flex;
+        flex-basis: 85%;
+        flex-direction: column;
+    }
+
+    &__janame {
+        font-weight: 600;
+        font-size: global.rem(22);
+        line-height: calc(26/22);
+        font-family: global.$font-base-en;
+        margin-bottom: 4px;
+    }
+
+    &__enname {
+        margin-bottom: 4px;
+        font-weight: 300;
+        font-size: global.rem(18);
+        line-height: calc(26/18);
+        font-family: global.$font-base-en;
+    }
+
+    &__title {
+        display: flex;
+        margin-bottom: 4px;
+        font-size: global.rem(18);
+        line-height: calc(24/18);
+    }
+
+    &__text {
+        font-size: global.rem(16);
+        line-height: calc(24/16);
+    }
+}
+
+@include global.media(tb) {
+    .c-card-customers {
+        height: 320px;
+    }
+}
+
+@include global.media(sp) {
+    .c-card-customers {
+        height: auto;
+
+        &__logo-wrapper {
+            &--instructor {
+                padding-bottom: 0.5rem;
+            }
+        }
+
+        &__janame {
+            font-size: global.rem(20);
+            line-height: calc(24/20);
+        }
+
+        &__enname {
+            font-size: global.rem(18);
+            line-height: calc(24/18);
+        }
+
+        &__title {
+            font-size: global.rem(16);
+            line-height: calc(27/16);
+        }
+
+        &__text {
+            font-size: global.rem(16);
+            line-height: calc(21/16);
+        }
+    }
+}

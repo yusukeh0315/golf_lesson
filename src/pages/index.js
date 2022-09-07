@@ -8,6 +8,7 @@ import Access from "../components/access"
 import Customer from "../components/customer"
 
 import { graphql } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const Home = ({ data }) => {
   return (
@@ -15,9 +16,23 @@ const Home = ({ data }) => {
       <Seo />
       <FirstView data={data} />
       <TopMessage />
-      <Service />
+      <Service data={data} />
       <Customer data={data} />
       <Access data={data} />
+
+      <section className="l-topbg">
+        <figure className="p-topbg__image-wrapper">
+          <GatsbyImage
+            className="p-topbg__image"
+            image={data.topbg_5.childImageSharp.gatsbyImageData}
+            alt=""
+            style={{ height: "100%" }}
+          />
+        </figure>
+        <div className="p-topbg__inner">
+          <p className="p-topbg__text">enjoy GOLF!</p>
+        </div>
+      </section>
     </Layout>
   )
 }
@@ -92,6 +107,30 @@ export const query = graphql`
     dummy: file(relativePath: { eq: "dummy.png" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    topbg_5: file(relativePath: { eq: "2825060_m.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    benefit: file(relativePath: { eq: "2821733_m.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    allMicrocmsCustomer {
+      edges {
+        node {
+          image {
+            height
+            url
+            width
+          }
+          attribute
+          content
+          customer_id
+        }
       }
     }
   }
