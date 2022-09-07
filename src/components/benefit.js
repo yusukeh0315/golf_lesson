@@ -8,7 +8,7 @@ const Benefit = ({ data }) => {
       svg: (
         <GatsbyImage
           className="c-card-service__image"
-          image={data.benefit.childImageSharp.gatsbyImageData}
+          image={data.benefit_1.childImageSharp.gatsbyImageData}
           alt=""
           style={{ height: "100%" }}
         />
@@ -20,7 +20,7 @@ const Benefit = ({ data }) => {
       svg: (
         <GatsbyImage
           className="c-card-service__image"
-          image={data.benefit.childImageSharp.gatsbyImageData}
+          image={data.benefit_2.childImageSharp.gatsbyImageData}
           alt=""
           style={{ height: "100%" }}
         />
@@ -32,7 +32,7 @@ const Benefit = ({ data }) => {
       svg: (
         <GatsbyImage
           className="c-card-service__image"
-          image={data.benefit.childImageSharp.gatsbyImageData}
+          image={data.benefit_3.childImageSharp.gatsbyImageData}
           alt=""
           style={{ height: "100%" }}
         />

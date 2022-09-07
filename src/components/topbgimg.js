@@ -8,13 +8,13 @@ const TopBgImg = ({ data }) => {
         <figure className="p-topbg__image-wrapper">
           <GatsbyImage
             className="p-topbg__image"
-            image={data.topbg_5.childImageSharp.gatsbyImageData}
+            image={data.topbg_bottom.childImageSharp.gatsbyImageData}
             alt=""
             style={{ height: "100%" }}
           />
         </figure>
         <div className="p-topbg__inner">
-          <p className="p-topbg__text">enjoy GOLF!</p>
+          <p className="p-topbg__text">enjoy GOLF</p>
         </div>
       </section>
     </>

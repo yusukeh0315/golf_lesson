@@ -27,7 +27,7 @@ const FacilityDesc = ({ data }) => {
             <figure className="p-facility-content__image-wrapper">
               <GatsbyImage
                 className="p-facility-content__image"
-                image={data.contactview.childImageSharp.gatsbyImageData}
+                image={data.facilitydesc.childImageSharp.gatsbyImageData}
                 alt=""
                 style={{ height: "100%" }}
               />
