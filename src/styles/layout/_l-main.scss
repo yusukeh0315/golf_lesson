@@ -62,7 +62,7 @@
   }
 }
 
-.l-service {
+.l-benefit {
   background: global.$color-lightblue-bg;
   $col_num: 3;
   $card_margin: 60px;
@@ -74,7 +74,7 @@
 }
 
 @include global.media(sp) {
-  .l-service {
+  .l-benefit {
     $col_num: 1;
     $card_margin: 60px;
     &__inner {

@@ -1,6 +1,6 @@
 @use "../../global" as global;
 
-.c-card-service {
+.c-card-benefit {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,7 +38,7 @@
 }
 
 @include global.media(sp) {
-  .c-card-service {
+  .c-card-benefit {
     &__icon-wrapper {
       margin-top: 20px;
       margin-bottom: 30px;
