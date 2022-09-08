@@ -55,7 +55,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-no-javascript`,
     // {
     //   resolve: "gatsby-plugin-google-gtag",
     //   options: {
