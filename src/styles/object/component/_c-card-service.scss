@@ -1,56 +1,55 @@
 @use "../../global" as global;
 
 .c-card-service {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    &__title {
-        margin-bottom: 10px;
-        font-weight: normal;
-        font-size: global.rem(24);
-        color: global.$color-blue;
+  &__title {
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: global.rem(24);
+    color: global.$color-blue;
+  }
+
+  &__sub-title {
+    font-weight: normal;
+    font-size: global.rem(16);
+  }
+
+  &__icon-wrapper {
+    width: 230px;
+    height: 230px;
+    margin-top: 39px;
+    margin-bottom: 50px;
+
+    & img {
+      border-radius: 50%;
     }
+  }
 
-    &__sub-title {
-        font-weight: normal;
-        font-size: global.rem(16);
-    }
+  &__text {
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-size: global.rem(16);
+    line-height: calc(24 / 16);
+    color: global.$color-blue;
+  }
+}
 
+@include global.media(sp) {
+  .c-card-service {
     &__icon-wrapper {
-        width: 230px;
-        height: 230px;
-        margin-top: 39px;
-        margin-bottom: 50px;
-
-        & img {
-            border-radius:50%;
-        }
+      margin-top: 20px;
+      margin-bottom: 30px;
     }
 
     &__text {
-        margin-bottom: 5px;
-        font-weight: normal;
-        font-size: global.rem(16);
-        line-height: calc(24 / 16);
-        color: global.$color-blue;
+      font-size: global.rem(16);
     }
-}
 
-
-@include global.media(sp) {
-    .c-card-service {
-        &__icon-wrapper {
-            margin-top: 20px;
-            margin-bottom: 30px;
-        }
-
-        &__text {
-            font-size: global.rem(16);
-        }
-
-        &__body {
-            margin-bottom: 50px;
-        }
+    &__body {
+      margin-bottom: 50px;
     }
+  }
 }

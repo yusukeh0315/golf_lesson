@@ -1,7 +1,6 @@
 @use "../../global" as global;
 
 .p-price-table {
-
   &__wrapper {
     // margin-left: auto;
     // margin-right: auto;
@@ -21,12 +20,12 @@
     border-bottom: solid 1px global.$color-blue;
   }
 
-  &__thead{
+  &__thead {
     background-color: global.$color-blue;
     color: global.$color-white;
   }
 
-  &__th{
+  &__th {
     // color: global.$color-blue;
     padding: 10px 5px;
   }
@@ -56,37 +55,39 @@
       border-bottom: unset;
     }
 
-    &__thead{
+    &__thead {
       display: none;
     }
 
-    &__td--mobile-th{
+    &__td--mobile-th {
       background-color: global.$color-blue;
       color: global.$color-white;
       font-size: global.rem(24);
       margin-bottom: 15px;
     }
 
-    &__td--mobile-price, &__td--mobile-time, &__td--mobile-desc{
+    &__td--mobile-price,
+    &__td--mobile-time,
+    &__td--mobile-desc {
       padding: 10px 10%;
       text-align: start;
     }
-    &__td--mobile-price{
-      &:before{
-        content: "料金： "
+    &__td--mobile-price {
+      &:before {
+        content: "料金： ";
       }
     }
 
-    &__td--mobile-time{
-      &:before{
-        content: "時間： "
+    &__td--mobile-time {
+      &:before {
+        content: "時間： ";
       }
     }
 
-    &__td--mobile-desc{
+    &__td--mobile-desc {
       margin-bottom: 50px;
-      &:before{
-        content: "説明： "
+      &:before {
+        content: "説明： ";
       }
     }
 
