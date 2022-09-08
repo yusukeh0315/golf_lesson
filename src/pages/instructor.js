@@ -1,8 +1,8 @@
 import React from "react"
-import Layout from "../components/layout"
-import SubView from "../components/subview"
-import Seo from "../components/seo"
 import Instructors from "../components/instructors"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
+import SubView from "../components/subview"
 
 import { graphql } from "gatsby"
 

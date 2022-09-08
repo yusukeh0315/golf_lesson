@@ -1,10 +1,9 @@
-import React from "react"
 import { Link } from "gatsby"
+import React from "react"
 
 import Reservation from "./reservation"
 
 const Header = ({ page }) => {
-
   return (
     <header className="l-header">
       <div className="l-header__inner">

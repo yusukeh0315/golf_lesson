@@ -6,17 +6,7 @@ const EmbedMap = ({ children }) => {
     triggerOnce: true,
   })
 
-  return (
-    <div
-      ref={ref}
-    >
-      {inView ? (
-        <div>{children}</div>
-      ) : (
-        <div></div>
-      )}
-    </div>
-  )
+  return <div ref={ref}>{inView ? <div>{children}</div> : <div></div>}</div>
 }
 
 export default EmbedMap

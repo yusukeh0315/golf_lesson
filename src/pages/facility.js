@@ -1,8 +1,8 @@
 import React from "react"
+import FacilityDesc from "../components/facilitydesc"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import SubView from "../components/subview"
-import FacilityDesc from "../components/facilitydesc"
 
 import { graphql } from "gatsby"
 

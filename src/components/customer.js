@@ -1,7 +1,6 @@
 import React from "react"
 
 const Customer = ({ data }) => {
-
   return (
     <section className="l-customer">
       <div className="l-customer__inner">

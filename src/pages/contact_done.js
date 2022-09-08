@@ -1,13 +1,12 @@
 import React from "react"
+import HeadingIcon from "../components/heading_icon"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import SubView from "../components/subview"
-import HeadingIcon from "../components/heading_icon"
 
 import { graphql } from "gatsby"
 
 const Contact = ({ data, location }) => {
-
   return (
     <Layout page="contact">
       <Seo

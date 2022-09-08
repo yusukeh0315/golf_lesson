@@ -1,13 +1,13 @@
 import React from "react"
 
-import Header from "./header"
 import Footer from "./footer"
+import Header from "./header"
 
 import "../styles/main.scss"
 
-import "typeface-notosans-jp"
-import "typeface-lato"
 import "@fontsource/kaisei-decol"
+import "typeface-lato"
+import "typeface-notosans-jp"
 
 import BurgerMenu from "./burgermenu/menu"
 

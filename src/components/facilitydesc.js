@@ -1,11 +1,11 @@
-import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
+import React from "react"
 
 import Address from "./address"
 import HeadingIcon from "./heading_icon"
 
-import "../styles/react-image-gallery/css/image-gallery.css"
 import ImageGallery from "react-image-gallery"
+import "../styles/react-image-gallery/css/image-gallery.css"
 import EmbedMap from "./embedmap"
 
 const FacilityDesc = ({ data }) => {

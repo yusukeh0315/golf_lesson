@@ -1,9 +1,9 @@
 import React, { useState } from "react"
+import HeadingIcon from "../components/heading_icon"
 import Layout from "../components/layout"
+import QuestionAndAnswer from "../components/qa"
 import Seo from "../components/seo"
 import SubView from "../components/subview"
-import QuestionAndAnswer from "../components/qa"
-import HeadingIcon from "../components/heading_icon"
 
 import { graphql } from "gatsby"
 

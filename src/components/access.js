@@ -1,10 +1,10 @@
-import React from "react"
-import { GatsbyImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
+import React from "react"
 
 import Address from "./address"
-import Reservation from "./reservation"
 import EmbedMap from "./embedmap"
+import Reservation from "./reservation"
 
 const Access = ({ data }) => {
   return (

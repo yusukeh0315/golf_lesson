@@ -1,12 +1,12 @@
 import React from "react"
+import Access from "../components/access"
+import Benefit from "../components/benefit"
+import Customer from "../components/customer"
+import FirstView from "../components/firstview"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import FirstView from "../components/firstview"
-import TopMessage from "../components/topmessage"
-import Benefit from "../components/benefit"
-import Access from "../components/access"
-import Customer from "../components/customer"
 import TopBgImg from "../components/topbgimg"
+import TopMessage from "../components/topmessage"
 
 import { graphql } from "gatsby"
 
