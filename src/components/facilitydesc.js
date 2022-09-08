@@ -4,7 +4,133 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import Address from "./address"
 import HeadingIcon from "./heading_icon"
 
+import "../styles/react-image-gallery/css/image-gallery.css"
+import ImageGallery from "react-image-gallery"
+
 const FacilityDesc = ({ data }) => {
+  const image_1 = (
+    <GatsbyImage
+      className="p-facility-content__image"
+      image={data.facilityimg_1.childImageSharp.gatsbyImageData}
+      alt=""
+      style={{ height: "100%" }}
+    />
+  )
+  const image_2 = (
+    <GatsbyImage
+      className="p-facility-content__image"
+      image={data.facilityimg_2.childImageSharp.gatsbyImageData}
+      alt=""
+      style={{ height: "100%" }}
+    />
+  )
+  const image_3 = (
+    <GatsbyImage
+      className="p-facility-content__image"
+      image={data.facilityimg_3.childImageSharp.gatsbyImageData}
+      alt=""
+      style={{ height: "100%" }}
+    />
+  )
+  const image_4 = (
+    <GatsbyImage
+      className="p-facility-content__image"
+      image={data.facilityimg_4.childImageSharp.gatsbyImageData}
+      alt=""
+      style={{ height: "100%" }}
+    />
+  )
+  const image_5 = (
+    <GatsbyImage
+      className="p-facility-content__image"
+      image={data.facilityimg_5.childImageSharp.gatsbyImageData}
+      alt=""
+      style={{ height: "100%" }}
+    />
+  )
+
+  function getSrcWebp(str, size) {
+    let imgsArray = str.split(",")
+    let src_path = imgsArray.filter(img => {
+      let imgArray = img.split(" ")
+      return size === imgArray[1]
+    })
+    return src_path[0].split(" ")[0]
+  }
+
+  const img1_org = getSrcWebp(
+    image_1.props.image.images.sources[0].srcSet,
+    "1920w"
+  )
+  const img1_thb = getSrcWebp(
+    image_1.props.image.images.sources[0].srcSet,
+    "750w"
+  )
+
+  const img2_org = getSrcWebp(
+    image_2.props.image.images.sources[0].srcSet,
+    "1920w"
+  )
+  const img2_thb = getSrcWebp(
+    image_2.props.image.images.sources[0].srcSet,
+    "750w"
+  )
+
+  const img3_org = getSrcWebp(
+    image_3.props.image.images.sources[0].srcSet,
+    "1920w"
+  )
+  const img3_thb = getSrcWebp(
+    image_3.props.image.images.sources[0].srcSet,
+    "750w"
+  )
+
+  const img4_org = getSrcWebp(
+    image_4.props.image.images.sources[0].srcSet,
+    "1920w"
+  )
+  const img4_thb = getSrcWebp(
+    image_4.props.image.images.sources[0].srcSet,
+    "750w"
+  )
+
+  const img5_org = getSrcWebp(
+    image_5.props.image.images.sources[0].srcSet,
+    "1920w"
+  )
+  const img5_thb = getSrcWebp(
+    image_5.props.image.images.sources[0].srcSet,
+    "750w"
+  )
+
+  const images = [
+    {
+      original: img1_org,
+      thumbnail: img1_thb,
+      originalClass : "p-facility-content__image",
+    },
+    {
+      original: img2_org,
+      thumbnail: img2_thb,
+      originalClass : "p-facility-content__image",
+    },
+    {
+      original: img3_org,
+      thumbnail: img3_thb,
+      originalClass : "p-facility-content__image",
+    },
+    {
+      original: img4_org,
+      thumbnail: img4_thb,
+      originalClass : "p-facility-content__image",
+    },
+    {
+      original: img5_org,
+      thumbnail: img5_thb,
+      originalClass : "p-facility-content__image",
+    },
+  ]
+
   return (
     <>
       <section className="l-subsection">
@@ -25,11 +151,13 @@ const FacilityDesc = ({ data }) => {
             </div>
             <div className="u-margin-center"></div>
             <figure className="p-facility-content__image-wrapper">
-              <GatsbyImage
-                className="p-facility-content__image"
-                image={data.facilitydesc.childImageSharp.gatsbyImageData}
-                alt=""
-                style={{ height: "100%" }}
+              <ImageGallery
+                items={images}
+                showPlayButton={false}
+                useBrowserFullscreen={false}
+                showFullscreenButton={false}
+                showNav={false}
+                autoPlay={true}
               />
             </figure>
           </div>

@@ -31,6 +31,31 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH)
       }
     }
+    facilityimg_1: file(relativePath: { eq: "facilityimg_1.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    facilityimg_2: file(relativePath: { eq: "facilityimg_2.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    facilityimg_3: file(relativePath: { eq: "facilityimg_3.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    facilityimg_4: file(relativePath: { eq: "facilityimg_4.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    facilityimg_5: file(relativePath: { eq: "facilityimg_5.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
   }
 `
 

@@ -11,11 +11,18 @@
   }
 
   &__body-wrapper {
-    flex-basis: 50%;
+    width: calc(50vw - 20px);
   }
 
   &__image-wrapper {
-    flex-basis: 50%;
+    width: calc(50vw - 20px);
+  }
+
+  &__image > img {
+    // width: 300px !important;
+    // height: 350px !important;
+    aspect-ratio: 5/ 3 !important;
+    object-fit: contain !important;
   }
 
   &__address {
@@ -38,7 +45,11 @@
       flex-direction: column-reverse;
     }
     &__image-wrapper {
+      width: 100%;
       aspect-ratio: 5/ 3;
+    }
+    &__body-wrapper {
+      width: 100%;
     }
     &__image{
       aspect-ratio: inherit;
