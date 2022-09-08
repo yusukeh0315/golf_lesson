@@ -42,7 +42,11 @@
 }
 
 .image-gallery-thumbnail.active {
-  border-color: global.$color-lightblue !important;
+  border-color: global.$color-blue !important;
+}
+
+.image-gallery-thumbnail:hover {
+  border-color: global.$color-blue !important;
 }
 
 @include global.media(sp) {

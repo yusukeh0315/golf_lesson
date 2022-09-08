@@ -163,6 +163,8 @@ const FacilityDesc = ({ data }) => {
                 showFullscreenButton={false}
                 showNav={false}
                 autoPlay={true}
+                slideDuration={450}
+                slideInterval={8000}
               />
             </figure>
           </div>
