@@ -35,7 +35,7 @@
         & > .p-cards-service__item {
             width: calc(#{percentage(calc(100 / $col_num) * 0.01)} - #{$card_margin} * calc(#{$col_num - 1} / #{$col_num}));
             margin-right: 0;
-            margin-bottom: 30px;
+            margin-bottom: 80px;
 
             &:nth-of-type(#{$col_num}n) {
                 margin-right: 0;

@@ -107,27 +107,32 @@ const FacilityDesc = ({ data }) => {
     {
       original: img1_org,
       thumbnail: img1_thb,
-      originalClass : "p-facility-content__image",
+      originalClass: "p-facility-content__image",
+      thumbnailClass: "p-facility-content__thumbnail",
     },
     {
       original: img2_org,
       thumbnail: img2_thb,
-      originalClass : "p-facility-content__image",
+      originalClass: "p-facility-content__image",
+      thumbnailClass: "p-facility-content__thumbnail",
     },
     {
       original: img3_org,
       thumbnail: img3_thb,
-      originalClass : "p-facility-content__image",
+      originalClass: "p-facility-content__image",
+      thumbnailClass: "p-facility-content__thumbnail",
     },
     {
       original: img4_org,
       thumbnail: img4_thb,
-      originalClass : "p-facility-content__image",
+      originalClass: "p-facility-content__image",
+      thumbnailClass: "p-facility-content__thumbnail",
     },
     {
       original: img5_org,
       thumbnail: img5_thb,
-      originalClass : "p-facility-content__image",
+      originalClass: "p-facility-content__image",
+      thumbnailClass: "p-facility-content__thumbnail",
     },
   ]
 

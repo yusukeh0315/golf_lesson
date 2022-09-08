@@ -17,12 +17,17 @@
   &__image-wrapper {
     width: calc(50vw - 20px);
   }
-
-  &__image > img {
-    // width: 300px !important;
-    // height: 350px !important;
+  &__image {
     aspect-ratio: 5/ 3 !important;
+    width: 100%;
+  }
+  &__image > img {
+    aspect-ratio: 5/ 3 !important;
+    width: 100%;
     object-fit: contain !important;
+  }
+  &__thumbnail {
+    cursor: pointer;
   }
 
   &__address {
@@ -34,6 +39,10 @@
     align-items: center;
     justify-content: space-between;
   }
+}
+
+.image-gallery-thumbnail.active {
+  border-color: global.$color-lightblue !important;
 }
 
 @include global.media(sp) {

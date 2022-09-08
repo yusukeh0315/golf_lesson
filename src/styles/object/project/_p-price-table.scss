@@ -63,6 +63,8 @@
     &__td--mobile-th{
       background-color: global.$color-blue;
       color: global.$color-white;
+      font-size: global.rem(24);
+      margin-bottom: 15px;
     }
 
     &__td--mobile-price, &__td--mobile-time, &__td--mobile-desc{
@@ -87,7 +89,6 @@
         content: "説明： "
       }
     }
-
 
     &__tr {
       // border-bottom: solid 1px global.$color-blue;
