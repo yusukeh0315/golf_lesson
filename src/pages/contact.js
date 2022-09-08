@@ -67,11 +67,9 @@ const Contact = ({ data, location }) => {
               name="contact"
               id="form"
               method="POST"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              action="/contact_done.html"
+              action="https://ssgform.com/s/Zuju97p82Cil"
             >
-              <input type="hidden" name="form-name" value="contact" />
+              <div style={{display: "none"}}><input type="text" name="trap" /></div>
               <div className="p-contact__item">
                 <label className="p-contact__label" htmlFor="name">
                   氏名<span className="c-require-label">必須</span>
