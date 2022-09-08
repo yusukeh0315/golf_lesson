@@ -55,6 +55,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-lodash`,
     // {
     //   resolve: "gatsby-plugin-google-gtag",
     //   options: {
