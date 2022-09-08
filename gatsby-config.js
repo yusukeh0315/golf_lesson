@@ -55,6 +55,7 @@ module.exports = {
         ],
       },
     },
+    `react-intersection-observer`,
     `gatsby-plugin-lodash`,
     // {
     //   resolve: "gatsby-plugin-webpack-bundle-analyser-v2",

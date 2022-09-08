@@ -36,6 +36,7 @@
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
     "react-image-gallery": "^1.2.9",
+    "react-intersection-observer": "8",
     "react-reveal": "^1.2.2",
     "react-slick": "^0.29.0",
     "reactjs-popup": "^2.0.5",
