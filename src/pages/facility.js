@@ -1,13 +1,19 @@
 import React from "react"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import SubView from "../components/subview"
 import FacilityDesc from "../components/facilitydesc"
 
 import { graphql } from "gatsby"
 
-const Facility = ({ data }) => {
+const Facility = ({ data, location }) => {
   return (
     <Layout page="facility">
+      <Seo
+        pagetitle="施設紹介"
+        pagedesc="施設紹介"
+        pagepath={location.pathname}
+      />
       <SubView data={data} title="施設紹介" />
       <FacilityDesc data={data} />
     </Layout>

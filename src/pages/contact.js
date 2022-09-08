@@ -40,7 +40,7 @@ const Contact = ({ data, location }) => {
   return (
     <Layout page="contact">
       <Seo
-        pagetitle="Contact"
+        pagetitle="お問い合わせ"
         pagedesc="お問い合わせ"
         pagepath={location.pathname}
       />
