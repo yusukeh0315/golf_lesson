@@ -22,7 +22,7 @@ const SubView = ({ data, title }) => {
             <GatsbyImage
               className="p-sub__image"
               image={image}
-              alt=""
+              alt="subview"
               style={{ height: "100%" }}
               loading="eager"
               durationFadeIn={100}

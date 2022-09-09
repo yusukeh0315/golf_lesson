@@ -9,7 +9,7 @@ const Benefit = ({ data }) => {
         <GatsbyImage
           className="c-card-benefit__image"
           image={data.benefit_1.childImageSharp.gatsbyImageData}
-          alt=""
+          alt="benefit1"
           style={{ height: "100%" }}
         />
       ),
@@ -21,7 +21,7 @@ const Benefit = ({ data }) => {
         <GatsbyImage
           className="c-card-benefit__image"
           image={data.benefit_2.childImageSharp.gatsbyImageData}
-          alt=""
+          alt="benefit2"
           style={{ height: "100%" }}
         />
       ),
@@ -33,7 +33,7 @@ const Benefit = ({ data }) => {
         <GatsbyImage
           className="c-card-benefit__image"
           image={data.benefit_3.childImageSharp.gatsbyImageData}
-          alt=""
+          alt="benefit3"
           style={{ height: "100%" }}
         />
       ),

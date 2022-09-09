@@ -9,7 +9,7 @@ const TopBgImg = ({ data }) => {
           <GatsbyImage
             className="p-topbg__image"
             image={data.topbg_bottom.childImageSharp.gatsbyImageData}
-            alt=""
+            alt="top-bottom-background"
             style={{ height: "100%" }}
           />
         </figure>

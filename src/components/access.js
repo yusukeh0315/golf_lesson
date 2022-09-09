@@ -14,7 +14,7 @@ const Access = ({ data }) => {
           <GatsbyImage
             className="p-access__image"
             image={data.topbg_middle.childImageSharp.gatsbyImageData}
-            alt=""
+            alt="top-middle-background"
             style={{ height: "100%" }}
           />
         </figure>

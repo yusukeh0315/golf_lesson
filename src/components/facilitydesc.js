@@ -13,7 +13,7 @@ const FacilityDesc = ({ data }) => {
     <GatsbyImage
       className="p-facility-content__image"
       image={data.facilityimg_1.childImageSharp.gatsbyImageData}
-      alt=""
+      alt="facility1"
       style={{ height: "100%" }}
     />
   )
@@ -21,7 +21,7 @@ const FacilityDesc = ({ data }) => {
     <GatsbyImage
       className="p-facility-content__image"
       image={data.facilityimg_2.childImageSharp.gatsbyImageData}
-      alt=""
+      alt="facility2"
       style={{ height: "100%" }}
     />
   )
@@ -29,7 +29,7 @@ const FacilityDesc = ({ data }) => {
     <GatsbyImage
       className="p-facility-content__image"
       image={data.facilityimg_3.childImageSharp.gatsbyImageData}
-      alt=""
+      alt="facility3"
       style={{ height: "100%" }}
     />
   )
@@ -37,7 +37,7 @@ const FacilityDesc = ({ data }) => {
     <GatsbyImage
       className="p-facility-content__image"
       image={data.facilityimg_4.childImageSharp.gatsbyImageData}
-      alt=""
+      alt="facility4"
       style={{ height: "100%" }}
     />
   )
@@ -45,7 +45,7 @@ const FacilityDesc = ({ data }) => {
     <GatsbyImage
       className="p-facility-content__image"
       image={data.facilityimg_5.childImageSharp.gatsbyImageData}
-      alt=""
+      alt="facility5"
       style={{ height: "100%" }}
     />
   )
@@ -110,30 +110,40 @@ const FacilityDesc = ({ data }) => {
       thumbnail: img1_thb,
       originalClass: "p-facility-content__image",
       thumbnailClass: "p-facility-content__thumbnail",
+      originalAlt: "facility1",
+      thumbnailAlt: "facility1",
     },
     {
       original: img2_org,
       thumbnail: img2_thb,
       originalClass: "p-facility-content__image",
       thumbnailClass: "p-facility-content__thumbnail",
+      originalAlt: "facility2",
+      thumbnailAlt: "facility2",
     },
     {
       original: img3_org,
       thumbnail: img3_thb,
       originalClass: "p-facility-content__image",
       thumbnailClass: "p-facility-content__thumbnail",
+      originalAlt: "facility3",
+      thumbnailAlt: "facility3",
     },
     {
       original: img4_org,
       thumbnail: img4_thb,
       originalClass: "p-facility-content__image",
       thumbnailClass: "p-facility-content__thumbnail",
+      originalAlt: "facility4",
+      thumbnailAlt: "facility4",
     },
     {
       original: img5_org,
       thumbnail: img5_thb,
       originalClass: "p-facility-content__image",
       thumbnailClass: "p-facility-content__thumbnail",
+      originalAlt: "facility5",
+      thumbnailAlt: "facility5",
     },
   ]
 

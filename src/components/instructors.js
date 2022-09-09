@@ -66,7 +66,7 @@ const Instructors = ({ data }) => {
                       <GatsbyImage
                         className="c-card-instructors__logo"
                         image={data.dummy.childImageSharp.gatsbyImageData}
-                        alt=""
+                        alt="instructor"
                         style={{ height: "100%" }}
                       />
                     </figure>

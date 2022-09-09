@@ -30,7 +30,7 @@ const FirstView = ({ data }) => {
                   <GatsbyImage
                     className="p-fv__image"
                     image={img}
-                    alt=""
+                    alt="firstview"
                     style={{ height: "100%" }}
                     loading="eager"
                     durationFadeIn={100}
