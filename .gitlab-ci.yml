@@ -7,6 +7,6 @@ before_script:
 build:
   script:
     - apt-get update -qq && apt-get install -y -qq lftp
-    - lftp -c "set ftp:ssl-allow no; open -u $USERNAME,$PASSWORD $HOST; mirror -R $LOCAL $SERVER --parallel=10"
+    - lftp -c "set ftp:ssl-allow no; open -u $USERNAME,$PASSWORD $HOST; mirror -R -X ~partytown $LOCAL $SERVER --parallel=10"
   only:
     - main
