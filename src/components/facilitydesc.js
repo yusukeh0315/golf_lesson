@@ -58,10 +58,12 @@ const FacilityDesc = ({ data }) => {
     })
     return src_path[0].split(" ")[0]
   }
+  console.log("image-info")
+  console.log(data.facilityimg_5.childImageSharp.gatsbyImageData)
 
   const img1_org = getSrcWebp(
     image_1.props.image.images.sources[0].srcSet,
-    "1920w"
+    "750w"
   )
   const img1_thb = getSrcWebp(
     image_1.props.image.images.sources[0].srcSet,
@@ -70,7 +72,7 @@ const FacilityDesc = ({ data }) => {
 
   const img2_org = getSrcWebp(
     image_2.props.image.images.sources[0].srcSet,
-    "1920w"
+    "750w"
   )
   const img2_thb = getSrcWebp(
     image_2.props.image.images.sources[0].srcSet,
@@ -79,7 +81,7 @@ const FacilityDesc = ({ data }) => {
 
   const img3_org = getSrcWebp(
     image_3.props.image.images.sources[0].srcSet,
-    "1920w"
+    "750w"
   )
   const img3_thb = getSrcWebp(
     image_3.props.image.images.sources[0].srcSet,
@@ -88,7 +90,7 @@ const FacilityDesc = ({ data }) => {
 
   const img4_org = getSrcWebp(
     image_4.props.image.images.sources[0].srcSet,
-    "1920w"
+    "750w"
   )
   const img4_thb = getSrcWebp(
     image_4.props.image.images.sources[0].srcSet,
@@ -97,7 +99,7 @@ const FacilityDesc = ({ data }) => {
 
   const img5_org = getSrcWebp(
     image_5.props.image.images.sources[0].srcSet,
-    "1920w"
+    "750w"
   )
   const img5_thb = getSrcWebp(
     image_5.props.image.images.sources[0].srcSet,
@@ -112,6 +114,7 @@ const FacilityDesc = ({ data }) => {
       thumbnailClass: "p-facility-content__thumbnail",
       originalAlt: "facility1",
       thumbnailAlt: "facility1",
+      loading: "lazy",
     },
     {
       original: img2_org,
@@ -120,6 +123,7 @@ const FacilityDesc = ({ data }) => {
       thumbnailClass: "p-facility-content__thumbnail",
       originalAlt: "facility2",
       thumbnailAlt: "facility2",
+      loading: "lazy",
     },
     {
       original: img3_org,
@@ -128,6 +132,7 @@ const FacilityDesc = ({ data }) => {
       thumbnailClass: "p-facility-content__thumbnail",
       originalAlt: "facility3",
       thumbnailAlt: "facility3",
+      loading: "lazy",
     },
     {
       original: img4_org,
@@ -136,6 +141,7 @@ const FacilityDesc = ({ data }) => {
       thumbnailClass: "p-facility-content__thumbnail",
       originalAlt: "facility4",
       thumbnailAlt: "facility4",
+      loading: "lazy",
     },
     {
       original: img5_org,
@@ -144,6 +150,7 @@ const FacilityDesc = ({ data }) => {
       thumbnailClass: "p-facility-content__thumbnail",
       originalAlt: "facility5",
       thumbnailAlt: "facility5",
+      loading: "lazy",
     },
   ]
 
