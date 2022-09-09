@@ -13,6 +13,7 @@ const TopBgImg = ({ data }) => {
             style={{ height: "100%" }}
           />
         </figure>
+        <div className="p-topbg__bg"></div>
         <div className="p-topbg__inner">
           <p className="p-topbg__text">enjoy GOLF</p>
         </div>
