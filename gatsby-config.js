@@ -57,6 +57,13 @@ module.exports = {
     },
     `react-intersection-observer`,
     `gatsby-plugin-lodash`,
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        output: `/sitemap`,
+        createLinkInHead: true,
+      },
+    },
     // {
     //   resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
     //   options: {
@@ -75,17 +82,18 @@ module.exports = {
     // {
     //   resolve: `gatsby-plugin-canonical-urls`,
     //   options: {
-    //     siteUrl: `https://vitworks.net/`,
+    //     siteUrl: `https://vitworks-dev.xyz/`,
     //     stripQueryString: true,
     //   },
     // },
-    // {
-    //   resolve: "gatsby-plugin-robots-txt",
-    //   options: {
-    //     host: "https://vitworks.net/",
-    //     sitemap: "https://vitworks.net/sitemap/sitemap-index.xml",
-    //     policy: [{ userAgent: "*", allow: "/", disallow: ["/contact_done/"] }],
-    //   },
-    // },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://vitworks-dev.xyz/",
+        sitemap: "https://vitworks-dev.xyz/sitemap/sitemap-index.xml",
+        policy: [{ userAgent: "*", disallow: ["/*"] }],
+        // policy: [{ userAgent: "*", allow: "/", disallow: ["/contact_done/"] }],
+      },
+    },
   ],
 }
