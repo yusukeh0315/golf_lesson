@@ -32,6 +32,8 @@ const FirstView = ({ data }) => {
                     image={img}
                     alt=""
                     style={{ height: "100%" }}
+                    loading="eager"
+                    durationFadeIn={100}
                   />
                 )
               })}

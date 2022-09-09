@@ -24,6 +24,8 @@ const SubView = ({ data, title }) => {
               image={image}
               alt=""
               style={{ height: "100%" }}
+              loading="eager"
+              durationFadeIn={100}
             />
           </figure>
           <div className="p-sub__title-wrapper">
