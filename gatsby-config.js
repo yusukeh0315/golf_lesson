@@ -14,7 +14,7 @@ module.exports = {
     title: `CocoLea GOLF Studio`,
     description: `ココレアゴルフスタジオ`,
     lang: `ja`,
-    siteUrl: `https://stunning-florentine-0bd6f1.netlify.app/`,
+    siteUrl: `https://vitworks-dev.xyz/`,
     local: `ja_JP`,
   },
   plugins: [
