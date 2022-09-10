@@ -1,4 +1,3 @@
-import axios from "axios"
 import { graphql } from "gatsby"
 import React from "react"
 import { useForm } from "react-hook-form"
@@ -7,8 +6,6 @@ import Layout from "../components/layout"
 import QuestionAndAnswer from "../components/qa"
 import Seo from "../components/seo"
 import SubView from "../components/subview"
-// import qs from "qs"
-// import request from "superagent"
 
 const Contact = ({ data, location }) => {
   const {
@@ -19,7 +16,6 @@ const Contact = ({ data, location }) => {
 
   const onSubmit = data => {
     const baseUrl = "https://ssgform.com/s/Zuju97p82Cil"
-    console.log(data)
 
     let formBody = []
     for (let property in data) {
@@ -28,100 +24,13 @@ const Contact = ({ data, location }) => {
       formBody.push(encodedKey + "=" + encodedValue)
     }
     formBody = formBody.join("&").replace(/%20/g, "+")
-    console.log(formBody)
 
     let xhr = new XMLHttpRequest()
     xhr.open("POST", baseUrl)
     xhr.setRequestHeader("X-PINGOTHER", "pingpong")
-    xhr.setRequestHeader(
-      "content-type",
-      "application/x-www-form-urlencoded"
-    )
+    xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded")
     xhr.send(formBody)
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      console.log(xhr.responseText)
-    }
-    // extract form data
-    // const formdata = new FormData(data)
 
-
-
-    // convert FormData to json object
-    // SOURCE: https://stackoverflow.com/a/46774073
-    // const json = {}
-    // formdata.forEach(function (value, prop) {
-    //   json[prop] = value
-    // })
-
-    // convert json to urlencoded query string
-    // SOURCE: https://stackoverflow.com/a/37562814 (comments)
-    // const formBody = Object.keys(json)
-    //   .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(json[key]))
-    //   .join("&")
-
-    // POST the request to Staticman's API endpoint
-    // fetch(baseUrl, {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
-    //   },
-    //   body: formBody,
-    // })
-    //   .then(response => {
-    //     console.log(response.status)
-    //   })
-    //   .catch(error => {
-    //     console.log(error)
-    //   })
-
-    // let params = new FormData()
-    // let params = new URLSearchParams()
-    // params.append("name", data["name"])
-    // params.append("email", data["email"])
-    // params.append("message", data["message"])
-    // const body = qs.stringify(data.toString())
-
-    // const options = {
-    //   method: "POST",
-    //   headers: { "content-type": "application/x-www-form-urlencoded" },
-    //   data: qs.stringify(data),
-    //   baseUrl,
-    // }
-
-    // axios(options)
-    //   .then(function (response) {
-    //     console.log(response)
-    //   })
-    //   .catch(function (error) {
-    //     console.log(error)
-    //   })
-    // axios
-    //   .post(baseUrl, params, {
-    //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //   })
-    //   .then(function (response) {
-    //     console.log(response)
-    //   })
-    //   .catch(function (error) {
-    //     console.log(error)
-    //   })
-
-    // request
-    //   .post(baseUrl)
-    //   .type("form")
-    //   .send(data)
-    //   .end(function (err, res) {
-    //     if (err) {
-    //       console.log(err)
-    //     } else {
-    //       console.log(res.status)
-    //     }
-    //   })
-
-    // axios
-    //   .get("https://vitworks-dev.xyz/contact_done")
-    //   .then(response => console.log(response))
-    //   .catch(error => console.log(error))
   }
 
   return (
@@ -153,12 +62,8 @@ const Contact = ({ data, location }) => {
               className="p-contact__form"
               name="contact"
               id="form"
-              // method="POST"
               onSubmit={handleSubmit(onSubmit)}
             >
-              {/* <div style={{ display: "none" }}>
-                <input type="text" name="trap" />
-              </div> */}
               <div className="p-contact__item">
                 <label className="p-contact__label" htmlFor="name">
                   氏名<span className="c-require-label">必須</span>
@@ -212,10 +117,6 @@ const Contact = ({ data, location }) => {
               <input
                 type="submit"
                 className="c-submit-button"
-                // className={`c-submit-button ${
-                //   disabled ? "c-submit-button--disabled" : ""
-                // }`}
-                // disabled={disabled}
               />
             </form>
           </div>
