@@ -8,7 +8,7 @@ import QuestionAndAnswer from "../components/qa"
 import Seo from "../components/seo"
 import SubView from "../components/subview"
 // import qs from "qs"
-import request from "superagent"
+// import request from "superagent"
 
 const Contact = ({ data, location }) => {
   const {
@@ -32,6 +32,7 @@ const Contact = ({ data, location }) => {
 
     let xhr = new XMLHttpRequest()
     xhr.open("POST", baseUrl)
+    xhr.setRequestHeader("X-PINGOTHER", "pingpong")
     xhr.setRequestHeader(
       "content-type",
       "application/x-www-form-urlencoded"
@@ -152,7 +153,7 @@ const Contact = ({ data, location }) => {
               className="p-contact__form"
               name="contact"
               id="form"
-              method="POST"
+              // method="POST"
               onSubmit={handleSubmit(onSubmit)}
             >
               {/* <div style={{ display: "none" }}>
