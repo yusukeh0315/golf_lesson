@@ -18,7 +18,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(50,50,50,0.2);
+    background-color: rgba(255,255,255,0.6);
   }
 
   &__inner {
@@ -37,7 +37,7 @@
   }
 
   &__text {
-    color: global.$color-white;
+    color: global.$color-lightblue;
     height: auto;
     font-weight: bold;
     font-size: global.rem(48);

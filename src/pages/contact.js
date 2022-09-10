@@ -16,10 +16,14 @@ const Contact = ({ data, location }) => {
   } = useForm()
 
   const onSubmit = data => {
-    const post_url = "https://ssgform.com/s/Zuju97p82Cil"
+    const baseUrl = "https://ssgform.com/s/Zuju97p82Cil"
     console.log(data)
     axios
-      .post(post_url, data)
+      .post(baseUrl, {
+        name: data["name"],
+        email: data["email"],
+        message: data["message"],
+      })
       .then(function (response) {
         console.log(response)
       })
