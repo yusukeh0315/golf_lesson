@@ -98,5 +98,6 @@ module.exports = {
         // policy: [{ userAgent: "*", allow: "/", disallow: ["/contact_done/"] }],
       },
     },
+    `react-hook-form`,
   ],
 }
