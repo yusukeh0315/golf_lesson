@@ -155,9 +155,9 @@ const Contact = ({ data, location }) => {
               method="POST"
               onSubmit={handleSubmit(onSubmit)}
             >
-              <div style={{ display: "none" }}>
+              {/* <div style={{ display: "none" }}>
                 <input type="text" name="trap" />
-              </div>
+              </div> */}
               <div className="p-contact__item">
                 <label className="p-contact__label" htmlFor="name">
                   氏名<span className="c-require-label">必須</span>
