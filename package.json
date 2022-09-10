@@ -44,6 +44,7 @@
     "reactjs-popup": "^2.0.5",
     "sass": "^1.54.8",
     "slick-carousel": "^1.8.1",
+    "superagent": "^8.0.0",
     "typeface-lato": "^1.1.13",
     "typeface-notosans-jp": "^1.0.1"
   },
