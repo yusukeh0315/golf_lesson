@@ -1,4 +1,4 @@
-import { graphql } from "gatsby"
+import { graphql, navigate } from "gatsby"
 import React from "react"
 import { useForm } from "react-hook-form"
 import HeadingIcon from "../components/heading_icon"
@@ -27,10 +27,10 @@ const Contact = ({ data, location }) => {
 
     let xhr = new XMLHttpRequest()
     xhr.open("POST", baseUrl)
-    xhr.setRequestHeader("X-PINGOTHER", "pingpong")
     xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded")
     xhr.send(formBody)
 
+    navigate(`/contact_done`)
   }
 
   return (
@@ -114,10 +114,7 @@ const Contact = ({ data, location }) => {
                   </div>
                 )}
               </div>
-              <input
-                type="submit"
-                className="c-submit-button"
-              />
+              <input type="submit" className="c-submit-button" />
             </form>
           </div>
         </div>
