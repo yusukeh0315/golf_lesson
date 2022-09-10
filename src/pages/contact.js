@@ -16,20 +16,21 @@ const Contact = ({ data, location }) => {
     formState: { errors },
   } = useForm()
 
-  const onSubmit = inputData => {
+  const onSubmit = data => {
     const baseUrl = "https://ssgform.com/s/Zuju97p82Cil"
+    console.log(data)
 
     var params = new URLSearchParams()
-    params.append("name", inputData["name"])
-    params.append("email", inputData["email"])
-    params.append("message", inputData["message"])
+    params.append("name", data["name"])
+    params.append("email", data["email"])
+    params.append("message", data["message"])
 
     axios
       .post(baseUrl, params, {
         headers: { "X-Requested-With": "XMLHttpRequest" },
       })
       .then(function (response) {
-        // console.log(response)
+        console.log(response)
         if (response.status === 200) {
           navigate(`/contact_done`)
         } else {

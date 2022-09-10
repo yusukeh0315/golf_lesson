@@ -14,11 +14,7 @@ const QuestionAndAnswer = () => {
     {
       question:
         "どのような服装が良いですか？また必要な持参しないといけないものはありますか？",
-      answer: "XXXXXXXXXXXXXXXXXXXXXXXXXX",
-    },
-    {
-      question: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX？",
-      answer: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      answer: "動きやすい服装でお越しください。その他は無料でレンタルいたします。",
     },
   ]
 
@@ -38,7 +34,9 @@ const QuestionAndAnswer = () => {
               <>
                 <div className="p-qa__body">
                   <p className="p-qa__question">
-                    Q {questionAndAnswer.question}
+                    <span className="p-qa__underline">
+                      Q {questionAndAnswer.question}
+                    </span>
                   </p>
                   <p className="p-qa__answer">A {questionAndAnswer.answer}</p>
                 </div>

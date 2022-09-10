@@ -14,11 +14,19 @@
     font-size: global.rem(24);
     margin-bottom: 1rem;
     word-wrap: break-word;
+    line-height: calc(40/24);
+  }
+
+  &__underline {
+    border-bottom:dotted;
+    border-color: global.$color-lightblue;
+    border-width:5px;
   }
 
   &__answer {
     color: global.$color-blue;
-    font-size: global.rem(24);
+    font-size: global.rem(20);
+    line-height: calc(38/20);
     padding-left: 2rem;
     word-wrap: break-word;
   }
@@ -36,14 +44,17 @@
 
     &__question {
       color: global.$color-lightblue;
-      font-size: global.rem(24);
+      font-size: global.rem(20);
       margin-bottom: 0.5rem;
+      line-height: calc(40/20);
       word-wrap: break-word;
     }
-
+    &__underline {
+      border-width:3px;
+    }
     &__answer {
       color: global.$color-blue;
-      font-size: global.rem(24);
+      font-size: global.rem(18);
       padding-left: 1rem;
       word-wrap: break-word;
     }
