@@ -1,25 +1,23 @@
-import React, { useState } from "react"
+import axios from "axios"
+import { graphql } from "gatsby"
+import React from "react"
+import { useForm } from "react-hook-form"
 import HeadingIcon from "../components/heading_icon"
 import Layout from "../components/layout"
 import QuestionAndAnswer from "../components/qa"
 import Seo from "../components/seo"
 import SubView from "../components/subview"
 
-import { graphql } from "gatsby"
-import { useForm } from "react-hook-form"
-
 const Contact = ({ data, location }) => {
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [message, setMessage] = useState("")
-  const [disabled, setDisabled] = useState(true)
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm()
 
-  const onSubmit = data => console.log(data)
+  const onSubmit = data => {
+    axios.post("https://ssgform.com/s/Zuju97p82Cil", data)
+  }
 
   return (
     <Layout page="contact">
@@ -51,7 +49,6 @@ const Contact = ({ data, location }) => {
               name="contact"
               id="form"
               method="POST"
-              action="https://ssgform.com/s/Zuju97p82Cil"
               onSubmit={handleSubmit(onSubmit)}
             >
               <div style={{ display: "none" }}>
