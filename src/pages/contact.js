@@ -16,7 +16,16 @@ const Contact = ({ data, location }) => {
   } = useForm()
 
   const onSubmit = data => {
-    axios.post("https://ssgform.com/s/Zuju97p82Cil", data)
+    const post_url = "https://ssgform.com/s/Zuju97p82Cil"
+    console.log(data)
+    axios
+      .post(post_url, data)
+      .then(function (response) {
+        console.log(response)
+      })
+      .catch(function (error) {
+        console.log(error)
+      })
   }
 
   return (
