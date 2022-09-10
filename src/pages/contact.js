@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 import QuestionAndAnswer from "../components/qa"
 import Seo from "../components/seo"
 import SubView from "../components/subview"
-import qs from "qs"
+// import qs from "qs"
 import request from "superagent"
 
 const Contact = ({ data, location }) => {
@@ -21,10 +21,10 @@ const Contact = ({ data, location }) => {
     const baseUrl = "https://ssgform.com/s/Zuju97p82Cil"
     console.log(data)
     // let params = new FormData()
-    let params = new URLSearchParams()
-    params.append("name", data["name"])
-    params.append("email", data["email"])
-    params.append("message", data["message"])
+    // let params = new URLSearchParams()
+    // params.append("name", data["name"])
+    // params.append("email", data["email"])
+    // params.append("message", data["message"])
     // const body = qs.stringify(data.toString())
 
     // const options = {
@@ -57,7 +57,11 @@ const Contact = ({ data, location }) => {
       .type("form")
       .send(data)
       .end(function (err, res) {
-        console.log(res)
+        if (err) {
+          console.log(err)
+        } else {
+          console.log(res.status)
+        }
       })
 
     // axios
