@@ -22,7 +22,7 @@ const Contact = ({ data, location }) => {
       .post(baseUrl, {
         name: data["name"],
         email: data["email"],
-        message: data["message"],
+        message: data["message"]
       })
       .then(function (response) {
         console.log(response)
