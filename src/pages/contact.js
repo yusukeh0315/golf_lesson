@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import QuestionAndAnswer from "../components/qa"
 import Seo from "../components/seo"
 import SubView from "../components/subview"
+// import qs from "qs"
 
 const Contact = ({ data, location }) => {
   const {
@@ -22,15 +23,30 @@ const Contact = ({ data, location }) => {
     params.append("name", data["name"])
     params.append("email", data["email"])
     params.append("message", data["message"])
-    
+
+    // const options = {
+    //   method: "POST",
+    //   headers: { "content-type": "application/x-www-form-urlencoded" },
+    //   data: qs.stringify(data),
+    //   baseUrl,
+    // }
+
+    // axios(options)
     axios
-      .post(baseUrl, params)
+      .post(baseUrl, params, {
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      })
       .then(function (response) {
         console.log(response)
       })
       .catch(function (error) {
         console.log(error)
       })
+
+    // axios
+    //   .get("https://vitworks-dev.xyz/contact_done")
+    //   .then(response => console.log(response))
+    //   .catch(error => console.log(error))
   }
 
   return (

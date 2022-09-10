@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@fontsource/kaisei-decol": "^4.5.11",
+    "axios": "^0.27.2",
     "gatsby": "^4.21.1",
     "gatsby-plugin-canonical-urls": "^4.22.0",
     "gatsby-plugin-google-gtag": "^4.22.0",
