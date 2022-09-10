@@ -1,3 +1,4 @@
+import axios from "axios"
 import { graphql, navigate } from "gatsby"
 import React from "react"
 import { useForm } from "react-hook-form"
@@ -6,6 +7,7 @@ import Layout from "../components/layout"
 import QuestionAndAnswer from "../components/qa"
 import Seo from "../components/seo"
 import SubView from "../components/subview"
+import { Helmet } from "react-helmet"
 
 const Contact = ({ data, location }) => {
   const {
@@ -14,23 +16,30 @@ const Contact = ({ data, location }) => {
     formState: { errors },
   } = useForm()
 
-  const onSubmit = data => {
+  const onSubmit = inputData => {
     const baseUrl = "https://ssgform.com/s/Zuju97p82Cil"
 
-    let formBody = []
-    for (let property in data) {
-      let encodedKey = encodeURIComponent(property)
-      let encodedValue = encodeURIComponent(data[property])
-      formBody.push(encodedKey + "=" + encodedValue)
-    }
-    formBody = formBody.join("&").replace(/%20/g, "+")
+    var params = new URLSearchParams()
+    params.append("name", inputData["name"])
+    params.append("email", inputData["email"])
+    params.append("message", inputData["message"])
 
-    let xhr = new XMLHttpRequest()
-    xhr.open("POST", baseUrl)
-    xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded")
-    xhr.send(formBody)
-
-    navigate(`/contact_done`)
+    axios
+      .post(baseUrl, params, {
+        headers: { "X-Requested-With": "XMLHttpRequest" },
+      })
+      .then(function (response) {
+        // console.log(response)
+        if (response.status === 200) {
+          navigate(`/contact_done`)
+        } else {
+          navigate(`/contact_ng`)
+        }
+      })
+      .catch(function (error) {
+        console.log(error)
+        navigate(`/contact_ng`)
+      })
   }
 
   return (
@@ -58,6 +67,13 @@ const Contact = ({ data, location }) => {
           </div>
 
           <div className="p-contact__main">
+            <Helmet>
+              <script
+                src="https://www.google.com/recaptcha/api.js"
+                async
+                defer
+              ></script>
+            </Helmet>
             <form
               className="p-contact__form"
               name="contact"
@@ -114,6 +130,10 @@ const Contact = ({ data, location }) => {
                   </div>
                 )}
               </div>
+              <div
+                class="g-recaptcha"
+                data-sitekey="6LdZ4-khAAAAAFA0LKDzj49hLol6iSfbvsf706hb"
+              ></div>
               <input type="submit" className="c-submit-button" />
             </form>
           </div>
