@@ -18,12 +18,13 @@ const Contact = ({ data, location }) => {
   const onSubmit = data => {
     const baseUrl = "https://ssgform.com/s/Zuju97p82Cil"
     console.log(data)
+    let params = new URLSearchParams()
+    params.append("name", data["name"])
+    params.append("email", data["email"])
+    params.append("message", data["message"])
+    
     axios
-      .post(baseUrl, {
-        name: data["name"],
-        email: data["email"],
-        message: data["message"]
-      })
+      .post(baseUrl, params)
       .then(function (response) {
         console.log(response)
       })
