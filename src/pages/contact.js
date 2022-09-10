@@ -20,6 +20,59 @@ const Contact = ({ data, location }) => {
   const onSubmit = data => {
     const baseUrl = "https://ssgform.com/s/Zuju97p82Cil"
     console.log(data)
+
+    let formBody = []
+    for (let property in data) {
+      let encodedKey = encodeURIComponent(property)
+      let encodedValue = encodeURIComponent(data[property])
+      formBody.push(encodedKey + "=" + encodedValue)
+    }
+    formBody = formBody.join("&").replace(/%20/g, "+")
+    console.log(formBody)
+
+    let xhr = new XMLHttpRequest()
+    xhr.open("POST", baseUrl)
+    xhr.setRequestHeader(
+      "content-type",
+      "application/x-www-form-urlencoded"
+    )
+    xhr.send(formBody)
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      console.log(xhr.responseText)
+    }
+    // extract form data
+    // const formdata = new FormData(data)
+
+
+
+    // convert FormData to json object
+    // SOURCE: https://stackoverflow.com/a/46774073
+    // const json = {}
+    // formdata.forEach(function (value, prop) {
+    //   json[prop] = value
+    // })
+
+    // convert json to urlencoded query string
+    // SOURCE: https://stackoverflow.com/a/37562814 (comments)
+    // const formBody = Object.keys(json)
+    //   .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(json[key]))
+    //   .join("&")
+
+    // POST the request to Staticman's API endpoint
+    // fetch(baseUrl, {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+    //   },
+    //   body: formBody,
+    // })
+    //   .then(response => {
+    //     console.log(response.status)
+    //   })
+    //   .catch(error => {
+    //     console.log(error)
+    //   })
+
     // let params = new FormData()
     // let params = new URLSearchParams()
     // params.append("name", data["name"])
@@ -41,28 +94,28 @@ const Contact = ({ data, location }) => {
     //   .catch(function (error) {
     //     console.log(error)
     //   })
-      // axios
-      //   .post(baseUrl, params, {
-      //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      //   })
-      //   .then(function (response) {
-      //     console.log(response)
-      //   })
-      //   .catch(function (error) {
-      //     console.log(error)
-      //   })
+    // axios
+    //   .post(baseUrl, params, {
+    //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //   })
+    //   .then(function (response) {
+    //     console.log(response)
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error)
+    //   })
 
-    request
-      .post(baseUrl)
-      .type("form")
-      .send(data)
-      .end(function (err, res) {
-        if (err) {
-          console.log(err)
-        } else {
-          console.log(res.status)
-        }
-      })
+    // request
+    //   .post(baseUrl)
+    //   .type("form")
+    //   .send(data)
+    //   .end(function (err, res) {
+    //     if (err) {
+    //       console.log(err)
+    //     } else {
+    //       console.log(res.status)
+    //     }
+    //   })
 
     // axios
     //   .get("https://vitworks-dev.xyz/contact_done")
