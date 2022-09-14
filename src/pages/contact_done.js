@@ -3,6 +3,7 @@ import HeadingIcon from "../components/heading_icon"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import SubView from "../components/subview"
+import Address from "../components/address"
 
 import { graphql } from "gatsby"
 
@@ -27,8 +28,16 @@ const Contact = ({ data, location }) => {
 
           <div className="p-contact__lead-wrapper">
             <p className="p-body__text">
-              お問い合わせありがとうございました。後ほど担当者からご連絡差し上げます。
+              お問い合わせありがとうございました。
+              後ほど担当者からご連絡差し上げます。
+              <br />
+              <br />
+              入力されたメールアドレス宛に受け付け確認のメールを送信しています。
+              受信していない場合、お手数ですが下記までご連絡ください。
             </p>
+            <div className="p-facility-content__address">
+              <Address />
+            </div>
           </div>
         </div>
       </section>
