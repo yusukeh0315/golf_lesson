@@ -254,3 +254,24 @@
     }
   }
 }
+
+.l-notfound {
+  &__inner {
+    @include global.inner(global.$width-inner);
+    height: calc(100vh - 80px);
+    padding: calc(50vh - 80px) 20px;
+    text-align: center;
+    font-weight: 400;
+    font-size: global.rem(26);
+  }
+}
+
+@include global.media(sp) {
+  .l-notfound {
+    &__inner {
+      text-align: center;
+      font-weight: 400;
+      font-size: global.rem(20);
+    }
+  }
+}
