@@ -100,6 +100,5 @@ module.exports = {
     },
     `react-hook-form`,
     `axios`,
-    `superagent`,
   ],
 }
