@@ -13,10 +13,10 @@ const Benefit = ({ data }) => {
           style={{ height: "100%" }}
         />
       ),
-      desc: "新橋駅、有楽町駅から歩いて〇〇分",
+      desc: "新橋駅、有楽町駅から歩いて〇〇分！天気を気にせず、いつでも練習できます。",
     },
     {
-      jaName: "楽しく上達",
+      jaName: "セミパーソナルゴルフレッスン",
       svg: (
         <GatsbyImage
           className="c-card-benefit__image"
@@ -25,10 +25,10 @@ const Benefit = ({ data }) => {
           style={{ height: "100%" }}
         />
       ),
-      desc: "インストラクターが丁寧にレクチャーし継続して上達できます。",
+      desc: "少人数だから、インストラクターが丁寧にレクチャーしみるみる上達できます！",
     },
     {
-      jaName: "気軽に練習",
+      jaName: "最新シミュレーター全打席完備",
       svg: (
         <GatsbyImage
           className="c-card-benefit__image"
@@ -37,7 +37,7 @@ const Benefit = ({ data }) => {
           style={{ height: "100%" }}
         />
       ),
-      desc: "手ぶらで練習できます！",
+      desc: "全打席に最新のシミュレータを完備しているので、いつでも同じ環境で練習ができます。",
     },
   ]
 

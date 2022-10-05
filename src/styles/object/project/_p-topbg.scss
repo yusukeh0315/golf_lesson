@@ -12,13 +12,23 @@
     left: 0;
   }
 
-  &__bg{
+  &__image {
+    // position: relative;
+    & img {
+      // position: absolute;
+      // top: 20%;
+      object-fit: cover;
+      object-position: 20% 20%;
+    }
+  }
+
+  &__bg {
     position: absolute;
     height: 400px;
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255, 255, 255, 0.6);
   }
 
   &__inner {

@@ -49,6 +49,13 @@
     line-height: calc(24 / 16);
     text-shadow: 2px 2px 3px #808080;
   }
+
+  &__icon-wrapper{
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+    width: 10%;
+  }
 }
 
 @include global.media(sp) {

@@ -26,7 +26,7 @@ const Home = ({ data }) => {
 
 export const query = graphql`
   query {
-    firstview_1: file(relativePath: { eq: "firstview_1.jpg" }) {
+    firstview_1: file(relativePath: { eq: "firstview_1.png" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }
@@ -46,7 +46,7 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH)
       }
     }
-    topbg_bottom: file(relativePath: { eq: "topbg_bottom.jpg" }) {
+    topbg_bottom: file(relativePath: { eq: "topbg_bottom.png" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }

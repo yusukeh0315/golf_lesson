@@ -43,6 +43,16 @@ const FirstView = ({ data }) => {
             <h1 className="p-fv__title">キャッチフレーズ</h1>
             <p className="p-fv__text">サブキャッチフレーズ</p>
           </div>
+          <div className="p-fv__icon-wrapper">
+            <span className="c-label">
+              <span className="c-label-font">
+                <span className="c-label-font c-label-font--large">24</span>
+                時間
+                <br />
+                OPEN
+              </span>
+            </span>
+          </div>
         </div>
       </div>
     </section>

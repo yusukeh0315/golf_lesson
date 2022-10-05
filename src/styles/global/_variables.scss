@@ -7,6 +7,7 @@
 // font
 $font-base-ja: "Kaisei Decol", "Noto Sans CJK JP","Noto Sans JP","Lato","Avenir","Helvetica Neue","Helvetica","Arial","Hiragino Sans","ヒラギノ角ゴシック",YuGothic,"Yu Gothic","メイリオ", Meiryo,"ＭＳ Ｐゴシック","MS PGothic" ;
 $font-base-en: "Kaisei Decol", "Lato","Noto Sans CJK JP","Noto Sans JP","Avenir","Helvetica Neue","Helvetica","Arial","Hiragino Sans","ヒラギノ角ゴシック",YuGothic,"Yu Gothic","メイリオ", Meiryo,"ＭＳ Ｐゴシック","MS PGothic" ;
+$font-label: "Noto Sans CJK JP","Noto Sans JP","Lato","Avenir","Helvetica Neue","Helvetica","Arial","Hiragino Sans","ヒラギノ角ゴシック",YuGothic,"Yu Gothic","メイリオ", Meiryo,"ＭＳ Ｐゴシック","MS PGothic" ;
 $baseFontSize: 16;
 
 // width
@@ -20,13 +21,14 @@ $color-black: #333333;
 $color-lightgray: #DFDFDF;
 $color-hovergray: #f6f6f6;
 $color-gray: #979797;
-$color-red: #eb5757;
-$color-blue: #22519F;
+$color-red: #E64568;
+$color-blue: #0053A6;
 $color-orange: #cf2e1f;
 // $color-orange: #EE6255;
-$color-lightblue: #007a96;
+$color-lightblue: #4EB331;
 // $color-lightblue: #47BFDB;
 $color-lightblue-bg: #47c0db52;
+$color-label-pink: #E84469;
 
 // z-index
 $layer: (

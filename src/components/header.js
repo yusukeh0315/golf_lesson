@@ -1,15 +1,35 @@
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
 import React from "react"
 
 import Reservation from "./reservation"
 
 const Header = ({ page }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      headerlogo: file(relativePath: { eq: "header-logo.png" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+    }
+  `)
+
   return (
     <header className="l-header">
       <div className="l-header__inner">
         <div className="p-header-logo">
           <Link to={`/`} className="p-header-logo__link">
-            Logo
+            <figure className="p-header-logo__image-wrapper">
+              <GatsbyImage
+                className="p-header-logo__image"
+                image={data.headerlogo.childImageSharp.gatsbyImageData}
+                alt="logo"
+                style={{ height: "100%" }}
+                loading="eager"
+                durationFadeIn={100}
+              />
+            </figure>
           </Link>
         </div>
         <nav className="p-header-nav">
