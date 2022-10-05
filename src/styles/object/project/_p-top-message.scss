@@ -8,11 +8,11 @@
   }
 
   &__title {
-    font-size: global.rem(24);
     padding: 20px 0;
     color: global.$color-blue;
+    @include global.font-settings(22, 24);
   }
   &__text {
-    font-size: global.rem(18);
+    @include global.font-settings(16, 18);
   }
 }

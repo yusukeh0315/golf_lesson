@@ -64,8 +64,17 @@
   padding: 0;
   cursor: pointer;
 }
-.menu li:hover {
+
+.menu a {
   color: global.$color-blue;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited,
+  &:link {
+    color: global.$color-blue;
+  }
 }
 
 /* #popup-root>div {
