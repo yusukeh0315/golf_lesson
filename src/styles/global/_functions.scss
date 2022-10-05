@@ -16,3 +16,20 @@
     @return calc(($line-height - $font-size) / 2px);
 }
 
+@function response-length($sp-value, $pc-value) {
+  $sp-pixels: $sp-value * 1px;
+  $pc-pixels: $pc-value * 1px;
+  $recommendation: calc(
+    (100vw - global.$sp-breakpoints-px) *
+      (
+        ($pc-value - $sp-value) /
+          (global.$tb-breakpoints - global.$sp-breakpoints)
+      ) + $sp-pixels
+  );
+
+  @return clamp($sp-pixels, $recommendation, $pc-pixels);
+}
+
+@function percent-length($parent-value, $value){
+  @return calc(floor((calc($value / $parent-value) * 10000%)) / 100);
+}

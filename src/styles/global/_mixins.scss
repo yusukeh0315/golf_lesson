@@ -5,6 +5,7 @@
 // ==========================================================================
 
 @use "./variables" as global;
+@use "./functions" as functions;
 
 
 // Inner Setting
@@ -79,3 +80,30 @@
 }
 
 
+// 呼び出し例
+// @include font-settings(フォントサイズ, 行送り , 太さ, トラッキング)
+@mixin font-settings($sp-pixels, $pc-pixels, $height: 1.5, $weight: false , $spacing: false) {
+    $sp-rems: functions.rem($sp-pixels);
+    $pc-rems: functions.rem($pc-pixels);
+    $recommendation: calc(
+        (100vw - global.$sp-breakpoints-px) *
+        (
+            ($pc-pixels - $sp-pixels) /
+            (global.$tb-breakpoints - global.$sp-breakpoints)
+        ) + $sp-rems
+    );
+
+    font-size: clamp($sp-rems, $recommendation, $pc-rems);
+
+	@if $weight {
+		font-weight: $weight;
+	}
+
+	@if $height {
+		line-height: $height;
+	}
+
+	@if $spacing {
+		letter-spacing: ($spacing / 1000) * 1em;
+	}
+}

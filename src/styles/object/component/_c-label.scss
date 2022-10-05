@@ -1,55 +1,24 @@
 @use "../../global" as global;
 
 .c-label {
-  aspect-ratio: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 160px;
-  height: 160px;
+  width: global.response-length(100, 160);
+  height: global.response-length(100, 160);
   border: none;
   border-radius: 50%;
   background-color: global.$color-label-pink;
 
   &-font {
     color: global.$color-white;
-    font-size: global.rem(28);
-    line-height: 1.5;
     text-decoration: none;
     text-align: center;
     font-family: global.$font-label;
-    font-weight: 900;
+    @include global.font-settings(16, 28, 1.5, 900);
 
     &--large {
-      font-size: global.rem(44);
-    }
-  }
-}
-
-@include global.media(tb) {
-  .c-label {
-    width: 150px;
-    height: 150px;
-    max-width: 150px;
-    &-font {
-      font-size: global.rem(22);
-      &--large {
-        font-size: global.rem(36);
-      }
-    }
-  }
-}
-
-@include global.media(tb) {
-  .c-label {
-    width: 100px;
-    height: 100px;
-    max-width: 100px;
-    &-font {
-      font-size: global.rem(17);
-      &--large {
-        font-size: global.rem(24);
-      }
+      @include global.font-settings(24, 28, 1.5, 900);
     }
   }
 }

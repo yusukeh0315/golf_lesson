@@ -1,15 +1,6 @@
 @use "../../global" as global;
 
 .p-fv {
-  &__title-wrapper {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-right: auto;
-    margin-bottom: 60px;
-    margin-left: 100px;
-  }
-
   &__wrapper {
     height: 100vh;
     position: relative;
@@ -23,56 +14,66 @@
     left: 0;
   }
 
-  &__title-wrapper {
+  &__content-inner {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    @include global.inner(global.$width-inner);
+    padding: 0 global.response-length(10, 20);
     position: absolute;
     top: 50%;
-    left: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  &__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
   }
 
   &__title {
     color: global.$color-white;
-    font-weight: 300;
-    font-size: global.rem(60);
     font-family: global.$font-base-en;
     text-shadow: 2px 2px 3px #808080;
-  }
-
-  &__title-point {
-    color: #0c4579;
+    @include global.font-settings(30, 60, 1.5, 300);
   }
 
   &__text {
     color: global.$color-white;
     margin-left: 20px;
-    font-weight: 300;
-    font-size: global.rem(20);
-    line-height: calc(24 / 16);
     text-shadow: 2px 2px 3px #808080;
+    @include global.font-settings(18, 30, 1.5, 300);
   }
 
-  &__icon-wrapper{
-    position: absolute;
-    bottom: 20%;
-    right: 20%;
-    width: 10%;
-  }
-}
-
-@include global.media(sp) {
-  .p-fv {
-    &__title-wrapper {
-      margin-right: auto;
-      margin-left: auto;
-    }
-
-    &__title {
-      font-size: global.rem(30);
-    }
-
-    &__text {
-      margin-right: auto;
-      margin-left: auto;
-      font-size: global.rem(16);
-    }
+  &__icon-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
+    padding-bottom: 80px;
+    padding-right: global.response-length(20, 40);
   }
 }
+
+// @include global.media(sp) {
+//   .p-fv {
+//     &__title-wrapper {
+//       margin-right: auto;
+//       margin-left: auto;
+//     }
+
+//     &__title {
+//       font-size: global.rem(30);
+//     }
+
+//     &__text {
+//       margin-right: auto;
+//       margin-left: auto;
+//       font-size: global.rem(16);
+//     }
+//   }
+// }

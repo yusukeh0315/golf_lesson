@@ -54,6 +54,7 @@
 .c-reservation_button {
   display: inline-block;
   width: 150px;
+  width: global.response-length(120, 150);
   height: 40px;
   max-width: 100%;
   padding: 10px 10px 10px 10px;
@@ -61,7 +62,6 @@
   background-color: global.$color-orange;
   color: global.$color-white;
   font-weight: bold;
-  // font-weight: normal;
   font-size: global.rem(18);
   line-height: 20px;
   text-decoration: none;
@@ -69,6 +69,7 @@
   cursor: pointer;
   transition: 0.25s;
   border-radius: 10px;
+  @include global.font-settings(14, 18, 20px, bold);
 
   &:hover,
   &:focus,
@@ -124,7 +125,7 @@
 
 .c-contact_button {
   display: inline-block;
-  width: 150px;
+  width: global.response-length(120, 150);
   height: 40px;
   max-width: 100%;
   padding: 10px 10px 10px 10px;
@@ -132,14 +133,12 @@
   background-color: global.$color-lightblue;
   color: global.$color-white;
   font-weight: bold;
-  // font-weight: normal;
-  font-size: global.rem(18);
-  line-height: 20px;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
   transition: 0.25s;
   border-radius: 10px;
+  @include global.font-settings(14, 18, 20px, bold);
 
   &:hover,
   &:focus,
