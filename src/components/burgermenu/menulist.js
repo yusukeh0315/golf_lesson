@@ -1,8 +1,8 @@
 import { Link } from "gatsby"
 import React from "react"
 
-import Reservation from "../reservation"
 import { enableBodyScroll } from "body-scroll-lock"
+import Reservation from "../reservation"
 
 const MenuList = ({ close }) => {
   const target = document.getElementsByClassName("menu")

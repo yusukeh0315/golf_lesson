@@ -1,5 +1,5 @@
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock"
-import React, {useEffect} from "react"
+import React from "react"
 import Popup from "reactjs-popup"
 import Icon from "./icon"
 import MenuList from "./menulist"
