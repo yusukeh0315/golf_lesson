@@ -100,5 +100,6 @@ module.exports = {
     },
     `react-hook-form`,
     `axios`,
+    `body-scroll-lock`,
   ],
 }
