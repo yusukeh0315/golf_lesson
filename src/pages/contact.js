@@ -1,13 +1,13 @@
 import axios from "axios"
 import { graphql, navigate } from "gatsby"
 import React from "react"
+import { Helmet } from "react-helmet"
 import { useForm } from "react-hook-form"
 import HeadingIcon from "../components/heading_icon"
 import Layout from "../components/layout"
 import QuestionAndAnswer from "../components/qa"
 import Seo from "../components/seo"
 import SubView from "../components/subview"
-import { Helmet } from "react-helmet"
 
 const Contact = ({ data, location }) => {
   const {
@@ -18,7 +18,6 @@ const Contact = ({ data, location }) => {
 
   const onSubmit = data => {
     const baseUrl = "https://ssgform.com/s/Zuju97p82Cil"
-    console.log(data)
 
     var params = new URLSearchParams()
     params.append("name", data["name"])
@@ -30,7 +29,6 @@ const Contact = ({ data, location }) => {
         headers: { "X-Requested-With": "XMLHttpRequest" },
       })
       .then(function (response) {
-        console.log(response)
         if (response.status === 200) {
           navigate(`/contact_done`)
         } else {
@@ -52,8 +50,8 @@ const Contact = ({ data, location }) => {
       />
       <SubView data={data} title="お問い合わせ" />
 
-      <section className="l-contact">
-        <div className="l-contact__inner">
+      <section className="l-subsection">
+        <div className="l-subsection__inner">
           <div className="p-section__title-wrapper">
             <h2 className="p-section__title js_typing">
               <HeadingIcon type="green" />
@@ -61,11 +59,9 @@ const Contact = ({ data, location }) => {
             </h2>
           </div>
 
-          <div className="p-contact__lead-wrapper">
-            <p className="p-body__text">
-              ご質問・ご要望などございましたら、以下お問い合わせフォームよりお気軽にご連絡ください。
-            </p>
-          </div>
+          <p className="p-body__text">
+            ご質問・ご要望などございましたら、以下お問い合わせフォームよりお気軽にご連絡ください。
+          </p>
 
           <div className="p-contact__main">
             <Helmet>

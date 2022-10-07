@@ -22,3 +22,21 @@
     }
   }
 }
+
+
+.c-require-label {
+  display: inline-block;
+  width: 56px;
+  max-width: 100%;
+  margin-left: 15px;
+  padding: 2px;
+  border: none;
+  background-color: global.$color-orange;
+  color: global.$color-white;
+  font-weight: normal;
+  font-size: global.rem(14);
+  line-height: 20px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 30px;
+}

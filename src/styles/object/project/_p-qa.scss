@@ -2,61 +2,30 @@
 
 .p-qa {
   &__wrapper {
-    padding: 0 40px;
+    padding: 0 global.response-length(0, 40);
   }
 
   &__body {
-    margin-bottom: 60px;
+    margin-bottom: global.response-length(50, 60);
   }
 
   &__question {
     color: global.$color-lightblue;
-    font-size: global.rem(24);
-    margin-bottom: 1rem;
+    margin-bottom: global.response-length(8, 16);
     word-wrap: break-word;
-    line-height: calc(40/24);
+    @include global.font-settings(20, 24);
   }
 
   &__underline {
     border-bottom:dotted;
     border-color: global.$color-lightblue;
-    border-width:5px;
+    border-width: global.response-length(3, 5);
   }
 
   &__answer {
     color: global.$color-blue;
-    font-size: global.rem(20);
-    line-height: calc(38/20);
-    padding-left: 2rem;
+    padding-left: global.response-length(16, 32);;
     word-wrap: break-word;
-  }
-}
-
-@include global.media(sp) {
-  .p-qa {
-    &__wrapper {
-      padding: 0;
-    }
-
-    &__body {
-      margin-bottom: 50px;
-    }
-
-    &__question {
-      color: global.$color-lightblue;
-      font-size: global.rem(20);
-      margin-bottom: 0.5rem;
-      line-height: calc(40/20);
-      word-wrap: break-word;
-    }
-    &__underline {
-      border-width:3px;
-    }
-    &__answer {
-      color: global.$color-blue;
-      font-size: global.rem(18);
-      padding-left: 1rem;
-      word-wrap: break-word;
-    }
+    @include global.font-settings(18, 20);
   }
 }

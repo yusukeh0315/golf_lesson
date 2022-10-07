@@ -58,8 +58,6 @@ const FacilityDesc = ({ data }) => {
     })
     return src_path[0].split(" ")[0]
   }
-  console.log("image-info")
-  console.log(data.facilityimg_5.childImageSharp.gatsbyImageData)
 
   const img1_org = getSrcWebp(
     image_1.props.image.images.sources[0].srcSet,
