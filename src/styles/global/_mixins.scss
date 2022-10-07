@@ -81,7 +81,7 @@
 
 
 // 呼び出し例
-// @include font-settings(フォントサイズ, 行送り , 太さ, トラッキング)
+// @include font-settings(SPフォントサイズ, PCフォントサイズ, 行送り , 太さ, トラッキング)
 @mixin font-settings($sp-pixels, $pc-pixels, $height: 1.5, $weight: false , $spacing: false) {
     $sp-rems: functions.rem($sp-pixels);
     $pc-rems: functions.rem($pc-pixels);
@@ -106,4 +106,62 @@
 	@if $spacing {
 		letter-spacing: ($spacing / 1000) * 1em;
 	}
+}
+
+// Card Setting
+// @include cards(カラム数, カード間の横幅 , カード間の縦幅)
+@mixin cards($col_num, $margin-x, $margin-y) {
+  $col_num_tb: calc($col_num - 1);
+  $col_num_sp: 1;
+
+  & > .p-cards__item {
+    flex-direction: column;
+
+    // カラム数、カード間マージンから、カードの幅を算出
+    width: calc(
+      #{percentage(calc(100 / $col_num) * 0.01)} - #{$margin-x} *
+        calc(#{$col_num - 1} / #{$col_num})
+    );
+    // width: 100px;
+    height: auto;
+    margin-right: $margin-x;
+    margin-bottom: $margin-y;
+
+    // 右端のカードのマージンを0に設定
+    &:nth-of-type(#{$col_num}n) {
+      margin-right: 0;
+    }
+
+    @include media(tb) {
+      width: calc(
+        #{percentage(calc(100 / $col_num_tb) * 0.01)} - #{$margin-x} *
+          calc(#{$col_num_tb - 1} / #{$col_num_tb})
+      );
+
+      margin-right: $margin-x;
+      margin-bottom: $margin-y;
+
+      &:nth-of-type(#{$col_num}n) {
+        margin-right: $margin-x;
+      }
+
+      // 右端のカードのマージンを0に設定
+      &:nth-of-type(#{$col_num_tb}n) {
+        margin-right: 0;
+      }
+    }
+
+    @include media(sp) {
+      width: calc(
+        #{percentage(calc(100 / $col_num_sp) * 0.01)} - #{$margin-x} *
+          calc(#{$col_num_sp - 1} / #{$col_num_sp})
+      );
+      margin-right: 0;
+      margin-bottom: $margin-y;
+
+      &:nth-of-type(#{$col_num}n) {
+        margin-right: 0;
+      }
+    }
+  }
 }

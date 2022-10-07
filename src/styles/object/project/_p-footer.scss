@@ -3,14 +3,7 @@
 .p-footer {
   margin-left: auto;
   font-weight: bold;
-  font-size: global.rem(18);
   font-family: global.$font-base-en;
   color: global.$color-white;
-  letter-spacing: 0.05rem;
-}
-
-@include global.media(sp) {
-  .p-footer {
-    font-size: global.rem(16);
-  }
+  @include global.font-settings(16, 18);
 }

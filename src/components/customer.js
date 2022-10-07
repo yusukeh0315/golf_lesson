@@ -7,11 +7,11 @@ const Customer = ({ data }) => {
         <div className="p-section__title-wrapper">
           <h2 className="p-section__title">ゴルフ楽しい！</h2>
         </div>
-        <div className="p-cards-customers p-cards-customers--col2">
+        <div className="p-cards p-cards--col2">
           {data.allMicrocmsCustomer.edges.map(({ node }) => {
             return (
               <>
-                <div className="p-cards-customers__item">
+                <div className="p-cards__item">
                   <div className="c-card-customers">
                     <figure className="c-card-customers__logo-wrapper">
                       <img

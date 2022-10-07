@@ -10,28 +10,32 @@ const Access = ({ data }) => {
   return (
     <>
       <section className="l-access">
-        <figure className="p-access__image-wrapper">
-          <GatsbyImage
-            className="p-access__image"
-            image={data.topbg_middle.childImageSharp.gatsbyImageData}
-            alt="top-middle-background"
-            style={{ height: "100%" }}
-          />
-        </figure>
-        <div className="p-access__inner">
-          <div className="p-access__container">
-            <p className="p-access__text">
-              不明な点など、お気軽にお問い合わせください。
-            </p>
+        <div className="l-access__inner">
+          <div className="p-access__wrapper">
+            <figure className="p-access__image-wrapper">
+              <GatsbyImage
+                className="p-access__image"
+                image={data.topbg_middle.childImageSharp.gatsbyImageData}
+                alt="top-middle-background"
+                style={{ height: "100%" }}
+              />
+            </figure>
+            <div className="p-access__content-inner">
+              <div className="p-access__container">
+                <p className="p-access__text">
+                  不明な点など、お気軽にお問い合わせください。
+                </p>
 
-            <Address />
+                <Address />
 
-            <div className="p-access__link">
-              <Link to="/contact/">
-                <button className="c-contact_button">お問い合わせ</button>
-              </Link>
-              <div className="u-margin-center"></div>
-              <Reservation />
+                <div className="p-access__link">
+                  <Link to="/contact/">
+                    <button className="c-contact_button">お問い合わせ</button>
+                  </Link>
+                  <div className="u-margin-center"></div>
+                  <Reservation />
+                </div>
+              </div>
             </div>
           </div>
         </div>

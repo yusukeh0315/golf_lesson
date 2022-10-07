@@ -44,10 +44,10 @@ const Benefit = ({ data }) => {
   return (
     <section className="l-benefit">
       <div className="l-benefit__inner">
-        <div className="p-cards-benefit p-cards-benefit--col3">
+        <div className="p-cards p-cards--col3">
           {benefits.map(benefit => {
             return (
-              <div className="p-cards-benefit__item c-card-benefit">
+              <div className="p-cards__item c-card-benefit">
                 <figure className="c-card-benefit__icon-wrapper">
                   {benefit.svg}
                 </figure>

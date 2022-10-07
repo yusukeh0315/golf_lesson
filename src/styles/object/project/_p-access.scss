@@ -1,8 +1,10 @@
 @use "../../global" as global;
 
 .p-access {
-  display: flex;
-  flex-direction: column;
+  &__wrapper {
+    height: 600px;
+    position: relative;
+  }
 
   &__image-wrapper {
     position: absolute;
@@ -12,12 +14,11 @@
     left: 0;
   }
 
-  &__inner {
+  &__content-inner {
     @include global.inner(global.$width-access);
-    background-color: rgb(255, 255, 255, 0.9);
-    height: 400px;
-    padding: 20px 20px;
-    z-index: 10;
+    width: global.percent-length(1280, 800);
+    height: auto;
+    padding: global.response-length(40, 60) global.response-length(20, 40);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -27,33 +28,33 @@
   }
 
   &__container {
+    background-color: rgb(255, 255, 255, 0.9);
     height: 100%;
     width: 100%;
-    padding: 20px;
+    padding: 20px global.response-length(10, 20);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    z-index: 10;
   }
 
   &__text {
     color: global.$color-blue;
-    padding-bottom: 20px;
-    font-size: global.rem(24);
+    padding-bottom: global.response-length(15, 20);
+    @include global.font-settings(22, 24);
   }
 
   &__address {
     color: global.$color-blue;
-    padding-bottom: 20px;
+    padding-bottom: global.response-length(15, 20);
     font-style: normal;
-    font-size: global.rem(18);
+    @include global.font-settings(16, 18);
   }
 
   &__tel {
     color: global.$color-blue;
-    padding-bottom: 20px;
-    font-size: global.rem(18);
+    padding-bottom: global.response-length(15, 20);
+    @include global.font-settings(16, 18);
   }
 
   &__table {
@@ -72,37 +73,17 @@
     padding: 10px 5px;
   }
   &__link {
-    // width: 60%;
     display: flex;
-    // justify-content: space-between;
   }
 }
 
 @include global.media(sp) {
   .p-access {
-    &__inner {
-      width: 80%;
-      height: 500px;
-      padding: 5px 5px;
-    }
-    &__text {
-      color: global.$color-blue;
-      padding-bottom: 15px;
-      font-size: global.rem(22);
+    &__content-inner {
+      width: 100%;
+      height: auto;
     }
 
-    &__address {
-      color: global.$color-blue;
-      padding-bottom: 15px;
-      font-style: normal;
-      font-size: global.rem(16);
-    }
-
-    &__tel {
-      color: global.$color-blue;
-      padding-bottom: 15px;
-      font-size: global.rem(16);
-    }
     &__table {
       width: 100%;
       margin-bottom: 40px;
@@ -118,8 +99,6 @@
     }
 
     &__link {
-      // width: 60%;
-      // height: 100px;
       width: 100%;
       display: flex;
       align-items: center;

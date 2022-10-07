@@ -1,8 +1,10 @@
 @use "../../global" as global;
 
 .p-topbg {
-  display: flex;
-  flex-direction: column;
+  &__wrapper {
+    height: 400px;
+    position: relative;
+  }
 
   &__image-wrapper {
     position: absolute;
@@ -13,10 +15,7 @@
   }
 
   &__image {
-    // position: relative;
     & img {
-      // position: absolute;
-      // top: 20%;
       object-fit: cover;
       object-position: 20% 20%;
     }
@@ -31,16 +30,13 @@
     background-color: rgba(255, 255, 255, 0.6);
   }
 
-  &__inner {
+  &__content-inner {
     @include global.inner(global.$width-access);
-    height: 400px;
-    padding: 20px 20px;
-    z-index: 10;
+    width: global.percent-length(1280, 800);
+    padding: global.response-length(40, 60) global.response-length(20, 40);
     position: absolute;
     top: 50%;
     left: 50%;
-    display: flex;
-    align-items: center;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -48,25 +44,18 @@
 
   &__text {
     color: global.$color-lightblue;
-    height: auto;
-    font-weight: bold;
-    font-size: global.rem(48);
     text-shadow: 2px 2px 3px #808080;
-    letter-spacing: 0.2rem;
+    @include global.font-settings(28, 48, 1.5, bold);
   }
 }
 
 @include global.media(sp) {
   .p-topbg {
-    &__inner {
+    &__content-inner {
       width: 100%;
-      // height: 500px;
-      padding: 5px 5px;
     }
     &__text {
       width: 100%;
-      font-size: global.rem(28);
-      text-align: center;
     }
   }
 }
