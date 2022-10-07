@@ -5,8 +5,10 @@ import { enableBodyScroll } from "body-scroll-lock"
 import Reservation from "../reservation"
 
 const MenuList = ({ close }) => {
-  const target = document.getElementsByClassName("menu")
   const closeMenu = () => {
+    if (typeof window === "object") {
+      const target = document.getElementsByClassName("menu")
+    }
     enableBodyScroll(target)
   }
   return (

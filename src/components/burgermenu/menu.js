@@ -16,7 +16,10 @@ const contentStyle = {
 }
 
 const BurgerMenu = () => {
-  const target = document.getElementsByClassName("menu")
+  if (typeof window === "object") {
+    const target = document.getElementsByClassName("menu")
+    //documentを使う関数を入れる
+  }
 
   let scrollValue = ""
 
@@ -26,15 +29,19 @@ const BurgerMenu = () => {
   }
 
   const openMenu = () => {
-    document.body.style.top = -`${window.scrollY}` + "px"
-    scrollValue = document.body.style.top
-    disableBodyScroll(target)
+    if (typeof window === "object") {
+      document.body.style.top = -`${window.scrollY}` + "px"
+      scrollValue = document.body.style.top
+      disableBodyScroll(target)
+    }
   }
 
   const preventScrollTop = () => {
-    const scrollY = parseInt(scrollValue || "0") * -1
-    document.body.style.top = ""
-    window.scrollTo(0, scrollY)
+    if (typeof window === "object") {
+      const scrollY = parseInt(scrollValue || "0") * -1
+      document.body.style.top = ""
+      window.scrollTo(0, scrollY)
+    }
   }
 
   return (
