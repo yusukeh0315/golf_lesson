@@ -2,26 +2,12 @@
 
 .p-section {
   &__title-wrapper {
-    margin-bottom: 40px;
+    margin-bottom: global.response-length(15, 30);
   }
 
   &__title {
-    font-weight: 100;
-    font-size: global.rem(42);
     font-family: global.$font-base-en;
     color: global.$color-blue;
-  }
-}
-
-@include global.media(sp) {
-  .p-section {
-    &__title--skill {
-      display: block;
-      margin-bottom: 1rem;
-    }
-
-    &__title {
-      font-size: global.rem(26);
-    }
+    @include global.font-settings(26, 42, 1.5, 100);
   }
 }

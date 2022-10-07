@@ -56,11 +56,11 @@ const Instructors = ({ data }) => {
             採用したインストラクターの基準、背景などがここで垣間見えるような紹介が良いかと思います。
           </p>
         </div>
-        <div className="p-cards-instructors p-cards-instructors--col2">
+        <div className="p-cards p-cards--col2">
           {instructors.map(instructor => {
             return (
               <>
-                <div className="p-cards-instructors__item">
+                <div className="p-cards__item">
                   <div className="c-card-instructors">
                     <figure className="c-card-instructors__logo-wrapper">
                       <GatsbyImage

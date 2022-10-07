@@ -5,6 +5,14 @@
   flex-wrap: wrap;
 }
 
+.p-cards--col2 {
+  $col_num: 2;
+  $margin-x: 50px;
+  $margin-y: 40px;
+  height: auto;
+  @include global.cards($col_num, $margin-x, $margin-y);
+}
+
 .p-cards--col3 {
   $col_num: 3;
   $margin-x: 60px;

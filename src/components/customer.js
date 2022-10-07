@@ -21,7 +21,7 @@ const Customer = ({ data }) => {
                       />
                     </figure>
                     <div className="c-card-customers__body">
-                      <p className="c-card-customers__janame">
+                      <p className="c-card-customers__attribute">
                         {node.attribute}
                       </p>
                       <p className="c-card-customers__text">{node.content}</p>

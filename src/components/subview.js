@@ -28,8 +28,10 @@ const SubView = ({ data, title }) => {
               durationFadeIn={100}
             />
           </figure>
-          <div className="p-sub__title-wrapper">
-            <h1 className="p-sub__title">{title}</h1>
+          <div className="p-sub__content-inner">
+            <div className="p-sub__title-wrapper">
+              <h1 className="p-sub__title">{title}</h1>
+            </div>
           </div>
         </div>
       </div>

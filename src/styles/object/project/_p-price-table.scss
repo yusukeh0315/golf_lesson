@@ -1,12 +1,6 @@
 @use "../../global" as global;
 
 .p-price-table {
-  &__wrapper {
-    // margin-left: auto;
-    // margin-right: auto;
-    // width :auto;
-  }
-
   &__table {
     color: global.$color-blue;
     width: 80%;
@@ -26,7 +20,6 @@
   }
 
   &__th {
-    // color: global.$color-blue;
     padding: 10px 5px;
   }
 
@@ -89,10 +82,6 @@
       &:before {
         content: "説明： ";
       }
-    }
-
-    &__tr {
-      // border-bottom: solid 1px global.$color-blue;
     }
 
     &__td {

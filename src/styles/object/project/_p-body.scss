@@ -2,38 +2,19 @@
 
 .p-body {
   &__wrapper {
-    margin-bottom: 40px;
+    margin-bottom: global.response-length(15, 40);
   }
 
   &__text {
-    padding: 1rem 2rem;
-    font-size: global.rem(24);
-    font-weight: normal;
+    padding: global.response-length(10, 15) global.response-length(10, 40);
     color: global.$color-blue;
-    line-height: calc(36 / 24);
+    @include global.font-settings(20, 24, 1.5, normal);
   }
 
   &__list {
-    padding: 1rem 4rem;
-    font-size: global.rem(28);
-    font-weight: normal;
+    padding: global.response-length(10, 15) global.response-length(48, 64);
     color: global.$color-blue;
     list-style-type: square;
-    line-height: calc(36 / 28);
-  }
-}
-
-@include global.media(sp) {
-  .p-body {
-    &__text {
-      padding: 0.5rem 1rem;
-      font-size: global.rem(20);
-      line-height: calc(28 / 20);
-    }
-
-    &__list {
-      font-size: global.rem(24);
-      line-height: calc(36 / 24);
-    }
+    @include global.font-settings(24, 28, 1.5, normal);
   }
 }

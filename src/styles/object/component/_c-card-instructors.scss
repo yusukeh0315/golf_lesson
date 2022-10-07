@@ -34,40 +34,30 @@
   }
 
   &__janame {
-    font-weight: 600;
-    font-size: global.rem(22);
-    line-height: calc(26 / 22);
     font-family: global.$font-base-en;
+    @include global.font-settings(20, 22, 1.5, 600);
   }
 
   &__enname {
     margin-bottom: 4px;
-    font-weight: 300;
-    font-size: global.rem(18);
-    line-height: calc(26 / 18);
     font-family: global.$font-base-en;
+    @include global.font-settings(18, 18, 1.5, 300);
   }
 
   &__title {
     display: flex;
     margin-bottom: 4px;
-    font-size: global.rem(18);
-    line-height: calc(24 / 18);
+    @include global.font-settings(16, 18, 1.5);
   }
 
   &__text {
-    font-size: global.rem(16);
-    line-height: calc(24 / 16);
+    @include global.font-settings(16, 16, 1.5);
   }
 }
 
 @include global.media(tb) {
   .c-card-instructors {
     height: 250px;
-
-    &__nolink {
-      height: 250px;
-    }
   }
 }
 
@@ -83,26 +73,6 @@
       &--instructor {
         padding-bottom: 0.5rem;
       }
-    }
-
-    &__janame {
-      font-size: global.rem(20);
-      line-height: calc(24 / 20);
-    }
-
-    &__enname {
-      font-size: global.rem(18);
-      line-height: calc(24 / 18);
-    }
-
-    &__title {
-      font-size: global.rem(16);
-      line-height: calc(27 / 16);
-    }
-
-    &__text {
-      font-size: global.rem(16);
-      line-height: calc(21 / 16);
     }
   }
 }

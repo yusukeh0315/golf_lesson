@@ -7,21 +7,15 @@
 
   &__title {
     margin-bottom: 10px;
-    font-weight: normal;
-    font-size: global.rem(24);
     color: global.$color-blue;
-  }
-
-  &__sub-title {
-    font-weight: normal;
-    font-size: global.rem(16);
+    @include global.font-settings(22, 24, 1.5, normal);
   }
 
   &__icon-wrapper {
     width: 230px;
     height: 230px;
-    margin-top: 39px;
-    margin-bottom: 50px;
+    margin-top: global.response-length(20, 40);
+    margin-bottom: global.response-length(30, 50);
 
     & img {
       border-radius: 50%;
@@ -30,26 +24,7 @@
 
   &__text {
     margin-bottom: 5px;
-    font-weight: normal;
-    font-size: global.rem(16);
-    line-height: calc(24 / 16);
     color: global.$color-blue;
-  }
-}
-
-@include global.media(sp) {
-  .c-card-benefit {
-    &__icon-wrapper {
-      margin-top: 20px;
-      margin-bottom: 30px;
-    }
-
-    &__text {
-      font-size: global.rem(16);
-    }
-
-    &__body {
-      margin-bottom: 50px;
-    }
+    @include global.font-settings(16, 16, 1.5, normal);
   }
 }
