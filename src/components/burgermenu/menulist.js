@@ -6,8 +6,9 @@ import Reservation from "../reservation"
 
 const MenuList = ({ close }) => {
   const closeMenu = () => {
-    if (typeof window === "object") {
-      const target = document.getElementsByClassName("menu")
+    let target = ""
+    if (typeof document !== "undefined") {
+      target = document.getElementsByClassName("menu")
     }
     enableBodyScroll(target)
   }

@@ -16,8 +16,9 @@ const contentStyle = {
 }
 
 const BurgerMenu = () => {
-  if (typeof window === "object") {
-    const target = document.getElementsByClassName("menu")
+  let target = ""
+  if (typeof document !== 'undefined') {
+    target = document.getElementsByClassName("menu")
     //documentを使う関数を入れる
   }
 
@@ -29,7 +30,7 @@ const BurgerMenu = () => {
   }
 
   const openMenu = () => {
-    if (typeof window === "object") {
+    if (typeof document !== 'undefined') {
       document.body.style.top = -`${window.scrollY}` + "px"
       scrollValue = document.body.style.top
       disableBodyScroll(target)
@@ -37,7 +38,7 @@ const BurgerMenu = () => {
   }
 
   const preventScrollTop = () => {
-    if (typeof window === "object") {
+    if (typeof document !== 'undefined') {
       const scrollY = parseInt(scrollValue || "0") * -1
       document.body.style.top = ""
       window.scrollTo(0, scrollY)
