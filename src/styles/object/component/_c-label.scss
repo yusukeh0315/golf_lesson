@@ -15,14 +15,13 @@
     text-decoration: none;
     text-align: center;
     font-family: global.$font-label;
-    @include global.font-settings(16, 28, 1.5, 900);
+    @include global.font-settings(16, 20, 1.5, 900);
 
     &--large {
       @include global.font-settings(24, 28, 1.5, 900);
     }
   }
 }
-
 
 .c-require-label {
   display: inline-block;

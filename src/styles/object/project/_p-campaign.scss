@@ -1,0 +1,134 @@
+@use "../../global" as global;
+
+.p-campaign {
+  &__wrapper {
+    height: 500px;
+    position: relative;
+  }
+
+  &__image-wrapper {
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &__content-inner {
+    @include global.inner(global.$width-access);
+    width: global.percent-length(1280, 800);
+    height: auto;
+    padding: global.response-length(40, 60) global.response-length(20, 40);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  &__container {
+    background-color: rgb(255, 255, 255, 0.9);
+    height: 100%;
+    width: 100%;
+    padding: 20px global.response-length(10, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__text {
+    color: global.$color-blue;
+    padding-bottom: global.response-length(15, 20);
+    @include global.font-settings(24, 36, 1.5, 800);
+  }
+
+  &__content {
+    display: flex;
+    width: 100%;
+  }
+  &__label-wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__price-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+  &__normal-price {
+    width: 100%;
+    margin-bottom: 20px;
+    @include global.font-settings(18, 24, 1.5, 400);
+    &--large {
+      @include global.font-settings(20, 32, 1.5, 400);
+    }
+  }
+  &__price {
+    margin-bottom: 20px;
+    width: 100%;
+    @include global.font-settings(20, 32, 1.5, 400);
+    &--large {
+      color: global.$color-label-pink;
+      @include global.font-settings(20, 36, 1.5, 600);
+    }
+  }
+}
+
+@include global.media(sp) {
+  .p-campaign {
+    &__content-inner {
+      width: 100%;
+      height: auto;
+    }
+
+    &__table {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    &__tr {
+      border-bottom: solid 1px global.$color-blue;
+    }
+
+    &__td {
+      text-align: center;
+      display: block;
+    }
+
+    &__link {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      & > a {
+        width: 100%;
+      }
+    }
+    &__content {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__label-wrapper {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    &__price-wrapper {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    &__normal-price {
+      text-align: center;
+    }
+    &__price {
+      text-align: center;
+    }
+  }
+}

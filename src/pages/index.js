@@ -1,6 +1,7 @@
 import React from "react"
 import Access from "../components/access"
 import Benefit from "../components/benefit"
+import Campaign from "../components/campaign"
 import Customer from "../components/customer"
 import FirstView from "../components/firstview"
 import Layout from "../components/layout"
@@ -16,6 +17,7 @@ const Home = ({ data }) => {
       <Seo />
       <FirstView data={data} />
       <TopMessage />
+      <Campaign data={data} />
       <Benefit data={data} />
       <Customer data={data} />
       <Access data={data} />
@@ -37,6 +39,11 @@ export const query = graphql`
       }
     }
     firstview_3: file(relativePath: { eq: "firstview_3.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    campaign: file(relativePath: { eq: "campaign.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }
