@@ -1,4 +1,5 @@
 import React from "react"
+import Campaign from "../components/campaign"
 import Layout from "../components/layout"
 import PriceTable from "../components/pricetable"
 import Seo from "../components/seo"
@@ -11,6 +12,7 @@ const Price = ({ data, location }) => {
     <Layout page="price">
       <Seo pagetitle="料金" pagedesc="料金" pagepath={location.pathname} />
       <SubView data={data} title="料金" />
+      <Campaign data={data} />
       <PriceTable />
     </Layout>
   )
@@ -19,6 +21,11 @@ const Price = ({ data, location }) => {
 export const query = graphql`
   query {
     priceview: file(relativePath: { eq: "priceview.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    campaign: file(relativePath: { eq: "campaign.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }
