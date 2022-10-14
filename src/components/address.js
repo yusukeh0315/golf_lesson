@@ -1,18 +1,18 @@
 import React from "react"
 
 const Address = () => {
-  const addressPostNum = "〒XXX-XXX"
-  const addressInfo = "東京都港区新橋XXX-XXX"
+  const addressPostNum = "〒105-0004"
+  const addressInfo = "東京都港区新橋1-7-11近鉄銀座中央通りビル地下1階"
   const telNumber = "XXX-XXX-XXXX"
   const businessDays = [
     {
-      dayOfWeek: "月曜日～金曜",
-      timeZone: "12:00～20:00",
+      dayOfWeek: "365日",
+      timeZone: "24時間営業",
     },
-    {
-      dayOfWeek: "土曜日、日曜日、祝日",
-      timeZone: "10:00～21:00",
-    },
+    // {
+    //   dayOfWeek: "土曜日、日曜日、祝日",
+    //   timeZone: "10:00～21:00",
+    // },
   ]
 
   return (
