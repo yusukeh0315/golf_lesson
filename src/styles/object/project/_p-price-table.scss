@@ -27,6 +27,16 @@
     color: global.$color-blue;
     padding: 10px 5px;
     text-align: center;
+
+    &--single-row-th {
+      background-color: global.$color-blue;
+      color: global.$color-white;
+      width: 60%;
+    }
+    &--single-row-td {
+      border-right: solid 1px global.$color-blue;
+      width: 40%;
+    }
   }
 
   &__link {
@@ -52,14 +62,27 @@
       display: none;
     }
 
+    &__td {
+      &--single-row-th {
+        width: auto;
+      }
+      &--single-row-td {
+        border-right: none;
+        width: auto;
+      }
+    }
+
     &__td--mobile-th {
       background-color: global.$color-blue;
       color: global.$color-white;
       font-size: global.rem(24);
       margin-bottom: 15px;
+      margin-right: 10px;
+      margin-left: 10px;
     }
 
     &__td--mobile-price,
+    &__td--mobile-price-month,
     &__td--mobile-time,
     &__td--mobile-desc {
       padding: 10px 10%;
@@ -70,17 +93,21 @@
         content: "料金： ";
       }
     }
-
+    &__td--mobile-price-month {
+      &:before {
+        content: "月会費： ";
+      }
+    }
     &__td--mobile-time {
       &:before {
-        content: "時間： ";
+        content: "利用可能時間： ";
       }
     }
 
     &__td--mobile-desc {
       margin-bottom: 50px;
       &:before {
-        content: "説明： ";
+        content: "打席料（50分/1回）: ";
       }
     }
 

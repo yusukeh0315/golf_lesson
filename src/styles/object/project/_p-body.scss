@@ -11,6 +11,12 @@
     @include global.font-settings(20, 24, 1.5, normal);
   }
 
+  &__text-h3 {
+    padding: 0 global.response-length(12, 64);
+    color: global.$color-black;
+    @include global.font-settings(20, 24, 1.5, normal);
+  }
+
   &__list {
     padding: global.response-length(10, 15) global.response-length(48, 64);
     color: global.$color-blue;
