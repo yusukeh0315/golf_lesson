@@ -17,7 +17,7 @@ const Contact = ({ data, location }) => {
   } = useForm()
 
   const onSubmit = data => {
-    const baseUrl = "https://ssgform.com/s/Zuju97p82Cil"
+    const baseUrl = "https://ssgform.com/s/nar63pOf5To2"
 
     var params = new URLSearchParams()
     params.append("name", data["name"])
@@ -129,7 +129,7 @@ const Contact = ({ data, location }) => {
               </div>
               <div
                 class="g-recaptcha"
-                data-sitekey="6LdZ4-khAAAAAFA0LKDzj49hLol6iSfbvsf706hb"
+                data-sitekey="6Ldw8owiAAAAAAjvOeDGQ_wLom8qFJQZNdnGP8kE"
               ></div>
               <input type="submit" className="c-submit-button" />
             </form>
