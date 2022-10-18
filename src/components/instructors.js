@@ -1,4 +1,3 @@
-import { GatsbyImage } from "gatsby-plugin-image"
 import React from "react"
 
 import HeadingIcon from "./heading_icon"
@@ -62,14 +61,14 @@ const Instructors = ({ data }) => {
               <>
                 <div className="p-cards__item">
                   <div className="c-card-instructors">
-                    <figure className="c-card-instructors__logo-wrapper">
+                    {/* <figure className="c-card-instructors__logo-wrapper">
                       <GatsbyImage
                         className="c-card-instructors__logo"
                         image={data.dummy.childImageSharp.gatsbyImageData}
                         alt="instructor"
                         style={{ height: "100%" }}
                       />
-                    </figure>
+                    </figure> */}
                     <div className="c-card-instructors__body">
                       <p className="c-card-instructors__janame">
                         {instructor.jaName}

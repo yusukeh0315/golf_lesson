@@ -13,13 +13,13 @@ const Customer = ({ data }) => {
               <>
                 <div className="p-cards__item">
                   <div className="c-card-customers">
-                    <figure className="c-card-customers__logo-wrapper">
+                    {/* <figure className="c-card-customers__logo-wrapper">
                       <img
                         className="c-card-customers__logo"
                         src={node.image.url}
                         alt=""
                       />
-                    </figure>
+                    </figure> */}
                     <div className="c-card-customers__body">
                       <p className="c-card-customers__attribute">
                         {node.attribute}
