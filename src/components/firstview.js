@@ -16,8 +16,12 @@ const FirstView = ({ data }) => {
   const image_1 = data.firstview_1.childImageSharp.gatsbyImageData
   const image_2 = data.firstview_2.childImageSharp.gatsbyImageData
   const image_3 = data.firstview_3.childImageSharp.gatsbyImageData
+  const image_4 = data.firstview_4.childImageSharp.gatsbyImageData
+  const image_5 = data.firstview_5.childImageSharp.gatsbyImageData
+  const image_6 = data.firstview_6.childImageSharp.gatsbyImageData
+  const image_7 = data.firstview_7.childImageSharp.gatsbyImageData
 
-  const images = [image_1, image_2, image_3]
+  const images = [image_1, image_5, image_3, image_7]
 
   return (
     <section className="l-fv">

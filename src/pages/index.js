@@ -43,6 +43,26 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH)
       }
     }
+    firstview_4: file(relativePath: { eq: "firstview_4.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    firstview_5: file(relativePath: { eq: "firstview_5.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    firstview_6: file(relativePath: { eq: "firstview_6.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    firstview_7: file(relativePath: { eq: "firstview_7.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
     campaign: file(relativePath: { eq: "campaign.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
@@ -74,14 +94,9 @@ export const query = graphql`
       }
     }
 
-    allMicrocmsCustomer {
+    allMicrocmsCustomer(sort: { fields: customer_id, order: ASC }) {
       edges {
         node {
-          image {
-            height
-            url
-            width
-          }
           attribute
           content
           customer_id
