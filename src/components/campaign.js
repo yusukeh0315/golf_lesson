@@ -1,4 +1,3 @@
-import { GatsbyImage } from "gatsby-plugin-image"
 import React from "react"
 import CampaignButton from "./campaign-button"
 
@@ -8,20 +7,20 @@ const Campaign = ({ data }) => {
       <section className="l-campaign">
         <div className="l-campaign__inner">
           <div className="p-campaign__wrapper">
-            <figure className="p-campaign__image-wrapper">
+            {/* <figure className="p-campaign__image-wrapper">
               <GatsbyImage
                 className="p-campaign__image"
                 image={data.campaign.childImageSharp.gatsbyImageData}
                 alt="top-middle-background"
                 style={{ height: "100%" }}
               />
-            </figure>
+            </figure> */}
             <div className="p-campaign__content-inner">
               <div className="p-campaign__container">
                 <p className="p-campaign__text">新規オープンキャンペーン!!</p>
                 <div className="p-campaign__content">
                   <div className="p-campaign__label-wrapper">
-                    <span className="c-label">
+                    <span className="c-label c-label--campaign">
                       <span className="c-label-font">
                         先着
                         <br />
@@ -45,7 +44,7 @@ const Campaign = ({ data }) => {
                     <p className="p-campaign__price">
                       今なら
                       <span className="p-campaign__price p-campaign__price--large">
-                        無料！
+                        無料！!
                       </span>
                     </p>
                     <CampaignButton />
