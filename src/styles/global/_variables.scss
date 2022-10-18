@@ -5,9 +5,17 @@
 // ==========================================================================
 
 // font
-$font-base-ja: "Kaisei Decol", "Noto Sans CJK JP","Noto Sans JP","Lato","Avenir","Helvetica Neue","Helvetica","Arial","Hiragino Sans","ヒラギノ角ゴシック",YuGothic,"Yu Gothic","メイリオ", Meiryo,"ＭＳ Ｐゴシック","MS PGothic" ;
-$font-base-en: "Kaisei Decol", "Lato","Noto Sans CJK JP","Noto Sans JP","Avenir","Helvetica Neue","Helvetica","Arial","Hiragino Sans","ヒラギノ角ゴシック",YuGothic,"Yu Gothic","メイリオ", Meiryo,"ＭＳ Ｐゴシック","MS PGothic" ;
-$font-label: "Noto Sans CJK JP","Noto Sans JP","Lato","Avenir","Helvetica Neue","Helvetica","Arial","Hiragino Sans","ヒラギノ角ゴシック",YuGothic,"Yu Gothic","メイリオ", Meiryo,"ＭＳ Ｐゴシック","MS PGothic" ;
+$font-base-ja: "Kaisei Decol", "Noto Sans CJK JP", "Noto Sans JP", "Lato",
+  "Avenir", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans",
+  "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", Meiryo,
+  "ＭＳ Ｐゴシック", "MS PGothic";
+$font-base-en: "Kaisei Decol", "Lato", "Noto Sans CJK JP", "Noto Sans JP",
+  "Avenir", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans",
+  "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", Meiryo,
+  "ＭＳ Ｐゴシック", "MS PGothic";
+$font-label: "Noto Sans CJK JP", "Noto Sans JP", "Lato", "Avenir",
+  "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans", "ヒラギノ角ゴシック",
+  YuGothic, "Yu Gothic", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic";
 $baseFontSize: 16;
 
 // width
@@ -18,31 +26,34 @@ $width-access: 800px;
 // color
 $color-white: #ffffff;
 $color-black: #333333;
-$color-lightgray: #DFDFDF;
+$color-lightgray: #dfdfdf;
 $color-hovergray: #f6f6f6;
 $color-gray: #979797;
-$color-red: #E64568;
-$color-blue: #0053A6;
+$color-red: #e64568;
+$color-blue: #0053a6;
+$color-light-blue: #0080ffb2;
 $color-orange: #cf2e1f;
-$color-lightblue: #4EB331;
+$color-lightblue: #4eb331;
 $color-lightblue-bg: #47c0db52;
-$color-label-pink: #E84469;
+$color-label-pink: #e84469;
+$color-campaign-orange: #f9b823;
 
 // z-index
 $layer: (
-    modal : 100,
-    header : 20,
-    tooltip : 10,
-    default : 1);
+  modal: 100,
+  header: 20,
+  tooltip: 10,
+  default: 1,
+);
 
 // breakpoint
-$sp-breakpoints : 767;
-$tb-breakpoints : 1023;
+$sp-breakpoints: 767;
+$tb-breakpoints: 1023;
 
-$sp-breakpoints-px : $sp-breakpoints * 1px;
-$tb-breakpoints-px : $tb-breakpoints * 1px;
+$sp-breakpoints-px: $sp-breakpoints * 1px;
+$tb-breakpoints-px: $tb-breakpoints * 1px;
 
 $breakpoints: (
-    sp: "only screen and (max-width: #{$sp-breakpoints-px})",
-    tb: "only screen and (max-width: #{$tb-breakpoints-px})",
+  sp: "only screen and (max-width: #{$sp-breakpoints-px})",
+  tb: "only screen and (max-width: #{$tb-breakpoints-px})",
 );

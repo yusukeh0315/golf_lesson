@@ -159,6 +159,11 @@ const PriceTable = () => {
                 </tr>
               </tbody>
             </table>
+            <div className="p-body__wrapper">
+              <p className="p-body__text">
+                ※マンツーマンレッスンも対応可能ですので、お気軽にご相談・お問い合わせください。
+              </p>
+            </div>
           </div>
         </div>
       </section>

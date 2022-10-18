@@ -10,12 +10,12 @@
 
   &__tbody {
     color: global.$color-blue;
-    border-top: solid 1px global.$color-blue;
-    border-bottom: solid 1px global.$color-blue;
+    border-top: solid 1px global.$color-light-blue;
+    border-bottom: solid 1px global.$color-light-blue;
   }
 
   &__thead {
-    background-color: global.$color-blue;
+    background-color: global.$color-light-blue;
     color: global.$color-white;
   }
 
@@ -29,12 +29,12 @@
     text-align: center;
 
     &--single-row-th {
-      background-color: global.$color-blue;
+      background-color: global.$color-light-blue;
       color: global.$color-white;
       width: 60%;
     }
     &--single-row-td {
-      border-right: solid 1px global.$color-blue;
+      border-right: solid 1px global.$color-light-blue;
       width: 40%;
     }
   }
@@ -73,7 +73,7 @@
     }
 
     &__td--mobile-th {
-      background-color: global.$color-blue;
+      background-color: global.$color-light-blue;
       color: global.$color-white;
       font-size: global.rem(24);
       margin-bottom: 15px;
