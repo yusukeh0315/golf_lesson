@@ -50,7 +50,7 @@ module.exports = {
       resolve: "gatsby-source-microcms",
       options: {
         apiKey: process.env.microCMS_API_KEY.replace(/\"/g, ""),
-        serviceId: "dev-cocolea",
+        serviceId: "cocoleagolf",
         apis: [
           {
             endpoint: "customer",
