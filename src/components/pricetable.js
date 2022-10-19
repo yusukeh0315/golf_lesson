@@ -33,7 +33,7 @@ const PriceTable = () => {
                     体験レッスン（税込）
                   </td>
                   <td className="p-price-table__td p-price-table__td--single-row-td p-price-table__td--mobile-price">
-                    2200円
+                    2,200円
                   </td>
                 </tr>
               </tbody>
@@ -158,7 +158,7 @@ const PriceTable = () => {
                     25分追加レッスンチケット（税込）
                   </td>
                   <td className="p-price-table__td p-price-table__td--single-row-td p-price-table__td--mobile-price">
-                    3300円
+                    3,300円
                   </td>
                 </tr>
               </tbody>
