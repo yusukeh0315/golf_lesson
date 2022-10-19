@@ -30,7 +30,7 @@ const PriceTable = () => {
               <tbody className="p-price-table__tbody">
                 <tr className="p-price-table__tr">
                   <td className="p-price-table__td p-price-table__td--single-row-th p-price-table__td--mobile-th">
-                    体験レッスン
+                    体験レッスン（税込）
                   </td>
                   <td className="p-price-table__td p-price-table__td--single-row-td p-price-table__td--mobile-price">
                     2200円
@@ -55,8 +55,10 @@ const PriceTable = () => {
                 <tr className="p-price-table__tr">
                   <th className="p-price-table__th">会員区分</th>
                   <th className="p-price-table__th">利用可能時間</th>
-                  <th className="p-price-table__th">月会費</th>
-                  <th className="p-price-table__th">打席料（50分／1回）</th>
+                  <th className="p-price-table__th">月会費（税込）</th>
+                  <th className="p-price-table__th">
+                    50分／1回 打席料（税込）
+                  </th>
                 </tr>
               </thead>
               <tbody className="p-price-table__tbody">
@@ -68,7 +70,7 @@ const PriceTable = () => {
                     全日
                   </td>
                   <td className="p-price-table__td p-price-table__td--mobile-price-month">
-                    25300円
+                    25,300円
                   </td>
                   <td className="p-price-table__td p-price-table__td--mobile-desc">
                     550円
@@ -82,7 +84,7 @@ const PriceTable = () => {
                     平日10時～17時
                   </td>
                   <td className="p-price-table__td p-price-table__td--mobile-price-month">
-                    19800円
+                    19,800円
                   </td>
                   <td className="p-price-table__td p-price-table__td--mobile-desc">
                     550円
@@ -104,8 +106,10 @@ const PriceTable = () => {
                 <tr className="p-price-table__tr">
                   <th className="p-price-table__th">会員区分</th>
                   <th className="p-price-table__th">利用可能時間</th>
-                  <th className="p-price-table__th">月会費</th>
-                  <th className="p-price-table__th">打席料（50分／1回）</th>
+                  <th className="p-price-table__th">月会費（税込）</th>
+                  <th className="p-price-table__th">
+                    50分／1回 打席料（税込）
+                  </th>
                 </tr>
               </thead>
               <tbody className="p-price-table__tbody">
@@ -116,8 +120,8 @@ const PriceTable = () => {
                   <td className="p-price-table__td p-price-table__td--mobile-time">
                     全日
                   </td>
-                  <td className="p-price-table__td p-price-table__td--mobile-price">
-                    17600円
+                  <td className="p-price-table__td p-price-table__td--mobile-price-month">
+                    17,600円
                   </td>
                   <td className="p-price-table__td p-price-table__td--mobile-desc">
                     550円
@@ -130,8 +134,8 @@ const PriceTable = () => {
                   <td className="p-price-table__td p-price-table__td--mobile-time">
                     平日10時～17時
                   </td>
-                  <td className="p-price-table__td p-price-table__td--mobile-price">
-                    12100円
+                  <td className="p-price-table__td p-price-table__td--mobile-price-month">
+                    12,100円
                   </td>
                   <td className="p-price-table__td p-price-table__td--mobile-desc">
                     550円
@@ -151,7 +155,7 @@ const PriceTable = () => {
               <tbody className="p-price-table__tbody">
                 <tr className="p-price-table__tr">
                   <td className="p-price-table__td p-price-table__td--single-row-th p-price-table__td--mobile-th">
-                    25分追加レッスンチケット
+                    25分追加レッスンチケット（税込）
                   </td>
                   <td className="p-price-table__td p-price-table__td--single-row-td p-price-table__td--mobile-price">
                     3300円

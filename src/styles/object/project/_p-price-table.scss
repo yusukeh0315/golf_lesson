@@ -6,6 +6,7 @@
     width: 80%;
     margin: 0 auto;
     margin-bottom: 40px;
+    font-size: 20px;
   }
 
   &__tbody {
@@ -32,6 +33,7 @@
       background-color: global.$color-light-blue;
       color: global.$color-white;
       width: 60%;
+      font-weight: bold;
     }
     &--single-row-td {
       border-right: solid 1px global.$color-light-blue;
@@ -95,7 +97,7 @@
     }
     &__td--mobile-price-month {
       &:before {
-        content: "月会費： ";
+        content: "月会費（税込）： ";
       }
     }
     &__td--mobile-time {
@@ -107,7 +109,7 @@
     &__td--mobile-desc {
       margin-bottom: 50px;
       &:before {
-        content: "打席料（50分/1回）: ";
+        content: "50分／1回 打席料（税込）: ";
       }
     }
 
