@@ -11,9 +11,11 @@ import "@fontsource/kaisei-decol"
 import "typeface-lato"
 import "typeface-notosans-jp"
 
+import BurgerMenu from "./burgermenu/menu"
+
 const Layout = ({ children, page }) => (
   <>
-    {/* <BurgerMenu /> */}
+    <BurgerMenu />
     <Header page={page} />
     <SideBanner />
 
