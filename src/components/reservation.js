@@ -4,7 +4,7 @@ import React from "react"
 const Reservation = () => {
   return (
     <Link to={`#`}>
-      <button className="c-reservation_button">ご予約</button>
+      <button className="c-reservation_button">会員ログイン</button>
     </Link>
   )
 }
