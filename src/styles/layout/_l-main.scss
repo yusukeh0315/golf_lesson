@@ -70,7 +70,6 @@
 }
 
 .l-subsection {
-
   &__inner {
     @include global.inner(global.$width-inner);
     height: 100%;
@@ -113,5 +112,13 @@
       font-weight: 400;
       font-size: global.rem(20);
     }
+  }
+}
+
+.l-campaign {
+  &--float {
+    position: absolute;
+    width: 100%;
+    top: 25vh;
   }
 }

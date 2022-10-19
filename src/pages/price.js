@@ -12,7 +12,9 @@ const Price = ({ data, location }) => {
     <Layout page="price">
       <Seo pagetitle="料金" pagedesc="料金" pagepath={location.pathname} />
       <SubView data={data} title="料金" />
-      <Campaign data={data} />
+      <section className="l-campaign">
+        <Campaign data={data} />
+      </section>
       <PriceTable />
     </Layout>
   )
