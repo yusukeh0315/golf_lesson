@@ -7,7 +7,7 @@ const Address = () => {
   const businessDays = [
     {
       dayOfWeek: "365日",
-      timeZone: "24時間営業",
+      timeZone: "365日 24時間営業",
     },
     // {
     //   dayOfWeek: "土曜日、日曜日、祝日",
@@ -28,7 +28,7 @@ const Address = () => {
             return (
               <>
                 <tr className="p-access__tr">
-                  <td className="p-access__td">{businessDay.dayOfWeek}</td>
+                  {/* <td className="p-access__td">{businessDay.dayOfWeek}</td> */}
                   <td className="p-access__td">{businessDay.timeZone}</td>
                 </tr>
               </>

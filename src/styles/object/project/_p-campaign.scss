@@ -28,11 +28,14 @@
   }
 
   &__container {
-    background-color: rgba(global.$color-campaign-orange, 0.5);
-    border-radius: 15px;
+    background-color: rgba(global.$color-campaign-orange, 1);
+    // border-radius: 15px;
+    filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.25));
+
     height: 100%;
     width: 100%;
-    padding: 20px global.response-length(20, 40);
+    padding: 20px global.response-length(20, 40) global.response-length(20, 50)
+      global.response-length(20, 40);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,17 +53,21 @@
     width: 100%;
   }
   &__label-wrapper {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   &__price-wrapper {
+    margin-right: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 60%;
+    @include global.media(sp) {
+      margin-right: 0;
+    }
   }
   &__normal-price {
     width: 100%;

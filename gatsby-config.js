@@ -14,7 +14,7 @@ module.exports = {
     title: `CocoLea GOLF Studio`,
     description: `ココレアゴルフスタジオ`,
     lang: `ja`,
-    siteUrl: `https://vitworks-dev.xyz/`,
+    siteUrl: `https://cocolea-golf.com/`,
     local: `ja_JP`,
   },
   plugins: [
@@ -35,7 +35,7 @@ module.exports = {
         short_name: `CocoLea GOLF Studio`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#477294`,
+        theme_color: `#4eb331`,
         display: `standalone`,
         icon: `src/images/icon.png`,
         icon_options: {
@@ -67,39 +67,31 @@ module.exports = {
         createLinkInHead: true,
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
-    //   options: {
-    //     devMode: true,
-    //   },
-    // },
-    // {
-    //   resolve: "gatsby-plugin-google-gtag",
-    //   options: {
-    //     trackingIds: ["G-968RDKR176"],
-    //     pluginConfig: {
-    //       head: true,
-    //     },
-    //   },
-    // },
-    // {
-    //   resolve: `gatsby-plugin-canonical-urls`,
-    //   options: {
-    //     siteUrl: `https://vitworks-dev.xyz/`,
-    //     stripQueryString: true,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://cocolea-golf.com/`,
+        stripQueryString: true,
+      },
+    },
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://vitworks-dev.xyz/",
-        sitemap: "https://vitworks-dev.xyz/sitemap/sitemap-index.xml",
+        host: "https://cocolea-golf.com/",
+        sitemap: "https://cocolea-golf.com/sitemap/sitemap-index.xml",
         policy: [{ userAgent: "*", disallow: ["/*"] }],
+        // TODO 公開時下記を修正
         // policy: [{ userAgent: "*", allow: "/", disallow: ["/contact_done/"] }],
       },
     },
     `react-hook-form`,
     `axios`,
     `body-scroll-lock`,
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: `GTM-NNNWDDV`,
+      },
+    },
   ],
 }
