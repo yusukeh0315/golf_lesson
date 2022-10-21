@@ -10,12 +10,12 @@ const PriceTable = () => {
           <div className="p-section__title-wrapper">
             <h2 className="p-section__title">
               <HeadingIcon type="tree" />
-              料金
+              レッスン料金
             </h2>
           </div>
           <div className="p-body__wrapper">
             <p className="p-body__text">
-              初めてこのスタジオに通うつもりで来た人に、手続きの流れを説明。初めての場合の3ステップ（予約⇒来店⇒レッスン）くらいの大枠でわかりやすい表現ができるようであれば、ここに掲載。また料金表のコースがいくつかあるのであれば、どのようなニーズに対して、どのコースが適切かを案内する説明を行う。
+              初めての方は体験レッスンを受けていただき、適切なプランをご提案することも可能ですのでお気軽にお申し込みください。
             </p>
           </div>
 
@@ -34,6 +34,27 @@ const PriceTable = () => {
                   </td>
                   <td className="p-price-table__td p-price-table__td--single-row-td p-price-table__td--mobile-price">
                     2,200円
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="p-section__title-wrapper">
+            <h3 className="p-section__title-h3 p-section__title-h3--single-row-title">
+              入会金
+            </h3>
+          </div>
+
+          <div className="p-price-table__wrapper">
+            <table className="p-price-table__table">
+              <tbody className="p-price-table__tbody">
+                <tr className="p-price-table__tr">
+                  <td className="p-price-table__td p-price-table__td--single-row-th p-price-table__td--mobile-th">
+                    レッスン会員、レンジ会員の入会費（税込）
+                  </td>
+                  <td className="p-price-table__td p-price-table__td--single-row-td p-price-table__td--mobile-price">
+                    33,000円
                   </td>
                 </tr>
               </tbody>
@@ -168,6 +189,32 @@ const PriceTable = () => {
                 ※マンツーマンレッスンも対応可能ですので、お気軽にご相談・お問い合わせください。
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="l-subsection">
+        <div className="l-subsection__inner">
+          <div className="p-section__title-wrapper">
+            <h2 className="p-section__title">
+              <HeadingIcon type="tree" />
+              施設利用料金
+            </h2>
+          </div>
+
+          <div className="p-price-table__wrapper">
+            <table className="p-price-table__table">
+              <tbody className="p-price-table__tbody">
+                <tr className="p-price-table__tr">
+                  <td className="p-price-table__td p-price-table__td--single-row-th p-price-table__td--mobile-th">
+                    ロッカー使用料金月額（税込）
+                  </td>
+                  <td className="p-price-table__td p-price-table__td--single-row-td p-price-table__td--mobile-price">
+                    3,300円
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>

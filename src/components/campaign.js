@@ -38,14 +38,11 @@ const Campaign = ({ data }) => {
                     <span className="p-campaign__normal-price p-campaign__normal-price--large">
                       33,000円
                     </span>
-                    のところ
-                  </span>
-                  <p className="p-campaign__price">
-                    今なら
+                    のところ 今なら
                     <span className="p-campaign__price p-campaign__price--large">
                       無料！!
                     </span>
-                  </p>
+                  </span>
                   <CampaignButton />
                 </div>
               </div>

@@ -3,10 +3,10 @@
 .p-price-table {
   &__table {
     color: global.$color-blue;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     margin-bottom: 40px;
-    font-size: 20px;
+    font-size: global.rem(24);
   }
 
   &__tbody {

@@ -2,13 +2,13 @@
 
 .p-campaign {
   &__wrapper {
-    height: 500px;
+    height: 100vh;
     position: relative;
   }
 
   &__image-wrapper {
     position: absolute;
-    height: 500px;
+    height: 100vh;
     width: 100%;
     top: 0;
     left: 0;
@@ -16,15 +16,19 @@
 
   &__content-inner {
     @include global.inner(global.$width-access);
-    width: global.percent-length(1280, 800);
+    width: global.percent-length(1280, 1000);
     height: auto;
-    padding: global.response-length(40, 60) global.response-length(20, 40);
+    padding: global.response-length(20, 30) global.response-length(20, 30);
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+
+    @include global.media(sp) {
+      top: 45%;
+    }
   }
 
   &__container {
@@ -34,8 +38,8 @@
 
     height: 100%;
     width: 100%;
-    padding: 20px global.response-length(20, 40) global.response-length(20, 50)
-      global.response-length(20, 40);
+    padding: 10px global.response-length(10, 20) 10px
+      global.response-length(10, 20);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,8 +48,11 @@
 
   &__text {
     color: global.$color-blue;
-    padding-bottom: global.response-length(15, 20);
-    @include global.font-settings(24, 36, 1.5, 800);
+    padding-bottom: 5px;
+    @include global.font-settings(22, 32, 1.5, 800);
+    @include global.media(sp) {
+      padding-bottom: 0;
+    }
   }
 
   &__content {
@@ -60,7 +67,7 @@
     justify-content: center;
   }
   &__price-wrapper {
-    margin-right: 20px;
+    margin-right: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,19 +78,22 @@
   }
   &__normal-price {
     width: 100%;
-    margin-bottom: 20px;
-    @include global.font-settings(18, 24, 1.5, 400);
+    margin-bottom: 15px;
+    @include global.font-settings(18, 20, 1.2, 400);
     &--large {
-      @include global.font-settings(20, 32, 1.5, 400);
+      @include global.font-settings(20, 26, 1.2, 400);
+    }
+    @include global.media(sp) {
+      padding-bottom: 0;
     }
   }
   &__price {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 100%;
-    @include global.font-settings(20, 32, 1.5, 400);
+    @include global.font-settings(20, 20, 1.2, 400);
     &--large {
       color: global.$color-orange;
-      @include global.font-settings(20, 36, 1.5, 600);
+      @include global.font-settings(20, 28, 1.2, 600);
     }
   }
 }
@@ -126,11 +136,11 @@
     }
     &__label-wrapper {
       width: 100%;
-      margin-bottom: 15px;
+      margin-bottom: 5px;
     }
     &__price-wrapper {
       width: 100%;
-      margin-bottom: 15px;
+      margin-bottom: 5px;
     }
     &__normal-price {
       text-align: center;
