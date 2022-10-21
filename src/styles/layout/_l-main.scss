@@ -29,6 +29,16 @@
   }
 }
 
+.l-flow {
+  // background: global.$color-lightblue-bg;
+
+  &__inner {
+    @include global.inner(global.$width-inner);
+    height: auto;
+    padding: global.response-length(40, 60) global.response-length(20, 40);
+  }
+}
+
 .l-customer {
   &__inner {
     @include global.inner(global.$width-inner);
@@ -77,22 +87,6 @@
     padding: global.response-length(40, 60) 20px;
   }
 }
-
-// .l-contact {
-//   &__inner {
-//     @include global.inner(global.$width-inner);
-//     height: 100%;
-//     padding: 60px 20px;
-//   }
-// }
-
-// @include global.media(sp) {
-//   .l-contact {
-//     &__inner {
-//       padding: 40px 20px;
-//     }
-//   }
-// }
 
 .l-notfound {
   &__inner {

@@ -11,6 +11,7 @@
   $margin-y: 40px;
   height: auto;
   @include global.cards($col_num, $margin-x, $margin-y);
+  margin-bottom: -40px;
 }
 
 .p-cards--col3 {
@@ -19,4 +20,14 @@
   $margin-y: 30px;
   height: auto;
   @include global.cards($col_num, $margin-x, $margin-y);
+  margin-bottom: -30px;
+}
+
+.p-cards-flow--col3 {
+  $col_num: 3;
+  $margin-x: 90px;
+  $margin-y: 70px;
+  height: auto;
+  @include global.cards($col_num, $margin-x, $margin-y);
+  margin-bottom: -70px;
 }

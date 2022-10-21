@@ -4,6 +4,7 @@ import Benefit from "../components/benefit"
 import Campaign from "../components/campaign"
 import Customer from "../components/customer"
 import FirstView from "../components/firstview"
+import Flow from "../components/flow"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import TopBgImg from "../components/topbgimg"
@@ -21,6 +22,7 @@ const Home = ({ data }) => {
         <Campaign data={data} />
       </section>
       <Benefit data={data} />
+      <Flow data={data} />
       <Customer data={data} />
       <Access data={data} />
       <TopBgImg data={data} />
@@ -95,7 +97,21 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH)
       }
     }
-
+    flow_1: file(relativePath: { eq: "flow_1.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    flow_2: file(relativePath: { eq: "flow_2.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    flow_3: file(relativePath: { eq: "flow_3.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
     allMicrocmsCustomer(sort: { fields: customer_id, order: ASC }) {
       edges {
         node {

@@ -1,0 +1,76 @@
+@use "../../global" as global;
+
+.c-card-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &__title-wrapper {
+    display: flex;
+    height: 76px;
+    margin-bottom: 5px;
+    align-items: flex-start;
+    @include global.media(sp) {
+      height: auto;
+    }
+  }
+
+  &__step {
+    color: global.$color-flow-orange;
+    margin-left: 5px;
+    margin-right: 1rem;
+    @include global.font-settings(36, 28, 1.2, bold);
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    color: global.$color-blue;
+    @include global.font-settings(22, 24, 1.5, normal);
+  }
+
+  &__icon-wrapper {
+    width: 100%;
+    aspect-ratio: 1;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    // box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+    & img {
+      // border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    margin-bottom: 5px;
+    color: global.$color-blue;
+    @include global.font-settings(16, 16, 1.5, normal);
+  }
+
+  &__arrow-wrapper {
+    position: absolute;
+    top: 0;
+    right: -57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    @include global.media(sp) {
+      height: 24px;
+      width: 100%;
+      top: auto;
+      bottom: -45px;
+      left: 0;
+    }
+  }
+  &__arrow {
+    fill: global.$color-blue;
+    @include global.media(sp) {
+      transform: rotate(90deg);
+    }
+  }
+}
