@@ -16,13 +16,15 @@ import BurgerMenu from "./burgermenu/menu"
 const Layout = ({ children, page }) => (
   <>
     <BurgerMenu />
-    <Header page={page} />
-    <SideBanner />
+    <main className="l-main">
+      <Header page={page} />
+      <SideBanner />
 
-    {children}
+      {children}
 
-    <SideBannerSP />
-    <Footer />
+      <SideBannerSP />
+      <Footer />
+    </main>
   </>
 )
 

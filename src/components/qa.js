@@ -4,18 +4,30 @@ import HeadingIcon from "./heading_icon"
 const QuestionAndAnswer = () => {
   const questionAndAnswers = [
     {
-      question: "駐車場はありますか？",
-      answer: "駐車場はございません。周辺にコインパーキングをご利用ください。",
+      question: "質問",
+      answer: "答え",
     },
     {
-      question: "更衣室、シャワーはありますか？",
-      answer: "シャワールームはありませんが、更衣室はあります。",
+      question: "質問",
+      answer: "答え",
     },
     {
-      question:
-        "どのような服装が良いですか？また必要な持参しないといけないものはありますか？",
-      answer: "動きやすい服装でお越しください。その他は無料でレンタルいたします。",
+      question: "質問",
+      answer: "答え",
     },
+    // {
+    //   question: "駐車場はありますか？",
+    //   answer: "駐車場はございません。周辺にコインパーキングをご利用ください。",
+    // },
+    // {
+    //   question: "更衣室、シャワーはありますか？",
+    //   answer: "シャワールームはありませんが、更衣室はあります。",
+    // },
+    // {
+    //   question:
+    //     "どのような服装が良いですか？また必要な持参しないといけないものはありますか？",
+    //   answer: "動きやすい服装でお越しください。その他は無料でレンタルいたします。",
+    // },
   ]
 
   return (

@@ -50,11 +50,11 @@ const Instructors = ({ data }) => {
             インストラクター紹介
           </h2>
         </div>
-        <div className="p-body__wrapper">
+        {/* <div className="p-body__wrapper">
           <p className="p-body__text">
             採用したインストラクターの基準、背景などがここで垣間見えるような紹介が良いかと思います。
           </p>
-        </div>
+        </div> */}
         <div className="p-cards p-cards--col2">
           {instructors.map(instructor => {
             return (

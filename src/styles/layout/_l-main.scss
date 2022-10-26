@@ -1,5 +1,9 @@
 @use "../global" as global;
 
+.l-main {
+  min-width: 300px;
+}
+
 // Top page settings
 .l-fv {
   height: 100vh;

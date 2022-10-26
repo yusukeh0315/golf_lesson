@@ -13,11 +13,11 @@ const PriceTable = () => {
               レッスン料金
             </h2>
           </div>
-          <div className="p-body__wrapper">
+          {/* <div className="p-body__wrapper">
             <p className="p-body__text">
               初めての方は体験レッスンを受けていただき、適切なプランをご提案することも可能ですのでお気軽にお申し込みください。
             </p>
-          </div>
+          </div> */}
 
           <div className="p-section__title-wrapper">
             <h3 className="p-section__title-h3 p-section__title-h3--single-row-title">
@@ -227,6 +227,14 @@ const PriceTable = () => {
             </h2>
           </div>
           <div className="p-body__wrapper">
+            <p className="p-body__text">レンタル品の説明</p>
+            <ul className="p-body__list">
+              <li className="p-body__item">レンタル品1</li>
+              <li className="p-body__item">レンタル品2</li>
+              <li className="p-body__item">レンタル品3</li>
+            </ul>
+          </div>
+          {/* <div className="p-body__wrapper">
             <p className="p-body__text">
               ご自分のクラブやシューズの持ち込みはもちろん可能です。お持ちでない方は、レンタルが可能ですので、レッスン前にお申し出ください。
             </p>
@@ -235,7 +243,7 @@ const PriceTable = () => {
               <li className="p-body__item">シューズ</li>
               <li className="p-body__item">グローブ</li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </section>
       <section className="l-subsection">
