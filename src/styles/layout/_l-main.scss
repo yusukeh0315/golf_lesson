@@ -114,9 +114,9 @@
 }
 
 .l-campaign {
-  &--float {
-    position: absolute;
-    width: 100%;
-    top: 25vh;
-  }
+  min-width: 300px;
+  width: 100%;
+  position: absolute;
+  width: 100%;
+  top: 50vh;
 }

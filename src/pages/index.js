@@ -18,7 +18,7 @@ const Home = ({ data }) => {
       <Seo />
       <FirstView data={data} />
       <TopMessage />
-      <section className="l-campaign l-campaign--float">
+      <section className="l-campaign">
         <Campaign data={data} />
       </section>
       <Benefit data={data} />
