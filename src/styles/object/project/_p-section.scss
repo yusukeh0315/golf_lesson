@@ -14,7 +14,7 @@
     font-family: global.$font-base-en;
     color: global.$color-blue;
     @include global.font-settings(24, 32, 1.5, 100);
-    padding: 0 global.response-length(10, 40);
+    padding: 0 global.response-length(0, 40);
     padding-top: 40px;
 
     &--single-row-title {

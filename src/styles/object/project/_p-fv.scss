@@ -4,6 +4,9 @@
   &__wrapper {
     height: 100vh;
     position: relative;
+    @include global.media(sp) {
+      height: calc(100vh - 60px);
+    }
   }
 
   &__image-wrapper div {
@@ -12,6 +15,9 @@
     width: 100%;
     top: 0;
     left: 0;
+    @include global.media(sp) {
+      height: calc(100vh - 60px);
+    }
   }
 
   &__content-inner {
@@ -27,6 +33,9 @@
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    @include global.media(sp) {
+      height: calc(100vh - 60px);
+    }
   }
 
   &__title-wrapper {
