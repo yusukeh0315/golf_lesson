@@ -18,6 +18,11 @@ const FirstView = ({ data }) => {
   const image_5 = data.firstview_5.childImageSharp.gatsbyImageData
   const image_7 = data.firstview_7.childImageSharp.gatsbyImageData
 
+  // const image_1 = "../images/firstview_1.jpg"
+  // const image_3 = "../images/firstview_3.jpg"
+  // const image_5 = "../images/firstview_5.jpg"
+  // const image_7 = "../images/firstview_7.jpg"
+
   const images = [image_1, image_5, image_3, image_7]
 
   return (
@@ -35,7 +40,20 @@ const FirstView = ({ data }) => {
                     style={{ height: "100%" }}
                     loading="eager"
                     durationFadeIn={100}
+                    quality={10}
+                    backgroundColor="transparent"
+                    placeholder="BLURRED"
                   />
+                  // <StaticImage
+                  //   className="p-fv__image"
+                  //   src={img}
+                  //   alt="firstview"
+                  //   style={{ height: "100%" }}
+                  //   // loading="eager"
+                  //   // backgroundColor="transparent"
+                  //   // quality={10}
+                  //   // placeholder="BLURRED"
+                  // />
                 )
               })}
             </Slider>

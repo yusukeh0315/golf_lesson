@@ -28,8 +28,8 @@ module.exports = {
         path: `${__dirname}/src/images/`,
         defaults: {
           formats: [`auto`, `webp`],
-          placeholder: `dominantColor`,
-          quality: 50,
+          placeholder: `BLURRED`,
+          quality: 10,
           breakpoints: [750, 1080, 1366, 1920],
           backgroundColor: `transparent`,
           tracedSVGOptions: {},

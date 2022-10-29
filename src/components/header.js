@@ -1,5 +1,5 @@
 import { graphql, Link, useStaticQuery } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 
 import Reservation from "./reservation"
@@ -21,13 +21,23 @@ const Header = ({ page }) => {
         <div className="p-header-logo">
           <Link to={`/`} className="p-header-logo__link">
             <figure className="p-header-logo__image-wrapper">
-              <GatsbyImage
+              {/* <GatsbyImage
                 className="p-header-logo__image"
                 image={data.headerlogo.childImageSharp.gatsbyImageData}
                 alt="logo"
                 style={{ height: "100%" }}
                 loading="eager"
                 durationFadeIn={100}
+              /> */}
+              <StaticImage
+                className="p-header-logo__image"
+                src="../images/header-logo.png"
+                alt="logo"
+                style={{ height: "100%" }}
+                loading="eager"
+                backgroundColor="transparent"
+                quality={10}
+                placeholder="BLURRED"
               />
             </figure>
           </Link>
