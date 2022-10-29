@@ -2,7 +2,7 @@ import React from "react"
 
 const Address = () => {
   const addressPostNum = "〒105-0004"
-  const addressInfo = "東京都港区新橋1-7-11近鉄銀座中央通りビル地下1階"
+  const addressInfo = "東京都港区新橋1-7-11近鉄銀座中央通りビルⅡ地下1階"
   const telNumber = "090-6484-5501"
   const businessDays = [
     {

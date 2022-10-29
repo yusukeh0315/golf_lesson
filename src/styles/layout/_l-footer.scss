@@ -4,6 +4,10 @@
   height: 80px;
   background-color: global.$color-lightblue;
 
+  @include global.media(sp) {
+    height: 140px;
+  }
+
   &__inner {
     @include global.inner(global.$width-base);
     display: flex;
