@@ -48,14 +48,14 @@
     color: global.$color-white;
     font-family: global.$font-base-en;
     text-shadow: 2px 2px 3px #808080;
-    @include global.font-settings(30, 60, 1.5, 300);
+    @include global.font-settings(30, 48, 1.2, 300);
   }
 
   &__text {
     color: global.$color-white;
     margin-left: 20px;
     text-shadow: 2px 2px 3px #808080;
-    @include global.font-settings(18, 30, 1.5, 300);
+    @include global.font-settings(18, 30, 1.5, bold);
   }
 
   &__icon-wrapper {

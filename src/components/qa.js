@@ -150,9 +150,7 @@ const QuestionAndAnswer = () => {
         </div>
 
         <div className="p-section__title-wrapper">
-          <h3 className="p-section__title-h3">
-            レッスンスタジオの設備に関して
-          </h3>
+          <h3 className="p-section__title-h3">設備に関して</h3>
         </div>
         <div className="p-qa__wrapper">
           {qaFacility.map(questionAndAnswer => {

@@ -2,12 +2,12 @@
 
 .c-card-instructors {
   display: flex;
-  height: 180px;
+  height: 300px;
   padding: 1rem;
 
   &__nolink {
     display: flex;
-    height: 180px;
+    height: 300px;
     padding: 1rem;
   }
 
@@ -55,11 +55,11 @@
   }
 }
 
-@include global.media(tb) {
-  .c-card-instructors {
-    height: 250px;
-  }
-}
+// @include global.media(tb) {
+//   .c-card-instructors {
+//     height: 250px;
+//   }
+// }
 
 @include global.media(sp) {
   .c-card-instructors {

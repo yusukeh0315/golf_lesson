@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 import HeadingIcon from "./heading_icon"
 
@@ -227,11 +226,16 @@ const PriceTable = () => {
             </h2>
           </div>
           <div className="p-body__wrapper">
-            <p className="p-body__text">レンタル品の説明</p>
+            {/* <p className="p-body__text">レンタル品の説明</p> */}
             <ul className="p-body__list">
-              <li className="p-body__item">レンタル品1</li>
-              <li className="p-body__item">レンタル品2</li>
-              <li className="p-body__item">レンタル品3</li>
+              <li className="p-body__item">
+                男性用ゴルフクラブ（スチール、カーボン）
+              </li>
+              <li className="p-body__item">女性用ゴルフクラブ（カーボン）</li>
+              <li className="p-body__item">スパイク</li>
+              <li className="p-body__item">
+                グローブ（感染症対策の観点でご持参いただけますと安心です）
+              </li>
             </ul>
           </div>
           {/* <div className="p-body__wrapper">
@@ -246,7 +250,7 @@ const PriceTable = () => {
           </div> */}
         </div>
       </section>
-      <section className="l-subsection">
+      {/* <section className="l-subsection">
         <div className="l-subsection__inner">
           <div className="p-section__title-wrapper">
             <h2 className="p-section__title">
@@ -264,7 +268,7 @@ const PriceTable = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   )
 }

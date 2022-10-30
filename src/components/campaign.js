@@ -14,7 +14,7 @@ const Campaign = ({ data }) => {
                   <span className="c-label-font">
                     先着
                     <br />
-                    <span className="c-label-font c-label-font--large">50</span>
+                    <span className="c-label-font c-label-font--large">55</span>
                     名様
                     <br />
                     限定
@@ -25,11 +25,11 @@ const Campaign = ({ data }) => {
                 <span className="p-campaign__normal-price">
                   入会金{" "}
                   <span className="p-campaign__normal-price p-campaign__normal-price--large">
-                    33,000円
+                    22,000円
                   </span>
                   のところ 今なら
                   <span className="p-campaign__price p-campaign__price--large">
-                    無料！!
+                    5,500円!
                   </span>
                 </span>
                 <CampaignButton />

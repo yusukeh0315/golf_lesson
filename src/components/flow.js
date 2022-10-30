@@ -61,7 +61,7 @@ const Flow = ({ data }) => {
   const flows = [
     {
       step: "01",
-      name: "ステップ1",
+      name: "WEBでお申し込みください",
       image: (
         <GatsbyImage
           className="c-card-flow__image"
@@ -70,11 +70,11 @@ const Flow = ({ data }) => {
           style={{ height: "100%" }}
         />
       ),
-      desc: "ステップ1の説明",
+      desc: "ココレアゴルフではWEB予約システムを採用しております。WEBからお申込みをお願いいたします。（お電話はレッスン等で出ることができない場合がございますのでご了承ください。）",
     },
     {
       step: "02",
-      name: "ステップ2",
+      name: "体験レッスン当日",
       image: (
         <GatsbyImage
           className="c-card-flow__image"
@@ -83,11 +83,11 @@ const Flow = ({ data }) => {
           style={{ height: "100%" }}
         />
       ),
-      desc: "ステップ2の説明",
+      desc: "当日はお時間10分ほど前にお越しください。ゴルフクラブ、シューズ、はご用意がございますので、手ぶらで結構です。更衣室がございますので、動きやすい格好をご準備ください。（昨今の感染症対策の観点でグローブはご持参いただけますと安心です。）",
     },
     {
       step: "03",
-      name: "ステップ3",
+      name: "事前面談・レッスン",
       image: (
         <GatsbyImage
           className="c-card-flow__image"
@@ -96,7 +96,20 @@ const Flow = ({ data }) => {
           style={{ height: "100%" }}
         />
       ),
-      desc: "ステップ3の説明",
+      desc: "先ずは、現在のお悩みや今後の目標などをお聞かせください。その後レッスン開始です。レッスンでは現在の問題点などを浮き彫りにし、改善方法や練習方法をお伝えします。通常のレッスンと同じ流れでレッスンさせていただきますのでココレアゴルフでどのようにレッスンが行われているのか体験ください。",
+    },
+    {
+      step: "04",
+      name: "フィードバック",
+      image: (
+        <GatsbyImage
+          className="c-card-flow__image"
+          image={data.flow_4.childImageSharp.gatsbyImageData}
+          alt="flow3"
+          style={{ height: "100%" }}
+        />
+      ),
+      desc: "最後に、今後の課題とココレアゴルフのカリキュラムについてご説明いたします。",
     },
   ]
   return (
@@ -105,7 +118,7 @@ const Flow = ({ data }) => {
         <div className="p-section__title-wrapper">
           <h2 className="p-section__title">体験レッスンの流れ</h2>
         </div>
-        <div className="p-cards p-cards-flow--col3">
+        <div className="p-cards p-cards-flow--col4">
           {flows.map(flow => {
             return (
               <>
@@ -120,7 +133,7 @@ const Flow = ({ data }) => {
                     </div>
                     <p className="c-card-flow__text">{flow.desc}</p>
                   </div>
-                  {flow.step === "03" ? "" : arrow}
+                  {flow.step === "04" ? "" : arrow}
                 </div>
               </>
             )

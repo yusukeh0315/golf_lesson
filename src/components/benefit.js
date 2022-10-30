@@ -43,7 +43,7 @@ const Benefit = ({ data }) => {
 
   const benefits = [
     {
-      jaName: "訴求ポイント1",
+      jaName: "駅チカで24時間営業！",
       svg: (
         <GatsbyImage
           className="c-card-benefit__image"
@@ -52,10 +52,10 @@ const Benefit = ({ data }) => {
           style={{ height: "100%" }}
         />
       ),
-      desc: "訴求ポイント1の説明と写真",
+      desc: "東京メトロ新橋駅1番出口から徒歩1分！銀座中央通りに面しており仕事帰りや、ちょっと空いた時間にいつでも練習ができ通いやすい。もちろんレンタル道具はそろっているので手ぶらでOK！！",
     },
     {
-      jaName: "訴求ポイント2",
+      jaName: "全打席最新のシュミレーター完備で打ち放題！",
       svg: (
         <GatsbyImage
           className="c-card-benefit__image"
@@ -64,10 +64,10 @@ const Benefit = ({ data }) => {
           style={{ height: "100%" }}
         />
       ),
-      desc: "訴求ポイント2の説明と写真",
+      desc: "超高性能カメラ内臓だからスイングからインパクトの瞬間まで丸見えに、",
     },
     {
-      jaName: "訴求ポイント3",
+      jaName: "最大2名の超少人数制だから楽しく短期間でメキメキ上達！",
       svg: (
         <GatsbyImage
           className="c-card-benefit__image"

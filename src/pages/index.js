@@ -112,6 +112,11 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH)
       }
     }
+    flow_4: file(relativePath: { eq: "flow_4.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
     allMicrocmsCustomer(sort: { fields: customer_id, order: ASC }) {
       edges {
         node {
