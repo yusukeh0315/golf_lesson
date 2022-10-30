@@ -9,14 +9,51 @@ const PriceTable = () => {
           <div className="p-section__title-wrapper">
             <h2 className="p-section__title">
               <HeadingIcon type="tree" />
-              レッスン料金
+              料金
             </h2>
           </div>
-          {/* <div className="p-body__wrapper">
-            <p className="p-body__text">
-              初めての方は体験レッスンを受けていただき、適切なプランをご提案することも可能ですのでお気軽にお申し込みください。
-            </p>
-          </div> */}
+
+          <div className="p-section__title-wrapper">
+            <h3 className="p-section__title-h3 p-section__title-h3--single-row-title">
+              入会金
+            </h3>
+          </div>
+
+          <div className="p-price-table__wrapper">
+            <table className="p-price-table__table">
+              <tbody className="p-price-table__tbody">
+                <tr className="p-price-table__tr">
+                  <td className="p-price-table__td p-price-table__td--single-row-th p-price-table__td--mobile-th">
+                    入会金（税込）
+                  </td>
+                  <td className="p-price-table__td p-price-table__td--single-row-td p-price-table__td--mobile-price">
+                    22,000円
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="p-section__title-wrapper">
+            <h3 className="p-section__title-h3 p-section__title-h3--single-row-title">
+              システム利用料
+            </h3>
+          </div>
+
+          <div className="p-price-table__wrapper">
+            <table className="p-price-table__table">
+              <tbody className="p-price-table__tbody">
+                <tr className="p-price-table__tr">
+                  <td className="p-price-table__td p-price-table__td--single-row-th p-price-table__td--mobile-th">
+                    システム利用料（税込）
+                  </td>
+                  <td className="p-price-table__td p-price-table__td--single-row-td p-price-table__td--mobile-price">
+                    6,600円
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
           <div className="p-section__title-wrapper">
             <h3 className="p-section__title-h3 p-section__title-h3--single-row-title">
@@ -33,81 +70,6 @@ const PriceTable = () => {
                   </td>
                   <td className="p-price-table__td p-price-table__td--single-row-td p-price-table__td--mobile-price">
                     2,200円
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="p-section__title-wrapper">
-            <h3 className="p-section__title-h3 p-section__title-h3--single-row-title">
-              入会金
-            </h3>
-          </div>
-
-          <div className="p-price-table__wrapper">
-            <table className="p-price-table__table">
-              <tbody className="p-price-table__tbody">
-                <tr className="p-price-table__tr">
-                  <td className="p-price-table__td p-price-table__td--single-row-th p-price-table__td--mobile-th">
-                    レッスン会員、レンジ会員の入会費（税込）
-                  </td>
-                  <td className="p-price-table__td p-price-table__td--single-row-td p-price-table__td--mobile-price">
-                    33,000円
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="p-section__title-wrapper">
-            <h3 className="p-section__title-h3">
-              レッスン会員 ～レッスンも受けたい！練習もしたい！という方～
-            </h3>
-            <p className="p-body__text-h3">
-              セミパーソナル25分のレッスン月4回+レンジ使い放題のプランです。
-            </p>
-          </div>
-
-          <div className="p-price-table__wrapper">
-            <table className="p-price-table__table">
-              <thead className="p-price-table__thead">
-                <tr className="p-price-table__tr">
-                  <th className="p-price-table__th">会員区分</th>
-                  <th className="p-price-table__th">利用可能時間</th>
-                  <th className="p-price-table__th">月会費（税込）</th>
-                  <th className="p-price-table__th">
-                    50分／1回 打席料（税込）
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="p-price-table__tbody">
-                <tr className="p-price-table__tr">
-                  <td className="p-price-table__td p-price-table__td--mobile-th">
-                    全日レッスン会員
-                  </td>
-                  <td className="p-price-table__td p-price-table__td--mobile-time">
-                    全日
-                  </td>
-                  <td className="p-price-table__td p-price-table__td--mobile-price-month">
-                    25,300円
-                  </td>
-                  <td className="p-price-table__td p-price-table__td--mobile-desc">
-                    550円
-                  </td>
-                </tr>
-                <tr className="p-price-table__tr">
-                  <td className="p-price-table__td p-price-table__td--mobile-th">
-                    デイレッスン会員
-                  </td>
-                  <td className="p-price-table__td p-price-table__td--mobile-time">
-                    平日10時～17時
-                  </td>
-                  <td className="p-price-table__td p-price-table__td--mobile-price-month">
-                    19,800円
-                  </td>
-                  <td className="p-price-table__td p-price-table__td--mobile-desc">
-                    550円
                   </td>
                 </tr>
               </tbody>
@@ -135,13 +97,13 @@ const PriceTable = () => {
               <tbody className="p-price-table__tbody">
                 <tr className="p-price-table__tr">
                   <td className="p-price-table__td p-price-table__td--mobile-th">
-                    全日レンジ会員
+                    全日会員
                   </td>
                   <td className="p-price-table__td p-price-table__td--mobile-time">
                     全日
                   </td>
                   <td className="p-price-table__td p-price-table__td--mobile-price-month">
-                    17,600円
+                    15,400円
                   </td>
                   <td className="p-price-table__td p-price-table__td--mobile-desc">
                     550円
@@ -149,7 +111,7 @@ const PriceTable = () => {
                 </tr>
                 <tr className="p-price-table__tr">
                   <td className="p-price-table__td p-price-table__td--mobile-th">
-                    デイレンジ会員
+                    デイ会員
                   </td>
                   <td className="p-price-table__td p-price-table__td--mobile-time">
                     平日10時～17時
@@ -166,8 +128,75 @@ const PriceTable = () => {
           </div>
 
           <div className="p-section__title-wrapper">
+            <h3 className="p-section__title-h3">
+              スクール会員
+              ～自分のペースでじっくりと練習しながらレッスンも受けたい方～
+            </h3>
+            <p className="p-body__text-h3">
+              お客様最大で2名様にコーチ1名の超少人数グループレッスンです。
+            </p>
+          </div>
+
+          <div className="p-price-table__wrapper">
+            <table className="p-price-table__table">
+              <thead className="p-price-table__thead">
+                <tr className="p-price-table__tr">
+                  <th className="p-price-table__th">会員区分</th>
+                  <th className="p-price-table__th">利用可能時間</th>
+                  <th className="p-price-table__th">月会費</th>
+                  <th className="p-price-table__th">スクール会費</th>
+                  <th className="p-price-table__th">50分／1回 打席料</th>
+                  <th className="p-price-table__th">合計（税込）</th>
+                </tr>
+              </thead>
+              <tbody className="p-price-table__tbody">
+                <tr className="p-price-table__tr">
+                  <td className="p-price-table__td p-price-table__td--mobile-th">
+                    全日会員
+                  </td>
+                  <td className="p-price-table__td p-price-table__td--mobile-time">
+                    全日
+                  </td>
+                  <td className="p-price-table__td p-price-table__td--mobile-price-month">
+                    15,400円
+                  </td>
+                  <td className="p-price-table__td p-price-table__td--mobile-price-school">
+                    11,100円
+                  </td>
+                  <td className="p-price-table__td p-price-table__td--mobile-desc">
+                    0円
+                  </td>
+                  <td className="p-price-table__td p-price-table__td--mobile-total">
+                    26,400円
+                  </td>
+                </tr>
+                <tr className="p-price-table__tr">
+                  <td className="p-price-table__td p-price-table__td--mobile-th">
+                    デイ会員
+                  </td>
+                  <td className="p-price-table__td p-price-table__td--mobile-time">
+                    平日10時～17時
+                  </td>
+                  <td className="p-price-table__td p-price-table__td--mobile-price-month">
+                    12,100円
+                  </td>
+                  <td className="p-price-table__td p-price-table__td--mobile-price-month">
+                    11,100円
+                  </td>
+                  <td className="p-price-table__td p-price-table__td--mobile-desc">
+                    0円
+                  </td>
+                  <td className="p-price-table__td p-price-table__td--mobile-desc">
+                    23,100円
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="p-section__title-wrapper">
             <h3 className="p-section__title-h3 p-section__title-h3--single-row-title">
-              追加レッスンチケット
+              レッスンチケット
             </h3>
           </div>
           <div className="p-price-table__wrapper">
@@ -175,10 +204,10 @@ const PriceTable = () => {
               <tbody className="p-price-table__tbody">
                 <tr className="p-price-table__tr">
                   <td className="p-price-table__td p-price-table__td--single-row-th p-price-table__td--mobile-th">
-                    25分追加レッスンチケット（税込）
+                    レッスンチケット（税込）
                   </td>
                   <td className="p-price-table__td p-price-table__td--single-row-td p-price-table__td--mobile-price">
-                    3,300円
+                    4,400円
                   </td>
                 </tr>
               </tbody>
@@ -206,10 +235,10 @@ const PriceTable = () => {
               <tbody className="p-price-table__tbody">
                 <tr className="p-price-table__tr">
                   <td className="p-price-table__td p-price-table__td--single-row-th p-price-table__td--mobile-th">
-                    ロッカー使用料金月額（税込）
+                    個人レンタルロッカー利用料月額（税込）
                   </td>
                   <td className="p-price-table__td p-price-table__td--single-row-td p-price-table__td--mobile-price">
-                    3,300円
+                    5,500円
                   </td>
                 </tr>
               </tbody>

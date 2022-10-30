@@ -78,6 +78,7 @@
       background-color: global.$color-light-blue;
       color: global.$color-white;
       font-size: global.rem(24);
+      margin-top: 15px;
       margin-bottom: 15px;
       margin-right: 10px;
       margin-left: 10px;
@@ -85,6 +86,8 @@
 
     &__td--mobile-price,
     &__td--mobile-price-month,
+    &__td--mobile-price-school,
+    &__td--mobile-total,
     &__td--mobile-time,
     &__td--mobile-desc {
       padding: 10px 10%;
@@ -107,12 +110,20 @@
     }
 
     &__td--mobile-desc {
-      margin-bottom: 50px;
       &:before {
         content: "50分／1回 打席料（税込）: ";
       }
     }
-
+    &__td--mobile-price-school {
+      &:before {
+        content: "スクール会費（税込）: ";
+      }
+    }
+    &__td--mobile-total {
+      &:before {
+        content: "合計（税込）: ";
+      }
+    }
     &__td {
       display: block;
     }

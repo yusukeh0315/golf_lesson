@@ -206,14 +206,26 @@ const FacilityDesc = ({ data }) => {
           </div>
 
           <div className="p-facility-content__wrapper">
-            <figure className="p-facility-content__image-wrapper">
+            {/* <figure className="p-facility-content__image-wrapper">
               <GatsbyImage
                 className="p-facility-content__image"
                 image={data.entrance_image.childImageSharp.gatsbyImageData}
                 alt=""
                 style={{ height: "100%" }}
               />
-            </figure>
+            </figure> */}
+            <div className="p-facility-content__image-wrapper">
+              <iframe
+                className="p-facility-content__image"
+                src="https://www.google.com/maps/embed?pb=!4v1667172837405!6m8!1m7!1sAClHffEA5sieAiww_Pyvsw!2m2!1d35.66675916272636!2d139.761103341172!3f356.1036962926286!4f-1.5088340607841957!5f0.7820865974627469"
+                width="600"
+                height="450"
+                // style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
             <div className="u-margin-center"></div>
             <div className="p-facility-content__map">
               <EmbedMap>
