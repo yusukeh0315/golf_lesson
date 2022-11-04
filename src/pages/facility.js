@@ -62,6 +62,41 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH)
       }
     }
+    route_1: file(relativePath: { eq: "route_1.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    route_2: file(relativePath: { eq: "route_2.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    route_3: file(relativePath: { eq: "route_3.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    route_4: file(relativePath: { eq: "route_4.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    route_5: file(relativePath: { eq: "route_5.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    route_6: file(relativePath: { eq: "route_6.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    route_7: file(relativePath: { eq: "route_7.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
   }
 `
 
