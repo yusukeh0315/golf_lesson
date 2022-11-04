@@ -1,4 +1,4 @@
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import React from "react"
 
 import Address from "./address"
@@ -197,7 +197,7 @@ const FacilityDesc = ({ data }) => {
               JR新橋駅銀座口、都営浅草線新橋駅1C出口から徒歩3分、東京メトロ新橋駅1番出口から徒歩1分の距離。銀座中央通り沿い角にある宮腰屋珈琲さんのお隣の近鉄銀座中央通りビルⅡ地下一階に店舗がございます。
               <br />
               <br />
-              銀座4丁目交差点方面からは、中央通りを新橋方面へ、高速高架下のドン・キホーテさんを越えて50メートル先にココレアゴルフの看板がございます。角にある宮腰屋珈琲さんのお隣の近鉄銀座中央通りビルⅡ地下一階に店舗がございます。
+              銀座4丁目交差点方面からは、銀座中央通りを新橋方面へ、首都高速高架下の肉のハナマサ、とドン・キホーテさんを越えて50メートル先にココレアゴルフの看板がございます。
             </p>
           </div>
 
@@ -206,27 +206,6 @@ const FacilityDesc = ({ data }) => {
           </div>
 
           <div className="p-facility-content__wrapper">
-            {/* <figure className="p-facility-content__image-wrapper">
-              <GatsbyImage
-                className="p-facility-content__image"
-                image={data.entrance_image.childImageSharp.gatsbyImageData}
-                alt=""
-                style={{ height: "100%" }}
-              />
-            </figure> */}
-            <div className="p-facility-content__image-wrapper">
-              <iframe
-                className="p-facility-content__image"
-                src="https://www.google.com/maps/embed?pb=!4v1667172837405!6m8!1m7!1sAClHffEA5sieAiww_Pyvsw!2m2!1d35.66675916272636!2d139.761103341172!3f356.1036962926286!4f-1.5088340607841957!5f0.7820865974627469"
-                width="600"
-                height="450"
-                // style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-            <div className="u-margin-center"></div>
             <div className="p-facility-content__map">
               <EmbedMap>
                 <iframe
@@ -240,6 +219,141 @@ const FacilityDesc = ({ data }) => {
                   referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
               </EmbedMap>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="l-subsection">
+        <div className="l-subsection__inner">
+          <div className="p-section__title-wrapper">
+            <h2 className="p-section__title">
+              <HeadingIcon type="turtle" />
+              ルート案内
+            </h2>
+          </div>
+          <div className="p-route">
+            <div className="p-route__content">
+              <div className="p-route__image-wrapper">
+                <figure>
+                  <StaticImage
+                    className="p-route__image"
+                    src="../images/route1.jpg"
+                    alt="route1"
+                    style={{ height: "100%" }}
+                    loading="eager"
+                    backgroundColor="transparent"
+                    quality={10}
+                    placeholder="BLURRED"
+                  />
+                </figure>
+                <figure>
+                  <StaticImage
+                    className="p-route__image"
+                    src="../images/route2.jpg"
+                    alt="route2"
+                    style={{ height: "100%" }}
+                    loading="eager"
+                    backgroundColor="transparent"
+                    quality={10}
+                    placeholder="BLURRED"
+                  />
+                </figure>
+              </div>
+              <div className="u-margin-center"></div>
+              <div className="p-route__desc-wrapper">
+                <p className="p-route__desc">最寄り駅です。</p>
+              </div>
+            </div>
+
+            <div className="p-route__content">
+              <div className="p-route__image-wrapper">
+                <figure>
+                  <StaticImage
+                    className="p-route__image"
+                    src="../images/route3.jpg"
+                    alt="route3"
+                    style={{ height: "100%" }}
+                    loading="eager"
+                    backgroundColor="transparent"
+                    quality={10}
+                    placeholder="BLURRED"
+                  />
+                </figure>
+                <figure>
+                  <StaticImage
+                    className="p-route__image"
+                    src="../images/route4.jpg"
+                    alt="route4"
+                    style={{ height: "100%" }}
+                    loading="eager"
+                    backgroundColor="transparent"
+                    quality={10}
+                    placeholder="BLURRED"
+                  />
+                </figure>
+              </div>
+              <div className="u-margin-center"></div>
+              <div className="p-route__desc-wrapper">
+                <p className="p-route__desc">説明なし。</p>
+              </div>
+            </div>
+
+            <div className="p-route__content">
+              <div className="p-route__image-wrapper">
+                <figure>
+                  <StaticImage
+                    className="p-route__image"
+                    src="../images/route5.jpg"
+                    alt="route5"
+                    style={{ height: "100%" }}
+                    loading="eager"
+                    backgroundColor="transparent"
+                    quality={10}
+                    placeholder="BLURRED"
+                  />
+                </figure>
+              </div>
+              <div className="u-margin-center"></div>
+              <div className="p-route__desc-wrapper">
+                <p className="p-route__desc">
+                  歩いて銀座中央通りへの画像です。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-route__content">
+            <div className="p-route__image-wrapper">
+              <figure>
+                <StaticImage
+                  className="p-route__image"
+                  src="../images/route6.jpg"
+                  alt="route6"
+                  style={{ height: "100%" }}
+                  loading="eager"
+                  backgroundColor="transparent"
+                  quality={10}
+                  placeholder="BLURRED"
+                />
+              </figure>
+              <figure>
+                <StaticImage
+                  className="p-route__image"
+                  src="../images/route7.jpg"
+                  alt="route7"
+                  style={{ height: "100%" }}
+                  loading="eager"
+                  backgroundColor="transparent"
+                  quality={10}
+                  placeholder="BLURRED"
+                />
+              </figure>
+            </div>
+            <div className="u-margin-center"></div>
+            <div className="p-route__desc-wrapper">
+              <p className="p-route__desc">
+                角に宮越屋コーヒーの画像です。ビルの裏手茶色の入口の画像です。
+              </p>
             </div>
           </div>
         </div>

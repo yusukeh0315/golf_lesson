@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import HeadingIcon from "./heading_icon"
 
@@ -161,7 +162,7 @@ const PriceTable = () => {
                     15,400円
                   </td>
                   <td className="p-price-table__td p-price-table__td--mobile-price-school">
-                    11,100円
+                    11,000円
                   </td>
                   <td className="p-price-table__td p-price-table__td--mobile-desc">
                     0円
@@ -181,7 +182,7 @@ const PriceTable = () => {
                     12,100円
                   </td>
                   <td className="p-price-table__td p-price-table__td--mobile-price-month">
-                    11,100円
+                    11,000円
                   </td>
                   <td className="p-price-table__td p-price-table__td--mobile-desc">
                     0円
@@ -192,6 +193,10 @@ const PriceTable = () => {
                 </tr>
               </tbody>
             </table>
+            <p className="p-body__text">
+              ※スクール以外でのレンジ利用は別途打席料として550円（税込）／回頂戴いたします。
+            </p>
+            <p></p>
           </div>
 
           <div className="p-section__title-wrapper">
@@ -267,19 +272,9 @@ const PriceTable = () => {
               </li>
             </ul>
           </div>
-          {/* <div className="p-body__wrapper">
-            <p className="p-body__text">
-              ご自分のクラブやシューズの持ち込みはもちろん可能です。お持ちでない方は、レンタルが可能ですので、レッスン前にお申し出ください。
-            </p>
-            <ul className="p-body__list">
-              <li className="p-body__item">ゴルフクラブ</li>
-              <li className="p-body__item">シューズ</li>
-              <li className="p-body__item">グローブ</li>
-            </ul>
-          </div> */}
         </div>
       </section>
-      {/* <section className="l-subsection">
+      <section className="l-subsection">
         <div className="l-subsection__inner">
           <div className="p-section__title-wrapper">
             <h2 className="p-section__title">
@@ -289,7 +284,7 @@ const PriceTable = () => {
           </div>
           <div className="p-body__wrapper">
             <p className="p-body__text">
-              <Link to={`#`}>
+              <Link to={`https://cocolea.riber.jp/`}>
                 <button className="c-schedule_button">
                   インストラクター予定表はこちら
                 </button>
@@ -297,7 +292,7 @@ const PriceTable = () => {
             </p>
           </div>
         </div>
-      </section> */}
+      </section>
     </>
   )
 }

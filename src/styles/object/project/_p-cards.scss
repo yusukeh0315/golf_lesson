@@ -25,7 +25,7 @@
 
 .p-cards-flow--col4 {
   $col_num: 4;
-  $margin-x: 90px;
+  $margin-x: 40px;
   $margin-y: 70px;
   height: auto;
   @include global.cards($col_num, $margin-x, $margin-y);

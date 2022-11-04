@@ -8,7 +8,6 @@ import Flow from "../components/flow"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import TopBgImg from "../components/topbgimg"
-import TopMessage from "../components/topmessage"
 
 import { graphql } from "gatsby"
 
@@ -17,7 +16,7 @@ const Home = ({ data }) => {
     <Layout>
       <Seo />
       <FirstView data={data} />
-      <TopMessage />
+      {/* <TopMessage /> */}
       <section className="l-campaign">
         <Campaign data={data} />
       </section>
@@ -92,7 +91,7 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH)
       }
     }
-    benefit_3: file(relativePath: { eq: "benefit_3.jpg" }) {
+    benefit_3: file(relativePath: { eq: "benefit_3.png" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }

@@ -3,7 +3,7 @@ import React from "react"
 
 const CampaignButton = () => {
   return (
-    <Link to={`#`}>
+    <Link to={`https://cocolea.riber.jp/`}>
       <button className="c-campaign_button">こちらをクリック！</button>
     </Link>
   )

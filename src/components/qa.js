@@ -89,9 +89,9 @@ const QuestionAndAnswer = () => {
         "ご入会ののち、パソコンのブラウザやスマートフォンのアプリからご希望のお時間にご予約いただく形となります。ご不明な点がございましたらお気軽にお問い合わせください。",
     },
     {
-      question: "キャンセルしたい時はどうすれば良いのでしょうか？",
+      question: "レッスン当日の受け付けなどのような手続きがありますか？",
       answer:
-        "ご入会ののち、パソコンのブラウザやスマートフォンのアプリからご希望のお時間にご予約いただく形となります。ご不明な点がございましたらお気軽にお問い合わせください。",
+        "当店ではご予約と連動した入退室管理システムを利用しております。ご予約いただいたお時間の30分前にアプリにカギが届きますのでそちらを使って入室ください。",
     },
     {
       question: "キャンセルしたい時はどうすれば良いのでしょうか？",
@@ -170,7 +170,7 @@ const QuestionAndAnswer = () => {
         </div>
 
         <div className="p-section__title-wrapper">
-          <h3 className="p-section__title-h3">レッスンスに関して</h3>
+          <h3 className="p-section__title-h3">レッスンに関して</h3>
         </div>
         <div className="p-qa__wrapper">
           {qaLesson.map(questionAndAnswer => {

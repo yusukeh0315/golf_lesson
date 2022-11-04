@@ -26,7 +26,7 @@
   &__title {
     margin-bottom: 10px;
     color: global.$color-blue;
-    @include global.font-settings(22, 24, 1.5, normal);
+    @include global.font-settings(20, 22, 1.5, normal);
   }
 
   &__icon-wrapper {
@@ -52,7 +52,7 @@
   &__arrow-wrapper {
     position: absolute;
     top: 0;
-    right: -57px;
+    right: -28px;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -61,7 +61,7 @@ const FirstView = ({ data }) => {
           <div className="p-fv__content-inner">
             <div className="p-fv__title-wrapper">
               <h1 className="p-fv__title">
-                ここから始まる
+                ココから始まる
                 <br />
                 ココだけの
                 <br />

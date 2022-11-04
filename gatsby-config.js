@@ -11,7 +11,7 @@ require("dotenv").config({
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `CocoLea GOLF Studio`,
+    title: `CocoLea Golf Studio`,
     description: `ココレアゴルフスタジオ`,
     lang: `ja`,
     siteUrl: `https://cocolea-golf.com/`,
