@@ -193,7 +193,7 @@ const PriceTable = () => {
                   <td className="p-price-table__td p-price-table__td--mobile-price-month">
                     12,100円
                   </td>
-                  <td className="p-price-table__td p-price-table__td--mobile-price-month">
+                  <td className="p-price-table__td p-price-table__td--mobile-price-school">
                     11,000円
                   </td>
                   <td className="p-price-table__td p-price-table__td--mobile-desc">
