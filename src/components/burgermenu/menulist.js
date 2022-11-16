@@ -31,7 +31,8 @@ const MenuList = ({ close }) => {
           aria-hidden="true"
           onClick={closeMenu}
         >
-          <Link to={`/facility/`}>施設紹介</Link>
+          <Link to={`/facility/`}>アクセス</Link>
+          {/* <Link to={`/facility/`}>施設紹介</Link> */}
         </li>
         <li // eslint-disable-line jsx-a11y/no-static-element-interactions
           aria-hidden="true"

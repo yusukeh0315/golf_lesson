@@ -86,6 +86,9 @@
       padding: 10px 0px 10px 0px;
     }
   }
+  &__map {
+    height: 450px;
+  }
 }
 
 @include global.media(sp) {

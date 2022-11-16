@@ -8,13 +8,22 @@ import { graphql } from "gatsby"
 
 const Facility = ({ data, location }) => {
   return (
+    // <Layout page="facility">
+    //   <Seo
+    //     pagetitle="施設紹介"
+    //     pagedesc="施設紹介"
+    //     pagepath={location.pathname}
+    //   />
+    //   <SubView data={data} title="施設紹介" />
+    //   <FacilityDesc data={data} />
+    // </Layout>
     <Layout page="facility">
       <Seo
-        pagetitle="施設紹介"
-        pagedesc="施設紹介"
+        pagetitle="アクセス"
+        pagedesc="アクセス"
         pagepath={location.pathname}
       />
-      <SubView data={data} title="施設紹介" />
+      <SubView data={data} title="アクセス" />
       <FacilityDesc data={data} />
     </Layout>
   )

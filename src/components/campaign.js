@@ -14,7 +14,9 @@ const Campaign = ({ data }) => {
                   <span className="c-label-font">
                     先着
                     <br />
-                    <span className="c-label-font c-label-font--large">55</span>
+                    <span className="c-label-font c-label-font--large">
+                      55(ココ)
+                    </span>
                     名様
                     <br />
                     限定
@@ -31,6 +33,9 @@ const Campaign = ({ data }) => {
                   <span className="p-campaign__price p-campaign__price--large">
                     5,500円!
                   </span>
+                </span>
+                <span className="p-campaign__normal-price">
+                  ※入会金とは別にシステム登録料として別途6,600円頂戴いたします。
                 </span>
                 <CampaignButton />
               </div>

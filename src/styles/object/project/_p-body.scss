@@ -6,21 +6,47 @@
   }
 
   &__text {
-    padding: global.response-length(10, 15) global.response-length(10, 40);
+    // padding: global.response-length(10, 15) global.response-length(10, 40);
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 90%;
     color: global.$color-blue;
-    @include global.font-settings(20, 24, 1.5, normal);
+    @include global.font-settings(18, 20, 1.5, normal);
+    @include global.media(sp) {
+      width: auto;
+      margin: 0 10px;
+      margin-bottom: 10px;
+    }
   }
 
   &__text-h3 {
-    padding: 0 global.response-length(12, 64);
+    // padding: 0 global.response-length(12, 64);
+    margin: 0 auto;
+    width: 90%;
     color: global.$color-black;
-    @include global.font-settings(20, 24, 1.5, normal);
+    @include global.font-settings(18, 20, 1.5, normal);
+    @include global.media(sp) {
+      width: auto;
+      margin: 0 10px;
+    }
+    &--pc {
+      @include global.media(sp) {
+        display: none;
+      }
+    }
+    &--sp {
+      display: none;
+      @include global.media(sp) {
+        display: inline-block;
+        width: auto;
+      }
+    }
   }
 
   &__list {
-    padding: global.response-length(10, 15) global.response-length(48, 64);
+    padding: global.response-length(10, 15) global.response-length(35, 64);
     color: global.$color-blue;
     list-style-type: square;
-    @include global.font-settings(24, 28, 1.5, normal);
+    @include global.font-settings(20, 24, 1.5, normal);
   }
 }

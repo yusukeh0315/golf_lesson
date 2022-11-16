@@ -6,7 +6,7 @@
     width: 90%;
     margin: 0 auto;
     margin-bottom: 40px;
-    font-size: global.rem(24);
+    font-size: global.rem(22);
   }
 
   &__tbody {
@@ -65,6 +65,7 @@
     }
 
     &__td {
+      font-size: global.rem(18);
       &--single-row-th {
         width: auto;
       }
@@ -77,7 +78,7 @@
     &__td--mobile-th {
       background-color: global.$color-light-blue;
       color: global.$color-white;
-      font-size: global.rem(24);
+      font-size: global.rem(22);
       margin-top: 15px;
       margin-bottom: 15px;
       margin-right: 10px;
@@ -90,38 +91,62 @@
     &__td--mobile-total,
     &__td--mobile-time,
     &__td--mobile-desc {
-      padding: 10px 10%;
+      padding: 10px 5%;
       text-align: start;
     }
     &__td--mobile-price {
+      position: relative;
+      text-align: end;
       &:before {
         content: "料金： ";
+        position: absolute;
+        left: 5%;
       }
     }
     &__td--mobile-price-month {
+      position: relative;
+      text-align: end;
       &:before {
         content: "月会費（税込）： ";
+        position: absolute;
+        left: 5%;
       }
     }
     &__td--mobile-time {
+      position: relative;
+      text-align: end;
       &:before {
         content: "利用可能時間： ";
+        position: absolute;
+        left: 5%;
       }
     }
 
     &__td--mobile-desc {
+      position: relative;
+      text-align: end;
       &:before {
         content: "50分／1回 打席料（税込）: ";
+        position: absolute;
+        left: 5%;
       }
     }
     &__td--mobile-price-school {
+      position: relative;
+      text-align: end;
       &:before {
         content: "スクール会費（税込）: ";
+        position: absolute;
+        left: 5%;
       }
     }
     &__td--mobile-total {
+      position: relative;
+      text-align: end;
       &:before {
         content: "合計（税込）: ";
+        position: absolute;
+        left: 5%;
       }
     }
     &__td {

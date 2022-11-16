@@ -5,7 +5,7 @@ const Customer = ({ data }) => {
     <section className="l-customer">
       <div className="l-customer__inner">
         <div className="p-section__title-wrapper">
-          <h2 className="p-section__title">ゴルフ楽しい！</h2>
+          <h2 className="p-section__title">お客様の声</h2>
         </div>
         <div className="p-cards p-cards--col2">
           {data.allMicrocmsCustomer.edges.map(({ node }) => {

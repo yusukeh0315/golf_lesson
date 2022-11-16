@@ -70,7 +70,7 @@ const Flow = ({ data }) => {
           style={{ height: "100%" }}
         />
       ),
-      desc: "ココレアゴルフではWEB予約システムを採用しております。WEBからお申込みをお願いいたします。お電話はレッスン等で出ることができない場合がございますのでご了承ください。",
+      desc: "ココレアゴルフではWEB予約システムを採用しております。WEBからお申込みをお願いいたします。\n\nお電話はレッスン等で出ることができない場合がございますのでご了承ください。",
     },
     {
       step: "02",
@@ -83,7 +83,7 @@ const Flow = ({ data }) => {
           style={{ height: "100%" }}
         />
       ),
-      desc: "当日はお時間10分ほど前にお越しください。ご予約時間の30分前に入退室管理システムから届くカギを使用して入室ください。ゴルフクラブ、シューズ、はご用意がございますので、手ぶらで結構です。感染症対策の観点でグローブはご持参いただけますと安心です。更衣室がございますので、動きやすい格好をご準備ください。",
+      desc: "当日はお時間10分ほど前にお越しください。ご予約時間の30分前に入退室管理システムから届くカギを使用して入室ください。\n\nゴルフクラブ、シューズ、はご用意がございます。感染症対策の観点でグローブはご持参いただけますと安心です。更衣室がございますので、動きやすい格好をご準備ください。",
     },
     {
       step: "03",
@@ -96,7 +96,7 @@ const Flow = ({ data }) => {
           style={{ height: "100%" }}
         />
       ),
-      desc: "先ずはカウンセリングでお悩みや目標をお聞かせください。その後レッスン開始です。現在の問題点を浮き彫りにし改善方法や練習方法をお伝えします。ココレアゴルフでどのようにレッスンが行われているのか体験してください。",
+      desc: "先ずはカウンセリングでお悩みや目標をお聞かせください。\n\nその後レッスン開始です。現在の問題点を浮き彫りにし改善方法や練習方法をお伝えします。\n\nココレアゴルフでどのようにレッスンが行われているのか体験してください。",
     },
     {
       step: "04",
@@ -109,7 +109,7 @@ const Flow = ({ data }) => {
           style={{ height: "100%" }}
         />
       ),
-      desc: "最後に、今後の課題とココレアゴルフのカリキュラムについてご説明いたします。",
+      desc: "最後に、今後の課題とココレアゴルフのカリキュラム、システムなどについてご説明いたします。",
     },
   ]
   return (
@@ -120,6 +120,13 @@ const Flow = ({ data }) => {
         </div>
         <div className="p-cards p-cards-flow--col4">
           {flows.map(flow => {
+            const texts = flow.desc.split(/(\n)/).map((item, index) => {
+              return (
+                <React.Fragment key={index}>
+                  {item.match(/\n/) ? <br /> : item}
+                </React.Fragment>
+              )
+            })
             return (
               <>
                 <div className="p-cards__item c-card-flow">
@@ -131,7 +138,7 @@ const Flow = ({ data }) => {
                       <p className="c-card-flow__step">{flow.step}</p>
                       <h3 className="c-card-flow__title">{flow.name}</h3>
                     </div>
-                    <p className="c-card-flow__text">{flow.desc}</p>
+                    <p className="c-card-flow__text">{texts}</p>
                   </div>
                   {flow.step === "04" ? "" : arrow}
                 </div>

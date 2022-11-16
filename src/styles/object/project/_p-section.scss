@@ -16,6 +16,10 @@
     @include global.font-settings(24, 32, 1.5, 100);
     padding: 0 global.response-length(0, 40);
     padding-top: 40px;
+    @include global.media(sp) {
+      padding-top: 20px;
+      padding-bottom: 5px;
+    }
 
     &--single-row-title {
       @include global.media(sp) {

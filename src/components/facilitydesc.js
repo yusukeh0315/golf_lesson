@@ -4,7 +4,6 @@ import React from "react"
 import Address from "./address"
 import HeadingIcon from "./heading_icon"
 
-import ImageGallery from "react-image-gallery"
 import "../styles/react-image-gallery/css/image-gallery.css"
 import EmbedMap from "./embedmap"
 
@@ -344,7 +343,7 @@ const FacilityDesc = ({ data }) => {
 
   return (
     <>
-      <section className="l-subsection">
+      {/* <section className="l-subsection">
         <div className="l-subsection__inner">
           <div className="p-section__title-wrapper">
             <h2 className="p-section__title">
@@ -373,63 +372,8 @@ const FacilityDesc = ({ data }) => {
             </figure>
           </div>
         </div>
-      </section>
-      パターン１
-      <section className="l-subsection">
-        <div className="l-subsection__inner">
-          <div className="p-section__title-wrapper">
-            <h2 className="p-section__title">
-              <HeadingIcon type="turtle" />
-              アクセス
-            </h2>
-          </div>
-          <div className="p-body__wrapper">
-            <p className="p-body__text">
-              JR新橋駅銀座口、都営浅草線新橋駅1C出口から徒歩3分、東京メトロ新橋駅1番出口から徒歩1分の距離。銀座中央通り沿い角にある宮腰屋珈琲さんのお隣の近鉄銀座中央通りビルⅡ地下一階に店舗がございます。
-              <br />
-              <br />
-              銀座4丁目交差点方面からは、中央通りを新橋方面へ、高速高架下のドン・キホーテさんを越えて50メートル先にココレアゴルフの看板がございます。角にある宮腰屋珈琲さんのお隣の近鉄銀座中央通りビルⅡ地下一階に店舗がございます。
-            </p>
-          </div>
+      </section> */}
 
-          <div className="p-facility-content__address">
-            <Address />
-          </div>
-
-          <div className="p-facility-content__route-wrapper">
-            <figure className="p-facility-content__route-image-wrapper">
-              <ImageGallery
-                items={route_images}
-                showPlayButton={false}
-                useBrowserFullscreen={false}
-                showFullscreenButton={false}
-                showNav={false}
-                autoPlay={false}
-                slideDuration={450}
-                slideInterval={8000}
-                disableThumbnailScroll={false}
-              />
-            </figure>
-            {/* </div> */}
-            <div className="u-margin-center"></div>
-            <div className="p-facility-content__map">
-              <EmbedMap>
-                <iframe
-                  className="p-facility-content__iframe"
-                  title="access-map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.4099898634654!2d139.75879561525846!3d35.6669055801976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188be846c2e09b%3A0x3659467ee42e50ba!2z44CSMTA1LTAwMDQg5p2x5Lqs6YO95riv5Yy65paw5qmL77yR5LiB55uu77yXIOi_kemJhOmKgOW6p-S4reWkrumAmuOCiuODk-ODq0lJ!5e0!3m2!1sja!2sjp!4v1666780800404!5m2!1sja!2sjp"
-                  width="100%"
-                  // height="auto"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </EmbedMap>
-            </div>
-          </div>
-        </div>
-      </section>
-      パターン２
       <section className="l-subsection">
         <div className="l-subsection__inner">
           <div className="p-section__title-wrapper">
@@ -459,7 +403,7 @@ const FacilityDesc = ({ data }) => {
                   title="access-map"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.4099898634654!2d139.75879561525846!3d35.6669055801976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188be846c2e09b%3A0x3659467ee42e50ba!2z44CSMTA1LTAwMDQg5p2x5Lqs6YO95riv5Yy65paw5qmL77yR5LiB55uu77yXIOi_kemJhOmKgOW6p-S4reWkrumAmuOCiuODk-ODq0lJ!5e0!3m2!1sja!2sjp!4v1666780800404!5m2!1sja!2sjp"
                   width="100%"
-                  height="450"
+                  height="450px"
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
@@ -483,7 +427,7 @@ const FacilityDesc = ({ data }) => {
                 <figure>
                   <StaticImage
                     className="p-route__image"
-                    src="../images/route1.jpg"
+                    src="../images/route_1.jpg"
                     alt="route1"
                     style={{ height: "100%" }}
                     loading="eager"
@@ -492,10 +436,21 @@ const FacilityDesc = ({ data }) => {
                     placeholder="BLURRED"
                   />
                 </figure>
+              </div>
+              <div className="u-margin-center"></div>
+              <div className="p-route__desc-wrapper">
+                <p className="p-route__desc">
+                  JR新橋駅銀座口から出てください。
+                </p>
+              </div>
+            </div>
+
+            <div className="p-route__content">
+              <div className="p-route__image-wrapper">
                 <figure>
                   <StaticImage
                     className="p-route__image"
-                    src="../images/route2.jpg"
+                    src="../images/route_2.jpg"
                     alt="route2"
                     style={{ height: "100%" }}
                     loading="eager"
@@ -507,7 +462,7 @@ const FacilityDesc = ({ data }) => {
               </div>
               <div className="u-margin-center"></div>
               <div className="p-route__desc-wrapper">
-                <p className="p-route__desc">最寄り駅です。</p>
+                <p className="p-route__desc">東京メトロ新橋駅の写真です。</p>
               </div>
             </div>
 
@@ -516,7 +471,7 @@ const FacilityDesc = ({ data }) => {
                 <figure>
                   <StaticImage
                     className="p-route__image"
-                    src="../images/route3.jpg"
+                    src="../images/route_3.jpg"
                     alt="route3"
                     style={{ height: "100%" }}
                     loading="eager"
@@ -525,10 +480,21 @@ const FacilityDesc = ({ data }) => {
                     placeholder="BLURRED"
                   />
                 </figure>
+              </div>
+              <div className="u-margin-center"></div>
+              <div className="p-route__desc-wrapper">
+                <p className="p-route__desc">
+                  JR新橋駅を出たところ、外堀通りの画像です。
+                </p>
+              </div>
+            </div>
+
+            <div className="p-route__content">
+              <div className="p-route__image-wrapper">
                 <figure>
                   <StaticImage
                     className="p-route__image"
-                    src="../images/route4.jpg"
+                    src="../images/route_4.jpg"
                     alt="route4"
                     style={{ height: "100%" }}
                     loading="eager"
@@ -540,7 +506,7 @@ const FacilityDesc = ({ data }) => {
               </div>
               <div className="u-margin-center"></div>
               <div className="p-route__desc-wrapper">
-                <p className="p-route__desc">説明なし。</p>
+                <p className="p-route__desc">左手に本間ゴルフが見えます。</p>
               </div>
             </div>
 
@@ -549,7 +515,7 @@ const FacilityDesc = ({ data }) => {
                 <figure>
                   <StaticImage
                     className="p-route__image"
-                    src="../images/route5.jpg"
+                    src="../images/route_5.jpg"
                     alt="route5"
                     style={{ height: "100%" }}
                     loading="eager"
@@ -562,7 +528,7 @@ const FacilityDesc = ({ data }) => {
               <div className="u-margin-center"></div>
               <div className="p-route__desc-wrapper">
                 <p className="p-route__desc">
-                  歩いて銀座中央通りへの画像です。
+                  銀座中央通りまで所要時間JR新橋銀座口から約2分
                 </p>
               </div>
             </div>
@@ -573,7 +539,7 @@ const FacilityDesc = ({ data }) => {
               <figure>
                 <StaticImage
                   className="p-route__image"
-                  src="../images/route6.jpg"
+                  src="../images/route_6.jpg"
                   alt="route6"
                   style={{ height: "100%" }}
                   loading="eager"
@@ -582,10 +548,21 @@ const FacilityDesc = ({ data }) => {
                   placeholder="BLURRED"
                 />
               </figure>
+            </div>
+            <div className="u-margin-center"></div>
+            <div className="p-route__desc-wrapper">
+              <p className="p-route__desc">
+                宮腰屋珈琲側にわたる。（看板が見えます）
+              </p>
+            </div>
+          </div>
+
+          <div className="p-route__content">
+            <div className="p-route__image-wrapper">
               <figure>
                 <StaticImage
                   className="p-route__image"
-                  src="../images/route7.jpg"
+                  src="../images/route_7.jpg"
                   alt="route7"
                   style={{ height: "100%" }}
                   loading="eager"
@@ -598,7 +575,7 @@ const FacilityDesc = ({ data }) => {
             <div className="u-margin-center"></div>
             <div className="p-route__desc-wrapper">
               <p className="p-route__desc">
-                角に宮越屋コーヒーの画像です。ビルの裏手茶色の入口の画像です。
+                そのビルの裏手がスタジオ入り口です。
               </p>
             </div>
           </div>

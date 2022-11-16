@@ -25,7 +25,8 @@
     }
     @include global.media(sp) {
       width: 100%;
-      height: 300px;
+      aspect-ratio: calc(16 / 9);
+      overflow: hidden;
     }
   }
 

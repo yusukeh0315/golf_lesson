@@ -18,6 +18,9 @@ const PriceTable = () => {
             <h3 className="p-section__title-h3 p-section__title-h3--single-row-title">
               入会金
             </h3>
+            <p className="p-body__text-h3  p-body__text-h3--pc">
+              先着55名様5,500円キャンペーン中
+            </p>
           </div>
 
           <div className="p-price-table__wrapper">
@@ -27,6 +30,10 @@ const PriceTable = () => {
                   <td className="p-price-table__td p-price-table__td--single-row-th p-price-table__td--mobile-th">
                     入会金（税込）
                   </td>
+                  <p className="p-body__text-h3 p-body__text-h3--sp">
+                    先着55名様5,500円キャンペーン中
+                  </p>
+
                   <td className="p-price-table__td p-price-table__td--single-row-td p-price-table__td--mobile-price">
                     22,000円
                   </td>
@@ -37,8 +44,11 @@ const PriceTable = () => {
 
           <div className="p-section__title-wrapper">
             <h3 className="p-section__title-h3 p-section__title-h3--single-row-title">
-              システム利用料
+              システム登録料
             </h3>
+            <p className="p-body__text-h3 p-body__text-h3--pc">
+              システムの関係上、入会金とシステム登録料を合算させて頂きますことご了承ください。
+            </p>
           </div>
 
           <div className="p-price-table__wrapper">
@@ -46,8 +56,11 @@ const PriceTable = () => {
               <tbody className="p-price-table__tbody">
                 <tr className="p-price-table__tr">
                   <td className="p-price-table__td p-price-table__td--single-row-th p-price-table__td--mobile-th">
-                    システム利用料（税込）
+                    システム登録料（税込）
                   </td>
+                  <p className="p-body__text-h3 p-body__text-h3--sp">
+                    システムの関係上、入会金とシステム登録料を合算させて頂きますことご了承ください。
+                  </p>
                   <td className="p-price-table__td p-price-table__td--single-row-td p-price-table__td--mobile-price">
                     6,600円
                   </td>
@@ -78,10 +91,10 @@ const PriceTable = () => {
           </div>
 
           <div className="p-section__title-wrapper">
-            <h3 className="p-section__title-h3">
-              レンジ会員 ～自分のペースでじっくりと練習したい方～
-            </h3>
-            <p className="p-body__text-h3">レンジ使い放題のプランです。</p>
+            <h3 className="p-section__title-h3">レンジ会員</h3>
+            <p className="p-body__text-h3">
+              自分のペースでじっくりと練習したい方向けのレンジ使い放題のプランです。
+            </p>
           </div>
           <div className="p-price-table__wrapper">
             <table className="p-price-table__table">
@@ -129,12 +142,11 @@ const PriceTable = () => {
           </div>
 
           <div className="p-section__title-wrapper">
-            <h3 className="p-section__title-h3">
-              スクール会員
-              ～自分のペースでじっくりと練習しながらレッスンも受けたい方～
-            </h3>
+            <h3 className="p-section__title-h3">スクール会員</h3>
             <p className="p-body__text-h3">
-              お客様最大で2名様にコーチ1名の超少人数グループレッスンです。
+              自分のペースでじっくりと練習しながらレッスンも受けたい方向けのプランです。お客様最大で2名様にコーチ1名の超少人数グループレッスンです。月4回レッスンを受けられます。
+              <br />
+              スクール以外でのレンジ利用は別途打席料として550円（税込）／回頂戴いたします。
             </p>
           </div>
 
@@ -187,15 +199,15 @@ const PriceTable = () => {
                   <td className="p-price-table__td p-price-table__td--mobile-desc">
                     0円
                   </td>
-                  <td className="p-price-table__td p-price-table__td--mobile-desc">
+                  <td className="p-price-table__td p-price-table__td--mobile-total">
                     23,100円
                   </td>
                 </tr>
               </tbody>
             </table>
-            <p className="p-body__text">
+            {/* <p className="p-body__text">
               ※スクール以外でのレンジ利用は別途打席料として550円（税込）／回頂戴いたします。
-            </p>
+            </p> */}
             <p></p>
           </div>
 
@@ -217,9 +229,10 @@ const PriceTable = () => {
                 </tr>
               </tbody>
             </table>
-            <div className="p-body__wrapper">
-              <p className="p-body__text">
-                ※マンツーマンレッスンも対応可能ですので、お気軽にご相談・お問い合わせください。
+            <div className="p-section__title-wrapper">
+              <h3 className="p-section__title-h3">その他</h3>
+              <p className="p-body__text-h3">
+                VIPプランもございますので、お気軽にご相談、お問い合わせください。
               </p>
             </div>
           </div>

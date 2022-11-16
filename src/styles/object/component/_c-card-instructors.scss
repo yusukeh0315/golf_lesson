@@ -67,6 +67,7 @@
 @include global.media(sp) {
   .c-card-instructors {
     height: auto;
+    flex-direction: column;
 
     &__nolink {
       height: auto;

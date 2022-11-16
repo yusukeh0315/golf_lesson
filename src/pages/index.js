@@ -91,7 +91,7 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH)
       }
     }
-    benefit_3: file(relativePath: { eq: "benefit_3.png" }) {
+    benefit_3: file(relativePath: { eq: "benefit_3.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }

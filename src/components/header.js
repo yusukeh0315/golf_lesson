@@ -71,7 +71,8 @@ const Header = ({ page }) => {
                   page === "facility" ? "current" : ""
                 }`}
               >
-                施設紹介
+                {/* 施設紹介 */}
+                アクセス
               </Link>
             </li>
             <li className="p-header-nav__item">

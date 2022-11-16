@@ -8,7 +8,8 @@ const SubView = ({ data, title }) => {
     image = data.priceview.childImageSharp.gatsbyImageData
   } else if (title === "インストラクター") {
     image = data.instructorview.childImageSharp.gatsbyImageData
-  } else if (title === "施設紹介") {
+  } else if (title === "アクセス") {
+    // } else if (title === "施設紹介") {
     image = data.facilityview.childImageSharp.gatsbyImageData
   } else if (title === "お問い合わせ") {
     image = data.contactview.childImageSharp.gatsbyImageData

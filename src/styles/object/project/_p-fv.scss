@@ -35,6 +35,7 @@
     -ms-transform: translate(-50%, -50%);
     @include global.media(sp) {
       height: calc(100vh - 60px);
+      top: 35%;
     }
   }
 
@@ -48,7 +49,7 @@
     color: global.$color-white;
     font-family: global.$font-base-en;
     text-shadow: 2px 2px 3px #808080;
-    @include global.font-settings(30, 48, 1.2, 300);
+    @include global.font-settings(28, 48, 1.2, 300);
   }
 
   &__text {
