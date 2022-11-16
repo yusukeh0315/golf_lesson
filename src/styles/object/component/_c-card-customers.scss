@@ -4,8 +4,8 @@
   background-color: global.$color-white;
   display: flex;
   flex-direction: column;
-  height: 280px;
-  padding: global.response-length(16, 32);
+  min-height: 300px;
+  padding: global.response-length(10, 15);
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 
@@ -40,7 +40,7 @@
 
 @include global.media(tb) {
   .c-card-customers {
-    height: 320px;
+    height: auto;
   }
 }
 

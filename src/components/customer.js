@@ -9,6 +9,13 @@ const Customer = ({ data }) => {
         </div>
         <div className="p-cards p-cards--col2">
           {data.allMicrocmsCustomer.edges.map(({ node }) => {
+            const texts = node.content.split(/(\n)/).map((item, index) => {
+              return (
+                <React.Fragment key={index}>
+                  {item.match(/\n/) ? <br /> : item}
+                </React.Fragment>
+              )
+            })
             return (
               <>
                 <div className="p-cards__item">
@@ -24,7 +31,7 @@ const Customer = ({ data }) => {
                       <p className="c-card-customers__attribute">
                         {node.attribute}
                       </p>
-                      <p className="c-card-customers__text">{node.content}</p>
+                      <p className="c-card-customers__text">{texts}</p>
                     </div>
                   </div>
                 </div>
