@@ -92,9 +92,7 @@ module.exports = {
       options: {
         host: "https://cocolea-golf.com/",
         sitemap: "https://cocolea-golf.com/sitemap/sitemap-index.xml",
-        policy: [{ userAgent: "*", disallow: ["/*"] }],
-        // TODO 公開時下記を修正
-        // policy: [{ userAgent: "*", allow: "/", disallow: ["/contact_done/"] }],
+        policy: [{ userAgent: "*", allow: "/", disallow: ["/contact_done/"] }],
       },
     },
     `react-hook-form`,
