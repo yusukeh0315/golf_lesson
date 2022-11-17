@@ -16,7 +16,6 @@
     display: flex;
     width: 100%;
     margin-bottom: 15px;
-    height: 300px;
     @include global.media(sp) {
       flex-direction: column-reverse;
       height: auto;
@@ -24,25 +23,25 @@
     }
   }
   &__image-wrapper {
-    width: 50%;
+    width: calc(50% - 10px);
     display: flex;
+    overflow: hidden;
+    aspect-ratio: calc(16 / 9);
     & figure {
       width: 100%;
-      margin: 5px;
     }
     @include global.media(sp) {
       width: 100%;
       aspect-ratio: calc(16 / 9);
-      overflow: hidden;
     }
   }
 
   &__desc-wrapper {
-    width: 50%;
-    margin: 5px;
+    width: calc(50% - 10px);
     @include global.media(sp) {
       width: 100%;
-      margin-bottom: -20px;
+      margin-top: 15px;
+      margin-bottom: -10px;
     }
   }
 
