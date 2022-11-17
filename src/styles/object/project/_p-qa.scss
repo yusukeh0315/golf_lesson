@@ -14,18 +14,21 @@
     margin-bottom: global.response-length(8, 16);
     word-wrap: break-word;
     @include global.font-settings(20, 24);
+    text-indent: -1em;
+    padding-left: 1em;
   }
 
   &__underline {
-    border-bottom:dotted;
+    border-bottom: dotted;
     border-color: global.$color-lightblue;
     border-width: global.response-length(3, 5);
   }
 
   &__answer {
     color: global.$color-blue;
-    padding-left: global.response-length(16, 32);;
+    padding-left: global.response-length(32, 32);
     word-wrap: break-word;
     @include global.font-settings(18, 20);
+    text-indent: -1em;
   }
 }

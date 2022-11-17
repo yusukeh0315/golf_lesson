@@ -40,6 +40,7 @@
 
 @include global.media(tb) {
   .c-card-customers {
+    min-height: auto;
     height: auto;
   }
 }
