@@ -46,9 +46,6 @@ const PriceTable = () => {
             <h3 className="p-section__title-h3 p-section__title-h3--single-row-title">
               システム登録料
             </h3>
-            <p className="p-body__text-h3 p-body__text-h3--pc">
-              システムの関係上、入会金とシステム登録料を合算させて頂きますことご了承ください。
-            </p>
           </div>
 
           <div className="p-price-table__wrapper">
@@ -67,12 +64,20 @@ const PriceTable = () => {
                 </tr>
               </tbody>
             </table>
+            <div className="p-price-table__annotation-wrapper">
+              <span className="p-price-table__annotation">
+                ※システムの関係上、入会金とシステム登録料を合算させて頂きますことご了承ください。
+              </span>
+            </div>
           </div>
 
           <div className="p-section__title-wrapper">
             <h3 className="p-section__title-h3 p-section__title-h3--single-row-title">
               体験レッスン
             </h3>
+            <p className="p-body__text-h3 p-body__text-h3--pc">
+              体験レッスンの流れはトップページをご覧ください。お気軽にお申し込みください。
+            </p>
           </div>
 
           <div className="p-price-table__wrapper">
@@ -145,8 +150,6 @@ const PriceTable = () => {
             <h3 className="p-section__title-h3">スクール会員</h3>
             <p className="p-body__text-h3">
               自分のペースでじっくりと練習しながらレッスンも受けたい方向けのプランです。お客様最大で2名様にコーチ1名の超少人数グループレッスンです。月4回レッスンを受けられます。
-              <br />
-              スクール以外でのレンジ利用は別途打席料として550円（税込）／回頂戴いたします。
             </p>
           </div>
 
@@ -205,13 +208,14 @@ const PriceTable = () => {
                 </tr>
               </tbody>
             </table>
-            {/* <p className="p-body__text">
-              ※スクール以外でのレンジ利用は別途打席料として550円（税込）／回頂戴いたします。
-            </p> */}
-            <p></p>
+            <div className="p-price-table__annotation-wrapper">
+              <span className="p-price-table__annotation">
+                ※スクール以外でのレンジ利用は別途打席料として550円（税込）／回頂戴いたします。
+              </span>
+            </div>
           </div>
 
-          <div className="p-section__title-wrapper">
+          {/* <div className="p-section__title-wrapper">
             <h3 className="p-section__title-h3 p-section__title-h3--single-row-title">
               レッスンチケット
             </h3>
@@ -229,12 +233,12 @@ const PriceTable = () => {
                 </tr>
               </tbody>
             </table>
-            <div className="p-section__title-wrapper">
-              <h3 className="p-section__title-h3">その他</h3>
-              <p className="p-body__text-h3">
-                VIPプランもございますので、お気軽にご相談、お問い合わせください。
-              </p>
-            </div>
+          </div> */}
+          <div className="p-section__title-wrapper">
+            <h3 className="p-section__title-h3">その他</h3>
+            <p className="p-body__text-h3">
+              VIPプランもございますので、お気軽にご相談、お問い合わせください。
+            </p>
           </div>
         </div>
       </section>

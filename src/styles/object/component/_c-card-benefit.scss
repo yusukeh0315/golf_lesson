@@ -28,7 +28,7 @@
   }
 
   &__text {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     color: global.$color-blue;
     @include global.font-settings(16, 16, 1.5, normal);
   }

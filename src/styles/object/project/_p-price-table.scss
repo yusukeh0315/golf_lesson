@@ -1,11 +1,13 @@
 @use "../../global" as global;
 
 .p-price-table {
+  &__wrapper {
+    padding-bottom: 40px;
+  }
   &__table {
     color: global.$color-blue;
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 40px;
     font-size: global.rem(22);
   }
 
@@ -46,13 +48,32 @@
     display: flex;
     justify-content: space-between;
   }
+
+  &__annotation-wrapper {
+    width: 100%;
+    color: global.$color-light-blue;
+    font-size: global.rem(16);
+    padding-top: 15px;
+    width: 90%;
+    text-align: end;
+    margin: 0 auto;
+  }
+  &__annotation {
+    color: global.$color-light-blue;
+    font-size: global.rem(16);
+    line-height: 1.4;
+  }
 }
 
 @include global.media(sp) {
   .p-price-table {
+    &__wrapper {
+      margin-bottom: 40px;
+    }
+
     &__table {
       width: 100%;
-      margin-bottom: 40px;
+      margin-bottom: 15px;
     }
 
     &__tbody {
@@ -151,6 +172,19 @@
     }
     &__td {
       display: block;
+    }
+
+    &__annotation-wrapper {
+      padding-top: 15px;
+      width: auto;
+      margin: 0 10px;
+    }
+    &__annotation {
+      display: inline-block;
+      width: 100%;
+      text-align: start;
+      text-indent: -1em;
+      padding-left: 1em;
     }
   }
 }
