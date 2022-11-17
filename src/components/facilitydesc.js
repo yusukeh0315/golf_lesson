@@ -561,7 +561,7 @@ const FacilityDesc = ({ data }) => {
               <div className="p-route__desc-wrapper">
                 <p className="p-route__desc">
                   宮越屋珈琲さんの方向へ銀座中央通りの交差点を渡ってください。
-                  ココレアゴルフの看板が見えます。
+                  当スタジオの看板が見えます。
                 </p>
               </div>
             </div>
