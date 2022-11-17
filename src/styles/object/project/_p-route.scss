@@ -3,7 +3,14 @@
 .p-route {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  @include global.media(sp) {
+    width: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 
   &__content {
     display: flex;

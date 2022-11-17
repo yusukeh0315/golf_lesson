@@ -387,7 +387,7 @@ const FacilityDesc = ({ data }) => {
               JR新橋駅銀座口、都営浅草線新橋駅1C出口から徒歩3分、東京メトロ新橋駅1番出口から徒歩1分の距離。銀座中央通り沿い角にある宮腰屋珈琲さんのお隣の近鉄銀座中央通りビルⅡ地下一階に店舗がございます。
               <br />
               <br />
-              銀座4丁目交差点方面からは、銀座中央通りを新橋方面へ、首都高速高架下の肉のハナマサ、とドン・キホーテさんを越えて50メートル先にココレアゴルフの看板がございます。
+              銀座4丁目交差点方面からは、銀座中央通りを新橋方面へ、首都高速高架下の肉のハナマサさんとドン・キホーテさんを越えて50メートル先にココレアゴルフの看板がございます。
             </p>
           </div>
 
@@ -420,6 +420,9 @@ const FacilityDesc = ({ data }) => {
               <HeadingIcon type="turtle" />
               ルート案内
             </h2>
+            <p className="p-body__text">
+              JR新橋駅から当スタジオまでのルート案内となります。JR新橋駅から当スタジオまでの途中に東京メトロ新橋駅の出口もございますので、東京メトロをご利用の方も参考にして下さい。
+            </p>
           </div>
           <div className="p-route">
             <div className="p-route__content">
@@ -440,29 +443,8 @@ const FacilityDesc = ({ data }) => {
               <div className="u-margin-center"></div>
               <div className="p-route__desc-wrapper">
                 <p className="p-route__desc">
-                  JR新橋駅銀座口から出てください。
+                  JR線をご利用の方はJR新橋駅銀座口をご利用ください。
                 </p>
-              </div>
-            </div>
-
-            <div className="p-route__content">
-              <div className="p-route__image-wrapper">
-                <figure>
-                  <StaticImage
-                    className="p-route__image"
-                    src="../images/route_2.jpg"
-                    alt="route2"
-                    style={{ height: "100%" }}
-                    loading="eager"
-                    backgroundColor="transparent"
-                    quality={10}
-                    placeholder="BLURRED"
-                  />
-                </figure>
-              </div>
-              <div className="u-margin-center"></div>
-              <div className="p-route__desc-wrapper">
-                <p className="p-route__desc">東京メトロ新橋駅の写真です。</p>
               </div>
             </div>
 
@@ -484,7 +466,32 @@ const FacilityDesc = ({ data }) => {
               <div className="u-margin-center"></div>
               <div className="p-route__desc-wrapper">
                 <p className="p-route__desc">
-                  JR新橋駅を出たところ、外堀通りの画像です。
+                  銀座口を出ると、カラオケビックエコーさんが見えます。ビックエコーさん側の歩道に渡って右方向に向かいます。
+                </p>
+              </div>
+            </div>
+
+            <div className="p-route__content">
+              <div className="p-route__image-wrapper">
+                <figure>
+                  <StaticImage
+                    className="p-route__image"
+                    src="../images/route_2.jpg"
+                    alt="route2"
+                    style={{ height: "100%" }}
+                    loading="eager"
+                    backgroundColor="transparent"
+                    quality={10}
+                    placeholder="BLURRED"
+                  />
+                </figure>
+              </div>
+              <div className="u-margin-center"></div>
+              <div className="p-route__desc-wrapper">
+                <p className="p-route__desc">
+                  道なりに進むと東京メトロ新橋駅1番出口があります。
+                  <br />
+                  東京メトロご利用の方は1番出口が便利です。
                 </p>
               </div>
             </div>
@@ -506,7 +513,9 @@ const FacilityDesc = ({ data }) => {
               </div>
               <div className="u-margin-center"></div>
               <div className="p-route__desc-wrapper">
-                <p className="p-route__desc">左手に本間ゴルフが見えます。</p>
+                <p className="p-route__desc">
+                  東京メトロ新橋駅1番出口を過ぎると、左手に本間ゴルフさんが見えます。
+                </p>
               </div>
             </div>
 
@@ -528,55 +537,56 @@ const FacilityDesc = ({ data }) => {
               <div className="u-margin-center"></div>
               <div className="p-route__desc-wrapper">
                 <p className="p-route__desc">
-                  銀座中央通りまで所要時間JR新橋銀座口から約2分
+                  銀座中央通りにつきあたり、ここまでのJR新橋銀座口からの所要時間は約2分です。
                 </p>
               </div>
             </div>
-          </div>
 
-          <div className="p-route__content">
-            <div className="p-route__image-wrapper">
-              <figure>
-                <StaticImage
-                  className="p-route__image"
-                  src="../images/route_6.jpg"
-                  alt="route6"
-                  style={{ height: "100%" }}
-                  loading="eager"
-                  backgroundColor="transparent"
-                  quality={10}
-                  placeholder="BLURRED"
-                />
-              </figure>
+            <div className="p-route__content">
+              <div className="p-route__image-wrapper">
+                <figure>
+                  <StaticImage
+                    className="p-route__image"
+                    src="../images/route_6.jpg"
+                    alt="route6"
+                    style={{ height: "100%" }}
+                    loading="eager"
+                    backgroundColor="transparent"
+                    quality={10}
+                    placeholder="BLURRED"
+                  />
+                </figure>
+              </div>
+              <div className="u-margin-center"></div>
+              <div className="p-route__desc-wrapper">
+                <p className="p-route__desc">
+                  宮越屋珈琲さんの方向へ銀座中央通りの交差点を渡ってください。
+                  ココレアゴルフの看板が見えます。
+                </p>
+              </div>
             </div>
-            <div className="u-margin-center"></div>
-            <div className="p-route__desc-wrapper">
-              <p className="p-route__desc">
-                宮腰屋珈琲側にわたる。（看板が見えます）
-              </p>
-            </div>
-          </div>
 
-          <div className="p-route__content">
-            <div className="p-route__image-wrapper">
-              <figure>
-                <StaticImage
-                  className="p-route__image"
-                  src="../images/route_7.jpg"
-                  alt="route7"
-                  style={{ height: "100%" }}
-                  loading="eager"
-                  backgroundColor="transparent"
-                  quality={10}
-                  placeholder="BLURRED"
-                />
-              </figure>
-            </div>
-            <div className="u-margin-center"></div>
-            <div className="p-route__desc-wrapper">
-              <p className="p-route__desc">
-                そのビルの裏手がスタジオ入り口です。
-              </p>
+            <div className="p-route__content">
+              <div className="p-route__image-wrapper">
+                <figure>
+                  <StaticImage
+                    className="p-route__image"
+                    src="../images/route_7.jpg"
+                    alt="route7"
+                    style={{ height: "100%" }}
+                    loading="eager"
+                    backgroundColor="transparent"
+                    quality={10}
+                    placeholder="BLURRED"
+                  />
+                </figure>
+              </div>
+              <div className="u-margin-center"></div>
+              <div className="p-route__desc-wrapper">
+                <p className="p-route__desc">
+                  近鉄銀座中央通りビルⅡの裏手に当スタジオ入り口があります。
+                </p>
+              </div>
             </div>
           </div>
         </div>

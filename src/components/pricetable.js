@@ -55,9 +55,6 @@ const PriceTable = () => {
                   <td className="p-price-table__td p-price-table__td--single-row-th p-price-table__td--mobile-th">
                     システム登録料（税込）
                   </td>
-                  <p className="p-body__text-h3 p-body__text-h3--sp">
-                    システムの関係上、入会金とシステム登録料を合算させて頂きますことご了承ください。
-                  </p>
                   <td className="p-price-table__td p-price-table__td--single-row-td p-price-table__td--mobile-price">
                     6,600円
                   </td>
@@ -87,6 +84,9 @@ const PriceTable = () => {
                   <td className="p-price-table__td p-price-table__td--single-row-th p-price-table__td--mobile-th">
                     体験レッスン（税込）
                   </td>
+                  <p className="p-body__text-h3 p-body__text-h3--sp">
+                    体験レッスンの流れはトップページをご覧ください。お気軽にお申し込みください。
+                  </p>
                   <td className="p-price-table__td p-price-table__td--single-row-td p-price-table__td--mobile-price">
                     2,200円
                   </td>
