@@ -5,17 +5,11 @@
 // ==========================================================================
 
 // font
-$font-base-ja: "Kaisei Decol", "Noto Sans CJK JP", "Noto Sans JP", "Lato",
-  "Avenir", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans",
-  "ヒラギノ角ゴシック", yugothic, "Yu Gothic", "メイリオ", meiryo,
+$font-base-ja: "Kaisei Decol", yugothic, "Yu Gothic", "メイリオ", meiryo,
   "ＭＳ Ｐゴシック", "MS PGothic";
-$font-base-en: "Kaisei Decol", "Lato", "Noto Sans CJK JP", "Noto Sans JP",
-  "Avenir", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans",
-  "ヒラギノ角ゴシック", yugothic, "Yu Gothic", "メイリオ", meiryo,
+$font-base-en: "Kaisei Decol", yugothic, "Yu Gothic", "メイリオ", meiryo,
   "ＭＳ Ｐゴシック", "MS PGothic";
-$font-label: "Noto Sans CJK JP", "Noto Sans JP", "Lato", "Avenir",
-  "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans", "ヒラギノ角ゴシック",
-  yugothic, "Yu Gothic", "メイリオ", meiryo, "ＭＳ Ｐゴシック", "MS PGothic";
+$font-label: "Noto Sans CJK JP", "Noto Sans JP", "Lato", yugothic, "Yu Gothic", "メイリオ", meiryo, "ＭＳ Ｐゴシック", "MS PGothic";
 $baseFontSize: 16;
 
 // width

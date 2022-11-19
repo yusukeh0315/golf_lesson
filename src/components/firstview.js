@@ -73,6 +73,7 @@ const FirstView = () => {
               {images.map(img => img)}
             </Slider>
           </figure>
+          <div className="p-fv__bg"></div>
           <div className="p-fv__content-inner">
             <div className="p-fv__title-wrapper">
               <h1 className="p-fv__title">
