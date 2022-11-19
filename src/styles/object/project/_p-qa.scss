@@ -1,6 +1,7 @@
 @use "../../global" as global;
 
 .p-qa {
+
   &__wrapper {
     padding: 0 global.response-length(0, 40);
   }
@@ -10,25 +11,27 @@
   }
 
   &__question {
-    color: global.$color-lightblue;
-    margin-bottom: global.response-length(8, 16);
-    word-wrap: break-word;
-    @include global.font-settings(20, 24);
-    text-indent: -1em;
     padding-left: 1em;
+    margin-bottom: global.response-length(8, 16);
+    color: global.$color-lightblue;
+    text-indent: -1em;
+    word-wrap: break-word;
+
+    @include global.font-settings(20, 24);
   }
 
   &__underline {
-    border-bottom: dotted;
     border-color: global.$color-lightblue;
     border-width: global.response-length(3, 5);
+    border-bottom: dotted;
   }
 
   &__answer {
-    color: global.$color-blue;
     padding-left: global.response-length(32, 32);
-    word-wrap: break-word;
-    @include global.font-settings(18, 20);
+    color: global.$color-blue;
     text-indent: -1em;
+    word-wrap: break-word;
+
+    @include global.font-settings(18, 20);
   }
 }

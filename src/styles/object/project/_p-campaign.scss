@@ -1,10 +1,12 @@
 @use "../../global" as global;
 
 .p-campaign {
+
   &__wrapper {
-    height: 50vh;
     position: relative;
     width: 100%;
+    height: 50vh;
+
     @include global.media(sp) {
       height: calc(50vh - 60px);
     }
@@ -12,48 +14,49 @@
 
   &__image-wrapper {
     position: absolute;
-    height: 50vh;
-    width: 100%;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 50vh;
   }
 
   &__content-inner {
     @include global.inner(global.$width-access);
-    width: global.percent-length(1280, 1000);
-    height: auto;
-    padding: global.response-length(20, 30) global.response-length(20, 30);
+
     position: absolute;
     top: 50%;
     left: 50%;
+    width: global.percent-length(1280, 1000);
+    height: auto;
+    padding: global.response-length(20, 30) global.response-length(20, 30);
     transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 
     @include global.media(sp) {
-      width: 100%;
       top: 40%;
+      width: 100%;
     }
   }
 
   &__container {
-    background-color: rgba(global.$color-campaign-orange, 1);
-    filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.25));
-
-    height: 100%;
-    width: 100%;
-    padding: 15px global.response-length(10, 20) 10px
-      global.response-length(10, 20);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 15px global.response-length(10, 20) 10px
+      global.response-length(10, 20);
+    background-color: rgba(global.$color-campaign-orange, 1);
+    filter: drop-shadow(0 1px 6px rgb(0 0 0 / 25%));
   }
 
   &__text {
-    color: global.$color-blue;
     padding-bottom: 5px;
+    color: global.$color-blue;
+
     @include global.font-settings(22, 32, 1.5, 800);
+
     @include global.media(sp) {
       padding-bottom: 0;
     }
@@ -63,47 +66,60 @@
     display: flex;
     width: 100%;
   }
+
   &__label-wrapper {
-    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 30%;
   }
+
   &__price-wrapper {
-    margin-right: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 70%;
+    margin-right: 5px;
+
     @include global.media(sp) {
       margin-right: 0;
     }
   }
+
   &__normal-price {
     width: 100%;
     margin-bottom: 15px;
+
     @include global.font-settings(18, 20, 1.2, 400);
+
     &--large {
       @include global.font-settings(20, 26, 1.2, 400);
     }
+
     @include global.media(sp) {
       padding-bottom: 0;
     }
   }
+
   &__price {
-    margin-bottom: 10px;
     width: 100%;
+    margin-bottom: 10px;
+
     @include global.font-settings(20, 20, 1.2, 400);
+
     &--large {
       color: global.$color-orange;
+
       @include global.font-settings(20, 28, 1.2, 600);
     }
   }
 }
 
 @include global.media(sp) {
+
   .p-campaign {
+
     &__content-inner {
       width: 100%;
       height: auto;
@@ -119,36 +135,41 @@
     }
 
     &__td {
-      text-align: center;
       display: block;
+      text-align: center;
     }
 
     &__link {
-      width: 100%;
       display: flex;
-      align-items: center;
       flex-direction: column;
+      align-items: center;
+      width: 100%;
 
       & > a {
         width: 100%;
       }
     }
+
     &__content {
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
+
     &__label-wrapper {
       width: 100%;
       margin-bottom: 5px;
     }
+
     &__price-wrapper {
       width: 100%;
       margin-bottom: 5px;
     }
+
     &__normal-price {
       text-align: center;
     }
+
     &__price {
       text-align: center;
     }

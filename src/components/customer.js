@@ -1,6 +1,20 @@
+import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 
-const Customer = ({ data }) => {
+const Customer = ({}) => {
+  const data = useStaticQuery(graphql`
+    query {
+      allMicrocmsCustomer(sort: { fields: customer_id, order: ASC }) {
+        edges {
+          node {
+            attribute
+            content
+            customer_id
+          }
+        }
+      }
+    }
+  `)
   return (
     <section className="l-customer">
       <div className="l-customer__inner">
@@ -20,13 +34,6 @@ const Customer = ({ data }) => {
               <>
                 <div className="p-cards__item">
                   <div className="c-card-customers">
-                    {/* <figure className="c-card-customers__logo-wrapper">
-                      <img
-                        className="c-card-customers__logo"
-                        src={node.image.url}
-                        alt=""
-                      />
-                    </figure> */}
                     <div className="c-card-customers__body">
                       <p className="c-card-customers__attribute">
                         {node.attribute}

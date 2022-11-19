@@ -2,23 +2,25 @@
 
 .p-header-logo {
   display: flex;
+  width: global.response-length(180, 280);
   height: 100%;
+  padding: 5px 0;
   margin-right: auto;
   text-decoration: none;
-  width: global.response-length(180, 280);
-  padding: 5px 0;
 
   &__link {
-    cursor: pointer;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    cursor: pointer;
   }
 
   &__image-wrapper {
     width: 100%;
     height: 100%;
   }
+
   &__image {
+
     & img {
       object-fit: contain !important;
     }
@@ -26,23 +28,24 @@
 }
 
 @include global.media(sp) {
+
   .p-header-logo {
-    margin-left: auto;
     width: 60%;
+    margin-left: auto;
   }
 }
 
 .p-header-nav {
   display: flex;
+  width: calc(100% - global.response-length(180, 280));
   height: 100%;
   margin-left: auto;
-  width: calc(100% - global.response-length(180, 280));
 
   &__list {
-    margin-left: auto;
     display: flex;
     align-items: center;
     height: 100%;
+    margin-left: auto;
   }
 
   &__item {
@@ -54,11 +57,12 @@
   }
 
   &__link {
-    display: inline-block;
     position: relative;
+    display: inline-block;
     font-family: global.$font-base-en;
     text-decoration: none;
     cursor: pointer;
+
     @include global.font-settings(14, 20, 1.5, 500);
 
     &:hover,
@@ -73,24 +77,25 @@
       position: absolute;
       bottom: -14px;
       left: 0;
-      content: "";
       width: 100%;
-      opacity: 0;
       visibility: hidden;
-      transition: 0.3s;
-      border-bottom: dotted;
+      content: "";
       border-color: global.$color-blue;
       border-width: 5px;
+      border-bottom: dotted;
+      opacity: 0;
+      transition: 0.3s;
     }
+
     &:hover::after {
       bottom: -10px;
-      opacity: 1;
       visibility: visible;
+      opacity: 1;
     }
 
     &.current {
-      display: inline-block;
       position: relative;
+      display: inline-block;
 
       &::before {
         position: absolute;
@@ -98,19 +103,21 @@
         left: 0;
         width: 100%;
         content: "";
-        border-bottom: dotted;
         border-color: global.$color-blue;
         border-width: 5px;
+        border-bottom: dotted;
       }
+
       &:hover::after {
-        opacity: 0;
         visibility: hidden;
+        opacity: 0;
       }
     }
   }
 }
 
 @include global.media(sp) {
+
   .p-header-nav {
     display: none;
   }

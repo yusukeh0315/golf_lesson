@@ -2,8 +2,9 @@
 
 .p-footer {
   margin-left: auto;
-  font-weight: bold;
   font-family: global.$font-base-en;
+  font-weight: bold;
   color: global.$color-white;
+
   @include global.font-settings(16, 18);
 }

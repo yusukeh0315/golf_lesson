@@ -1,13 +1,13 @@
 @use "../../global" as global;
 
 .c-card-customers {
-  background-color: global.$color-white;
   display: flex;
   flex-direction: column;
   min-height: 300px;
   padding: global.response-length(10, 15);
+  background-color: global.$color-white;
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgb(0 0 0 / 20%);
 
   &__logo-wrapper {
     flex-basis: 20%;
@@ -28,8 +28,9 @@
   }
 
   &__attribute {
-    font-family: global.$font-base-en;
     margin-bottom: 4px;
+    font-family: global.$font-base-en;
+
     @include global.font-settings(20, 22, 1.5, 600);
   }
 
@@ -39,17 +40,20 @@
 }
 
 @include global.media(tb) {
+
   .c-card-customers {
-    min-height: auto;
     height: auto;
+    min-height: auto;
   }
 }
 
 @include global.media(sp) {
+
   .c-card-customers {
     height: auto;
 
     &__logo-wrapper {
+
       &--instructor {
         padding-bottom: 0.5rem;
       }

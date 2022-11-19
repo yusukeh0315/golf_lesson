@@ -1,6 +1,7 @@
 @use "../../global" as global;
 
 .p-top-message {
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -10,8 +11,10 @@
   &__title {
     padding: 20px 0;
     color: global.$color-blue;
+
     @include global.font-settings(22, 24);
   }
+
   &__text {
     @include global.font-settings(16, 18);
   }

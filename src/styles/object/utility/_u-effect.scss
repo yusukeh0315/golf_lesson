@@ -1,14 +1,16 @@
 @use "../../global" as global;
 
 .u-effect-fadein {
+  opacity: 0;
   animation-name: fadeInAnime;
   animation-duration: 2s;
   animation-fill-mode: forwards;
-  opacity: 0;
+
   // position: relative;
 }
 
 @keyframes fadeInAnime {
+
   from {
     opacity: 0;
   }

@@ -2,6 +2,7 @@
 
 .l-header {
   @include global.z-index(header);
+
   position: fixed;
   width: 100%;
   height: 80px;
@@ -9,6 +10,7 @@
 
   &__inner {
     @include global.inner(global.$width-base);
+
     display: flex;
     height: 100%;
     padding: 0 global.response-length(10, 20);
@@ -16,6 +18,7 @@
 }
 
 @include global.media(sp) {
+
   .l-header {
     height: 80px;
 

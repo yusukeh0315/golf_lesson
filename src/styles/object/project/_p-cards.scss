@@ -9,8 +9,11 @@
   $col_num: 2;
   $margin-x: 50px;
   $margin-y: 40px;
+
   height: auto;
+
   @include global.cards($col_num, $margin-x, $margin-y);
+
   margin-bottom: -40px;
 }
 
@@ -18,8 +21,11 @@
   $col_num: 3;
   $margin-x: 60px;
   $margin-y: 30px;
+
   height: auto;
+
   @include global.cards($col_num, $margin-x, $margin-y);
+
   margin-bottom: -30px;
 }
 
@@ -27,7 +33,10 @@
   $col_num: 4;
   $margin-x: 40px;
   $margin-y: 70px;
+
   height: auto;
+
   @include global.cards($col_num, $margin-x, $margin-y);
+
   margin-bottom: -70px;
 }

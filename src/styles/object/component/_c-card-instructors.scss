@@ -25,6 +25,7 @@
     width: 80px !important;
     height: 80px !important;
     object-fit: contain !important;
+
     & img {
       border-radius: 50%;
     }
@@ -38,18 +39,21 @@
 
   &__janame {
     font-family: global.$font-base-en;
+
     @include global.font-settings(20, 22, 1.5, 600);
   }
 
   &__enname {
     margin-bottom: 4px;
     font-family: global.$font-base-en;
+
     @include global.font-settings(18, 18, 1.5, 300);
   }
 
   &__title {
     display: flex;
     margin-bottom: 4px;
+
     @include global.font-settings(16, 18, 1.5);
   }
 
@@ -65,15 +69,17 @@
 // }
 
 @include global.media(sp) {
+
   .c-card-instructors {
-    height: auto;
     flex-direction: column;
+    height: auto;
 
     &__nolink {
       height: auto;
     }
 
     &__logo-wrapper {
+
       &--instructor {
         padding-bottom: 0.5rem;
       }

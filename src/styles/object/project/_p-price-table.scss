@@ -1,14 +1,16 @@
 @use "../../global" as global;
 
 .p-price-table {
+
   &__wrapper {
     padding-bottom: 40px;
   }
+
   &__table {
-    color: global.$color-blue;
     width: 90%;
     margin: 0 auto;
     font-size: global.rem(22);
+    color: global.$color-blue;
   }
 
   &__tbody {
@@ -18,8 +20,8 @@
   }
 
   &__thead {
-    background-color: global.$color-light-blue;
     color: global.$color-white;
+    background-color: global.$color-light-blue;
   }
 
   &__th {
@@ -27,46 +29,50 @@
   }
 
   &__td {
-    color: global.$color-blue;
     padding: 10px 5px;
+    color: global.$color-blue;
     text-align: center;
 
     &--single-row-th {
-      background-color: global.$color-light-blue;
-      color: global.$color-white;
       width: 60%;
       font-weight: bold;
+      color: global.$color-white;
+      background-color: global.$color-light-blue;
     }
+
     &--single-row-td {
-      border-right: solid 1px global.$color-light-blue;
       width: 40%;
+      border-right: solid 1px global.$color-light-blue;
     }
   }
 
   &__link {
-    width: 60%;
     display: flex;
     justify-content: space-between;
+    width: 60%;
   }
 
   &__annotation-wrapper {
     width: 100%;
-    color: global.$color-light-blue;
-    font-size: global.rem(16);
-    padding-top: 15px;
     width: 90%;
-    text-align: end;
+    padding-top: 15px;
     margin: 0 auto;
-  }
-  &__annotation {
+    font-size: global.rem(16);
     color: global.$color-light-blue;
+    text-align: end;
+  }
+
+  &__annotation {
     font-size: global.rem(16);
     line-height: 1.4;
+    color: global.$color-light-blue;
   }
 }
 
 @include global.media(sp) {
+
   .p-price-table {
+
     &__wrapper {
       margin-bottom: 40px;
     }
@@ -87,23 +93,25 @@
 
     &__td {
       font-size: global.rem(18);
+
       &--single-row-th {
         width: auto;
       }
+
       &--single-row-td {
-        border-right: none;
         width: auto;
+        border-right: none;
       }
     }
 
     &__td--mobile-th {
-      background-color: global.$color-light-blue;
-      color: global.$color-white;
-      font-size: global.rem(22);
       margin-top: 15px;
-      margin-bottom: 15px;
       margin-right: 10px;
+      margin-bottom: 15px;
       margin-left: 10px;
+      font-size: global.rem(22);
+      color: global.$color-white;
+      background-color: global.$color-light-blue;
     }
 
     &__td--mobile-price,
@@ -115,76 +123,89 @@
       padding: 10px 5%;
       text-align: start;
     }
+
     &__td--mobile-price {
       position: relative;
       text-align: end;
-      &:before {
-        content: "料金： ";
+
+      &::before {
         position: absolute;
         left: 5%;
+        content: "料金： ";
       }
     }
+
     &__td--mobile-price-month {
       position: relative;
       text-align: end;
-      &:before {
-        content: "月会費（税込）： ";
+
+      &::before {
         position: absolute;
         left: 5%;
+        content: "月会費（税込）： ";
       }
     }
+
     &__td--mobile-time {
       position: relative;
       text-align: end;
-      &:before {
-        content: "利用可能時間： ";
+
+      &::before {
         position: absolute;
         left: 5%;
+        content: "利用可能時間： ";
       }
     }
 
     &__td--mobile-desc {
       position: relative;
       text-align: end;
-      &:before {
-        content: "50分／1回 打席料（税込）: ";
+
+      &::before {
         position: absolute;
         left: 5%;
+        content: "50分／1回 打席料（税込）: ";
       }
     }
+
     &__td--mobile-price-school {
       position: relative;
       text-align: end;
-      &:before {
-        content: "スクール会費（税込）: ";
+
+      &::before {
         position: absolute;
         left: 5%;
+        content: "スクール会費（税込）: ";
       }
     }
+
     &__td--mobile-total {
       position: relative;
       text-align: end;
-      &:before {
-        content: "合計（税込）: ";
+
+      &::before {
         position: absolute;
         left: 5%;
+        content: "合計（税込）: ";
       }
     }
+
     &__td {
       display: block;
     }
 
     &__annotation-wrapper {
-      padding-top: 15px;
       width: auto;
+      padding-top: 15px;
       margin: 0 10px;
     }
+
     &__annotation {
       display: inline-block;
       width: 100%;
+      padding-left: 1em;
       text-align: start;
       text-indent: -1em;
-      padding-left: 1em;
     }
   }
 }

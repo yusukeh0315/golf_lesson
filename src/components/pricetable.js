@@ -277,7 +277,6 @@ const PriceTable = () => {
             </h2>
           </div>
           <div className="p-body__wrapper">
-            {/* <p className="p-body__text">レンタル品の説明</p> */}
             <ul className="p-body__list">
               <li className="p-body__item">
                 男性用ゴルフクラブ（スチール、カーボン）

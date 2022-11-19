@@ -1,10 +1,10 @@
-import { GatsbyImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import Slider from "react-slick"
 import "../styles/slick-carousel/slick/slick-theme.css"
 import "../styles/slick-carousel/slick/slick.css"
 
-const FirstView = ({ data }) => {
+const FirstView = () => {
   const settings = {
     dots: false,
     infinite: true,
@@ -13,17 +13,56 @@ const FirstView = ({ data }) => {
     fade: true,
     arrows: false,
   }
-  const image_1 = data.firstview_1.childImageSharp.gatsbyImageData
-  const image_3 = data.firstview_3.childImageSharp.gatsbyImageData
-  const image_5 = data.firstview_5.childImageSharp.gatsbyImageData
-  const image_7 = data.firstview_7.childImageSharp.gatsbyImageData
+  const image_1 = (
+    <StaticImage
+      className="p-fv__image"
+      src="../images/firstview_1.png"
+      alt="メインビジュアル"
+      style={{ height: "100%" }}
+      loading="eager"
+      backgroundColor="transparent"
+      quality={10}
+      placeholder="BLURRED"
+    />
+  )
+  const image_2 = (
+    <StaticImage
+      className="p-fv__image"
+      src="../images/firstview_2.jpg"
+      alt="メインビジュアル"
+      style={{ height: "100%" }}
+      loading="eager"
+      backgroundColor="transparent"
+      quality={10}
+      placeholder="BLURRED"
+    />
+  )
+  const image_3 = (
+    <StaticImage
+      className="p-fv__image"
+      src="../images/firstview_3.jpg"
+      alt="メインビジュアル"
+      style={{ height: "100%" }}
+      loading="eager"
+      backgroundColor="transparent"
+      quality={10}
+      placeholder="BLURRED"
+    />
+  )
+  const image_4 = (
+    <StaticImage
+      className="p-fv__image"
+      src="../images/firstview_4.jpg"
+      alt="メインビジュアル"
+      style={{ height: "100%" }}
+      loading="eager"
+      backgroundColor="transparent"
+      quality={10}
+      placeholder="BLURRED"
+    />
+  )
 
-  // const image_1 = "../images/firstview_1.jpg"
-  // const image_3 = "../images/firstview_3.jpg"
-  // const image_5 = "../images/firstview_5.jpg"
-  // const image_7 = "../images/firstview_7.jpg"
-
-  const images = [image_1, image_5, image_3, image_7]
+  const images = [image_1, image_2, image_3, image_4]
 
   return (
     <section className="l-fv">
@@ -31,31 +70,7 @@ const FirstView = ({ data }) => {
         <div className="p-fv__wrapper">
           <figure className="p-fv__image-wrapper">
             <Slider style={{ width: "100%" }} {...settings}>
-              {images.map(img => {
-                return (
-                  <GatsbyImage
-                    className="p-fv__image"
-                    image={img}
-                    alt="firstview"
-                    style={{ height: "100%" }}
-                    loading="eager"
-                    durationFadeIn={100}
-                    quality={10}
-                    backgroundColor="transparent"
-                    placeholder="BLURRED"
-                  />
-                  // <StaticImage
-                  //   className="p-fv__image"
-                  //   src={img}
-                  //   alt="firstview"
-                  //   style={{ height: "100%" }}
-                  //   // loading="eager"
-                  //   // backgroundColor="transparent"
-                  //   // quality={10}
-                  //   // placeholder="BLURRED"
-                  // />
-                )
-              })}
+              {images.map(img => img)}
             </Slider>
           </figure>
           <div className="p-fv__content-inner">
@@ -67,18 +82,7 @@ const FirstView = ({ data }) => {
                 <br />
                 ココロを込めたおもてなし
               </h1>
-              {/* <p className="p-fv__text">サブキャッチフレーズ</p> */}
             </div>
-            {/* <div className="p-fv__icon-wrapper">
-              <span className="c-label">
-                <span className="c-label-font">
-                  <span className="c-label-font c-label-font--large">24</span>
-                  時間
-                  <br />
-                  OPEN
-                </span>
-              </span>
-            </div> */}
           </div>
         </div>
       </div>

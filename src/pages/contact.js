@@ -1,5 +1,5 @@
 import axios from "axios"
-import { graphql, navigate } from "gatsby"
+import { navigate } from "gatsby"
 import React from "react"
 import { Helmet } from "react-helmet"
 import { useForm } from "react-hook-form"
@@ -48,7 +48,7 @@ const Contact = ({ data, location }) => {
         pagedesc="お問い合わせ"
         pagepath={location.pathname}
       />
-      <SubView data={data} title="お問い合わせ" />
+      <SubView title="お問い合わせ" />
 
       <section className="l-subsection">
         <div className="l-subsection__inner">
@@ -140,15 +140,5 @@ const Contact = ({ data, location }) => {
     </Layout>
   )
 }
-
-export const query = graphql`
-  query {
-    contactview: file(relativePath: { eq: "contactview.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH)
-      }
-    }
-  }
-`
 
 export default Contact

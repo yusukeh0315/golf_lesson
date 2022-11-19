@@ -7,7 +7,7 @@ import SubView from "../components/subview"
 
 import { graphql } from "gatsby"
 
-const Contact = ({ data, location }) => {
+const Contact = ({ location }) => {
   return (
     <Layout page="contact">
       <Seo
@@ -15,7 +15,7 @@ const Contact = ({ data, location }) => {
         pagedesc="お問い合わせ失敗"
         pagepath={location.pathname}
       />
-      <SubView data={data} title="お問い合わせ" />
+      <SubView title="お問い合わせ" />
 
       <section className="l-subsection">
         <div className="l-subsection__inner">

@@ -1,66 +1,70 @@
 @use "../../global" as global;
 
 .p-access {
+
   &__wrapper {
-    height: 700px;
     position: relative;
+    height: 700px;
   }
 
   &__image-wrapper {
     position: absolute;
-    height: 700px;
-    width: 100%;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 700px;
   }
 
   &__content-inner {
     @include global.inner(global.$width-access);
-    width: global.percent-length(1280, 800);
-    height: auto;
-    padding: global.response-length(40, 60) global.response-length(20, 40);
+
     position: absolute;
     top: 50%;
     left: 50%;
+    width: global.percent-length(1280, 800);
+    height: auto;
+    padding: global.response-length(40, 60) global.response-length(20, 40);
     transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 
   &__container {
-    background-color: rgb(255, 255, 255, 0.9);
-    height: 100%;
-    width: 100%;
-    padding: 20px global.response-length(10, 20);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 20px global.response-length(10, 20);
+    background-color: rgb(255 255 255 / 90%);
   }
 
   &__text {
-    color: global.$color-blue;
     padding-bottom: global.response-length(15, 20);
+    color: global.$color-blue;
+
     @include global.font-settings(22, 24);
   }
 
   &__address {
-    color: global.$color-blue;
     padding-bottom: global.response-length(15, 20);
     font-style: normal;
+    color: global.$color-blue;
+
     @include global.font-settings(16, 18);
   }
 
   &__tel {
-    color: global.$color-blue;
     padding-bottom: global.response-length(15, 20);
+    color: global.$color-blue;
+
     @include global.font-settings(16, 18);
   }
 
   &__table {
-    color: global.$color-blue;
     width: 60%;
     margin-bottom: 10px;
+    color: global.$color-blue;
   }
 
   &__tbody {
@@ -68,31 +72,37 @@
     border-top: solid 1px global.$color-blue;
     border-bottom: solid 1px global.$color-blue;
   }
+
   &__td {
-    color: global.$color-blue;
     padding: 10px 5px;
+    color: global.$color-blue;
     text-align: center;
   }
+
   &__link {
     display: flex;
   }
 
   &__note {
+    padding: 15px 20px 30px;
     color: global.$color-blue;
+
     @include global.font-settings(16, 18);
-    padding: 15px 20px 30px 20px;
 
     @include global.media(sp) {
-      padding: 10px 0px 10px 0px;
+      padding: 10px 0;
     }
   }
+
   &__map {
     height: 450px;
   }
 }
 
 @include global.media(sp) {
+
   .p-access {
+
     &__content-inner {
       width: 100%;
       height: auto;
@@ -108,15 +118,15 @@
     }
 
     &__td {
-      text-align: center;
       display: block;
+      text-align: center;
     }
 
     &__link {
-      width: 100%;
       display: flex;
-      align-items: center;
       flex-direction: column;
+      align-items: center;
+      width: 100%;
 
       & > a {
         width: 100%;

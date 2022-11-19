@@ -1,3 +1,4 @@
+import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import React from "react"
 
@@ -7,7 +8,52 @@ import HeadingIcon from "./heading_icon"
 import "../styles/react-image-gallery/css/image-gallery.css"
 import EmbedMap from "./embedmap"
 
-const FacilityDesc = ({ data }) => {
+const FacilityDesc = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      facilityview: file(relativePath: { eq: "facilityview.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      facilitydesc: file(relativePath: { eq: "facilitydesc.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      entrance_image: file(relativePath: { eq: "entrance_image.png" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      facilityimg_1: file(relativePath: { eq: "facilityimg_1.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      facilityimg_2: file(relativePath: { eq: "facilityimg_2.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      facilityimg_3: file(relativePath: { eq: "facilityimg_3.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      facilityimg_4: file(relativePath: { eq: "facilityimg_4.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      facilityimg_5: file(relativePath: { eq: "facilityimg_5.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+    }
+  `)
+
   const image_1 = (
     <GatsbyImage
       className="p-facility-content__image"
@@ -49,62 +95,6 @@ const FacilityDesc = ({ data }) => {
     />
   )
 
-  const route_image_1 = (
-    <GatsbyImage
-      className="p-facility-content__image"
-      image={data.route_1.childImageSharp.gatsbyImageData}
-      alt="facility1"
-      style={{ height: "100%" }}
-    />
-  )
-  const route_image_2 = (
-    <GatsbyImage
-      className="p-facility-content__image"
-      image={data.route_2.childImageSharp.gatsbyImageData}
-      alt="facility2"
-      style={{ height: "100%" }}
-    />
-  )
-  const route_image_3 = (
-    <GatsbyImage
-      className="p-facility-content__image"
-      image={data.route_3.childImageSharp.gatsbyImageData}
-      alt="facility3"
-      style={{ height: "100%" }}
-    />
-  )
-  const route_image_4 = (
-    <GatsbyImage
-      className="p-facility-content__image"
-      image={data.route_4.childImageSharp.gatsbyImageData}
-      alt="facility4"
-      style={{ height: "100%" }}
-    />
-  )
-  const route_image_5 = (
-    <GatsbyImage
-      className="p-facility-content__image"
-      image={data.route_5.childImageSharp.gatsbyImageData}
-      alt="facility5"
-      style={{ height: "100%" }}
-    />
-  )
-  const route_image_6 = (
-    <GatsbyImage
-      className="p-facility-content__image"
-      image={data.route_6.childImageSharp.gatsbyImageData}
-      alt="facility6"
-      style={{ height: "100%" }}
-    />
-  )
-  const route_image_7 = (
-    <GatsbyImage
-      className="p-facility-content__image"
-      image={data.route_7.childImageSharp.gatsbyImageData}
-      alt="facility7"
-      style={{ height: "100%" }}
-    />
-  )
   function getSrcWebp(str, size) {
     let imgsArray = str.split(",")
     let src_path = imgsArray.filter(img => {
@@ -207,140 +197,6 @@ const FacilityDesc = ({ data }) => {
     },
   ]
 
-  const route_img1_org = getSrcWebp(
-    route_image_1.props.image.images.sources[0].srcSet,
-    "750w"
-  )
-  const route_img1_thb = getSrcWebp(
-    route_image_1.props.image.images.sources[0].srcSet,
-    "750w"
-  )
-
-  const route_img2_org = getSrcWebp(
-    route_image_2.props.image.images.sources[0].srcSet,
-    "750w"
-  )
-  const route_img2_thb = getSrcWebp(
-    route_image_2.props.image.images.sources[0].srcSet,
-    "750w"
-  )
-
-  const route_img3_org = getSrcWebp(
-    route_image_3.props.image.images.sources[0].srcSet,
-    "750w"
-  )
-  const route_img3_thb = getSrcWebp(
-    route_image_3.props.image.images.sources[0].srcSet,
-    "750w"
-  )
-
-  const route_img4_org = getSrcWebp(
-    route_image_4.props.image.images.sources[0].srcSet,
-    "750w"
-  )
-  const route_img4_thb = getSrcWebp(
-    route_image_4.props.image.images.sources[0].srcSet,
-    "750w"
-  )
-
-  const route_img5_org = getSrcWebp(
-    route_image_5.props.image.images.sources[0].srcSet,
-    "750w"
-  )
-  const route_img5_thb = getSrcWebp(
-    route_image_5.props.image.images.sources[0].srcSet,
-    "750w"
-  )
-  const route_img6_org = getSrcWebp(
-    route_image_6.props.image.images.sources[0].srcSet,
-    "750w"
-  )
-  const route_img6_thb = getSrcWebp(
-    route_image_6.props.image.images.sources[0].srcSet,
-    "750w"
-  )
-
-  const route_img7_org = getSrcWebp(
-    route_image_7.props.image.images.sources[0].srcSet,
-    "750w"
-  )
-  const route_img7_thb = getSrcWebp(
-    route_image_7.props.image.images.sources[0].srcSet,
-    "750w"
-  )
-  const route_images = [
-    {
-      original: route_img1_org,
-      thumbnail: route_img1_thb,
-      originalClass: "p-facility-content__route-image",
-      thumbnailClass: "p-facility-content__route-thumbnail",
-      originalAlt: "facility1",
-      thumbnailAlt: "facility1",
-      loading: "lazy",
-      description: "JR新橋駅",
-    },
-    {
-      original: route_img2_org,
-      thumbnail: route_img2_thb,
-      originalClass: "p-facility-content__route-image",
-      thumbnailClass: "p-facility-content__route-thumbnail",
-      originalAlt: "facility2",
-      thumbnailAlt: "facility2",
-      loading: "lazy",
-      description: "東京メトロ新橋駅",
-    },
-    {
-      original: route_img3_org,
-      thumbnail: route_img3_thb,
-      originalClass: "p-facility-content__route-image",
-      thumbnailClass: "p-facility-content__route-thumbnail",
-      originalAlt: "facility3",
-      thumbnailAlt: "facility3",
-      loading: "lazy",
-      description: "？？？",
-    },
-    {
-      original: route_img4_org,
-      thumbnail: route_img4_thb,
-      originalClass: "p-facility-content__route-image",
-      thumbnailClass: "p-facility-content__route-thumbnail",
-      originalAlt: "facility4",
-      thumbnailAlt: "facility4",
-      loading: "lazy",
-      description: "？？？",
-    },
-    {
-      original: route_img5_org,
-      thumbnail: route_img5_thb,
-      originalClass: "p-facility-content__route-image",
-      thumbnailClass: "p-facility-content__route-thumbnail",
-      originalAlt: "facility5",
-      thumbnailAlt: "facility5",
-      loading: "lazy",
-      description: "銀座中央通り",
-    },
-    {
-      original: route_img6_org,
-      thumbnail: route_img6_thb,
-      originalClass: "p-facility-content__route-image",
-      thumbnailClass: "p-facility-content__route-thumbnail",
-      originalAlt: "facility6",
-      thumbnailAlt: "facility6",
-      loading: "lazy",
-      description: "宮越屋コーヒー",
-    },
-    {
-      original: route_img7_org,
-      thumbnail: route_img7_thb,
-      originalClass: "p-facility-content__route-image",
-      thumbnailClass: "p-facility-content__route-thumbnail",
-      originalAlt: "facility7",
-      thumbnailAlt: "facility7",
-      loading: "lazy",
-      description: "スタジオ入口",
-    },
-  ]
-
   return (
     <>
       {/* <section className="l-subsection">
@@ -431,7 +287,7 @@ const FacilityDesc = ({ data }) => {
                   <StaticImage
                     className="p-route__image"
                     src="../images/route_1.jpg"
-                    alt="route1"
+                    alt="JR新橋駅銀座口"
                     style={{ height: "100%" }}
                     loading="eager"
                     backgroundColor="transparent"
@@ -454,7 +310,7 @@ const FacilityDesc = ({ data }) => {
                   <StaticImage
                     className="p-route__image"
                     src="../images/route_3.jpg"
-                    alt="route3"
+                    alt="カラオケビックエコー"
                     style={{ height: "100%" }}
                     loading="eager"
                     backgroundColor="transparent"
@@ -477,7 +333,7 @@ const FacilityDesc = ({ data }) => {
                   <StaticImage
                     className="p-route__image"
                     src="../images/route_2.jpg"
-                    alt="route2"
+                    alt="東京メトロ新橋駅1番出口"
                     style={{ height: "100%" }}
                     loading="eager"
                     backgroundColor="transparent"
@@ -502,7 +358,7 @@ const FacilityDesc = ({ data }) => {
                   <StaticImage
                     className="p-route__image"
                     src="../images/route_4.jpg"
-                    alt="route4"
+                    alt="本間ゴルフ"
                     style={{ height: "100%" }}
                     loading="eager"
                     backgroundColor="transparent"
@@ -525,7 +381,7 @@ const FacilityDesc = ({ data }) => {
                   <StaticImage
                     className="p-route__image"
                     src="../images/route_5.jpg"
-                    alt="route5"
+                    alt="銀座中央通り"
                     style={{ height: "100%" }}
                     loading="eager"
                     backgroundColor="transparent"
@@ -548,7 +404,7 @@ const FacilityDesc = ({ data }) => {
                   <StaticImage
                     className="p-route__image"
                     src="../images/route_6.jpg"
-                    alt="route6"
+                    alt="宮越屋珈琲"
                     style={{ height: "100%" }}
                     loading="eager"
                     backgroundColor="transparent"
@@ -572,7 +428,7 @@ const FacilityDesc = ({ data }) => {
                   <StaticImage
                     className="p-route__image"
                     src="../images/route_7.jpg"
-                    alt="route7"
+                    alt="近鉄銀座中央通りビルⅡの裏手"
                     style={{ height: "100%" }}
                     loading="eager"
                     backgroundColor="transparent"

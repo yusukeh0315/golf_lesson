@@ -1,5 +1,5 @@
 import { Link } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 
 import Address from "./address"
@@ -13,11 +13,14 @@ const Access = ({ data }) => {
         <div className="l-access__inner">
           <div className="p-access__wrapper">
             <figure className="p-access__image-wrapper">
-              <GatsbyImage
+              <StaticImage
                 className="p-access__image"
-                image={data.topbg_middle.childImageSharp.gatsbyImageData}
-                alt="top-middle-background"
+                src="../images/topbg_middle.jpg"
                 style={{ height: "100%" }}
+                loading="eager"
+                backgroundColor="transparent"
+                quality={50}
+                placeholder="BLURRED"
               />
             </figure>
             <div className="p-access__content-inner">

@@ -1,34 +1,69 @@
-import { GatsbyImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 
-const SubView = ({ data, title }) => {
+const SubView = ({ title }) => {
   let image
 
   if (title === "料金") {
-    image = data.priceview.childImageSharp.gatsbyImageData
+    image = (
+      <StaticImage
+        className="p-sub__image"
+        src="../images/priceview.jpg"
+        alt="メインビジュアル"
+        style={{ height: "100%" }}
+        loading="eager"
+        backgroundColor="transparent"
+        quality={10}
+        placeholder="BLURRED"
+      />
+    )
   } else if (title === "インストラクター") {
-    image = data.instructorview.childImageSharp.gatsbyImageData
+    image = (
+      <StaticImage
+        className="p-sub__image"
+        src="../images/instructorview.jpg"
+        alt="メインビジュアル"
+        style={{ height: "100%" }}
+        loading="eager"
+        backgroundColor="transparent"
+        quality={10}
+        placeholder="BLURRED"
+      />
+    )
   } else if (title === "アクセス") {
     // } else if (title === "施設紹介") {
-    image = data.facilityview.childImageSharp.gatsbyImageData
+    image = (
+      <StaticImage
+        className="p-sub__image"
+        src="../images/facilityview.jpg"
+        alt="メインビジュアル"
+        style={{ height: "100%" }}
+        loading="eager"
+        backgroundColor="transparent"
+        quality={10}
+        placeholder="BLURRED"
+      />
+    )
   } else if (title === "お問い合わせ") {
-    image = data.contactview.childImageSharp.gatsbyImageData
+    image = (
+      <StaticImage
+        className="p-sub__image"
+        src="../images/contactview.jpg"
+        alt="メインビジュアル"
+        style={{ height: "100%" }}
+        loading="eager"
+        backgroundColor="transparent"
+        quality={10}
+        placeholder="BLURRED"
+      />
+    )
   }
 
   return (
     <section className="l-sub">
       <div className="l-sub__inner">
         <div className="p-sub__wrapper">
-          <figure className="p-sub__image-wrapper">
-            <GatsbyImage
-              className="p-sub__image"
-              image={image}
-              alt="subview"
-              style={{ height: "100%" }}
-              loading="eager"
-              durationFadeIn={100}
-            />
-          </figure>
+          <figure className="p-sub__image-wrapper">{image}</figure>
           <div className="p-sub__content-inner">
             <div className="p-sub__title-wrapper">
               <h1 className="p-sub__title">{title}</h1>

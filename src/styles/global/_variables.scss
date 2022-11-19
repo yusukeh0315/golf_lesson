@@ -7,15 +7,15 @@
 // font
 $font-base-ja: "Kaisei Decol", "Noto Sans CJK JP", "Noto Sans JP", "Lato",
   "Avenir", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans",
-  "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", Meiryo,
+  "ヒラギノ角ゴシック", yugothic, "Yu Gothic", "メイリオ", meiryo,
   "ＭＳ Ｐゴシック", "MS PGothic";
 $font-base-en: "Kaisei Decol", "Lato", "Noto Sans CJK JP", "Noto Sans JP",
   "Avenir", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans",
-  "ヒラギノ角ゴシック", YuGothic, "Yu Gothic", "メイリオ", Meiryo,
+  "ヒラギノ角ゴシック", yugothic, "Yu Gothic", "メイリオ", meiryo,
   "ＭＳ Ｐゴシック", "MS PGothic";
 $font-label: "Noto Sans CJK JP", "Noto Sans JP", "Lato", "Avenir",
   "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans", "ヒラギノ角ゴシック",
-  YuGothic, "Yu Gothic", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic";
+  yugothic, "Yu Gothic", "メイリオ", meiryo, "ＭＳ Ｐゴシック", "MS PGothic";
 $baseFontSize: 16;
 
 // width
@@ -24,20 +24,20 @@ $width-inner: 1120px;
 $width-access: 800px;
 
 // color
-$color-white: #ffffff;
+$color-white: #FFFFFF;
 $color-black: #333333;
-$color-lightgray: #dfdfdf;
-$color-hovergray: #f6f6f6;
+$color-lightgray: #DFDFDF;
+$color-hovergray: #F6F6F6;
 $color-gray: #979797;
-$color-red: #e64568;
-$color-blue: #0053a6;
-$color-light-blue: #0080ffb2;
-$color-orange: #e84469;
-$color-lightblue: #4eb331;
-$color-lightblue-bg: #47c0db52;
-$color-label-pink: #e84469;
-$color-flow-orange: #f9b823;
-$color-campaign-orange: #ffe29f;
+$color-red: #E64568;
+$color-blue: #0053A6;
+$color-light-blue: #0080FFB2;
+$color-orange: #E84469;
+$color-lightblue: #4EB331;
+$color-lightblue-bg: #47C0DB52;
+$color-label-pink: #E84469;
+$color-flow-orange: #F9B823;
+$color-campaign-orange: #FFE29F;
 
 // z-index
 $layer: (
@@ -50,10 +50,8 @@ $layer: (
 // breakpoint
 $sp-breakpoints: 767;
 $tb-breakpoints: 1023;
-
 $sp-breakpoints-px: $sp-breakpoints * 1px;
 $tb-breakpoints-px: $tb-breakpoints * 1px;
-
 $breakpoints: (
   sp: "only screen and (max-width: #{$sp-breakpoints-px})",
   tb: "only screen and (max-width: #{$tb-breakpoints-px})",

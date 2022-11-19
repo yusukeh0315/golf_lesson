@@ -5,15 +5,17 @@
 
 .burger-menu,
 .burger-menu.open {
-  display: inline-block;
-  cursor: pointer;
   position: fixed;
-  right: 20px;
   top: 20px;
+  right: 20px;
   z-index: 9999;
+  display: inline-block;
+
   // background: #fff;
   padding: 10px;
+  cursor: pointer;
   border-radius: 25px;
+
   // box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -22,16 +24,17 @@
 .bar3 {
   width: 25px;
   height: 3px;
-  background-color: global.$color-blue;
   margin: 4px 0;
+  background-color: global.$color-blue;
   transition: 0.4s;
+
   // box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .burger-menu.open .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-4px, 4px);
-  transform: rotate(-45deg) translate(-4px, 4px);
   background-color: global.$color-blue;
+  transform: rotate(-45deg) translate(-4px, 4px);
+  transform: rotate(-45deg) translate(-4px, 4px);
 }
 
 .burger-menu.open .bar2 {
@@ -39,29 +42,31 @@
 }
 
 .burger-menu.open .bar3 {
-  -webkit-transform: rotate(45deg) translate(-6px, -6px);
-  transform: rotate(45deg) translate(-6px, -6px);
   background-color: global.$color-blue;
+  transform: rotate(45deg) translate(-6px, -6px);
+  transform: rotate(45deg) translate(-6px, -6px);
 }
 
 /* Menu */
 
 .menu {
-  width: 100%;
   display: block;
+  width: 100%;
+  padding: 0;
   text-align: center;
-  padding: 0px;
 }
+
 .menu ul {
   position: relative;
-  top: 0px;
-  font-size: 24px;
-  padding: 0px;
-}
-.menu li {
-  list-style: outside none none;
-  margin: 40px 0px;
+  top: 0;
   padding: 0;
+  font-size: 24px;
+}
+
+.menu li {
+  padding: 0;
+  margin: 40px 0;
+  list-style: outside none none;
   cursor: pointer;
 }
 
@@ -87,6 +92,7 @@
 }
 
 @include global.media(sp) {
+
   .burger-menu,
   .burger-menu.open {
     display: block;

@@ -6,15 +6,16 @@
   justify-content: center;
   width: global.response-length(100, 160);
   height: global.response-length(100, 160);
+  background-color: global.$color-label-pink;
   border: none;
   border-radius: 50%;
-  background-color: global.$color-label-pink;
 
   &-font {
-    color: global.$color-white;
-    text-decoration: none;
-    text-align: center;
     font-family: global.$font-label;
+    color: global.$color-white;
+    text-align: center;
+    text-decoration: none;
+
     @include global.font-settings(16, 20, 1.5, 900);
 
     &--large {
@@ -29,14 +30,17 @@
     transform: rotate(-10deg);
 
     @include global.media(sp) {
+
       & br {
         display: none;
       }
-      transform: rotate(0);
+
       width: 100%;
       height: 40px;
-      border-radius: 0;
       background-color: transparent;
+      border-radius: 0;
+      transform: rotate(0);
+
       & .c-label-font {
         color: global.$color-orange;
       }
@@ -48,15 +52,15 @@
   display: inline-block;
   width: 56px;
   max-width: 100%;
-  margin-left: 15px;
   padding: 2px;
-  border: none;
-  background-color: global.$color-orange;
-  color: global.$color-white;
-  font-weight: normal;
+  margin-left: 15px;
   font-size: global.rem(14);
+  font-weight: normal;
   line-height: 20px;
-  text-decoration: none;
+  color: global.$color-white;
   text-align: center;
+  text-decoration: none;
+  background-color: global.$color-orange;
+  border: none;
   border-radius: 30px;
 }

@@ -1,38 +1,20 @@
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 
 import Reservation from "./reservation"
 
 const Header = ({ page }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      headerlogo: file(relativePath: { eq: "header-logo.png" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-    }
-  `)
-
   return (
     <header className="l-header">
       <div className="l-header__inner">
         <div className="p-header-logo">
           <Link to={`/`} className="p-header-logo__link">
             <figure className="p-header-logo__image-wrapper">
-              {/* <GatsbyImage
-                className="p-header-logo__image"
-                image={data.headerlogo.childImageSharp.gatsbyImageData}
-                alt="logo"
-                style={{ height: "100%" }}
-                loading="eager"
-                durationFadeIn={100}
-              /> */}
               <StaticImage
                 className="p-header-logo__image"
                 src="../images/header-logo.png"
-                alt="logo"
+                alt="Cocolea Golf Studio"
                 style={{ height: "100%" }}
                 loading="eager"
                 backgroundColor="transparent"

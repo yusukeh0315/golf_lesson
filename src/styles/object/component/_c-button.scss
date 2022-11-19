@@ -1,51 +1,53 @@
 @use "../../global" as global;
 
 // button
+
 .c-submit-button {
-  margin-top: 30px;
   display: inline-block;
   width: 255px;
-  height: 40px;
   max-width: 100%;
-  padding: 10px 10px 10px 10px;
-  border: 1px solid global.$color-gray;
-  background-color: global.$color-white;
-  color: global.$color-blue;
+  height: 40px;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: global.rem(16);
   font-weight: bold;
   font-weight: normal;
-  font-size: global.rem(16);
   line-height: 20px;
-  text-decoration: none;
+  color: global.$color-blue;
   text-align: center;
+  text-decoration: none;
   cursor: pointer;
-  transition: 0.25s;
+  background-color: global.$color-white;
+  border: 1px solid global.$color-gray;
   border-radius: 30px !important;
+  transition: 0.25s;
 
   &:hover,
   &:focus,
   &:active {
-    border: 1px solid global.$color-white;
-    background-color: global.$color-lightblue;
     color: global.$color-white;
+    background-color: global.$color-lightblue;
+    border: 1px solid global.$color-white;
   }
 
   &--disabled {
-    background-color: global.$color-hovergray;
     color: global.$color-gray;
     cursor: default;
+    background-color: global.$color-hovergray;
 
     &:hover,
     &:focus,
     &:active {
-      border: 1px solid global.$color-gray;
-      background-color: global.$color-hovergray;
       color: global.$color-gray;
       cursor: default;
+      background-color: global.$color-hovergray;
+      border: 1px solid global.$color-gray;
     }
   }
 }
 
 @include global.media(sp) {
+
   .c-submit-button {
     width: 100%;
   }
@@ -55,28 +57,29 @@
   display: inline-block;
   width: 150px;
   width: global.response-length(120, 150);
-  height: 40px;
   max-width: 100%;
-  padding: 10px 10px 10px 10px;
-  border: 1px solid global.$color-orange;
-  background-color: global.$color-orange;
-  color: global.$color-white;
-  font-weight: bold;
+  height: 40px;
+  padding: 10px;
   font-size: global.rem(18);
+  font-weight: bold;
   line-height: 20px;
-  text-decoration: none;
+  color: global.$color-white;
   text-align: center;
+  text-decoration: none;
   cursor: pointer;
-  transition: 0.25s;
+  background-color: global.$color-orange;
+  border: 1px solid global.$color-orange;
   border-radius: 10px;
+  transition: 0.25s;
+
   @include global.font-settings(14, 18, 20px, bold);
 
   &:hover,
   &:focus,
   &:active {
-    border: 1px solid global.$color-orange;
-    background-color: global.$color-white;
     color: global.$color-orange;
+    background-color: global.$color-white;
+    border: 1px solid global.$color-orange;
   }
 }
 
@@ -85,32 +88,34 @@
   width: 150px;
   width: global.response-length(120, 150);
   width: 100%;
-  height: 40px;
   max-width: 100%;
-  padding: 10px 10px 10px 10px;
-  border: 1px solid global.$color-orange;
-  background-color: global.$color-orange;
-  color: global.$color-white;
-  font-weight: bold;
+  height: 40px;
+  padding: 10px;
   font-size: global.rem(18);
+  font-weight: bold;
   line-height: 20px;
-  text-decoration: none;
+  color: global.$color-white;
   text-align: center;
+  text-decoration: none;
   cursor: pointer;
-  transition: 0.25s;
+  background-color: global.$color-orange;
+  border: 1px solid global.$color-orange;
   border-radius: 10px;
+  transition: 0.25s;
+
   @include global.font-settings(14, 18, 18px, bold);
 
   &:hover,
   &:focus,
   &:active {
-    border: 1px solid global.$color-orange;
-    background-color: global.$color-white;
     color: global.$color-orange;
+    background-color: global.$color-white;
+    border: 1px solid global.$color-orange;
   }
 }
 
 @include global.media(sp) {
+
   .c-campaign_button {
     width: 100%;
     height: 45px;
@@ -118,6 +123,7 @@
 }
 
 @include global.media(sp) {
+
   .c-reservation_button {
     width: 100%;
   }
@@ -126,36 +132,37 @@
 .c-schedule_button {
   display: inline-block;
   width: auto;
-  height: 60px;
   max-width: 100%;
-  padding: 10px 30px 10px 30px;
-  border: 1px solid global.$color-blue;
-  background-color: global.$color-blue;
-  color: global.$color-white;
+  height: 60px;
+  padding: 10px 30px;
+  font-size: global.rem(24);
   font-weight: bold;
   font-weight: normal;
-  font-size: global.rem(24);
   line-height: 20px;
-  text-decoration: none;
+  color: global.$color-white;
   text-align: center;
+  text-decoration: none;
   cursor: pointer;
-  transition: 0.25s;
+  background-color: global.$color-blue;
+  border: 1px solid global.$color-blue;
   border-radius: 10px;
+  transition: 0.25s;
 
   &:hover,
   &:focus,
   &:active {
-    border: 1px solid global.$color-blue;
-    background-color: global.$color-white;
     color: global.$color-blue;
+    background-color: global.$color-white;
+    border: 1px solid global.$color-blue;
   }
 }
 
 @include global.media(sp) {
+
   .c-schedule_button {
     width: 100%;
     height: auto;
-    padding: 20px 10px 20px 10px;
+    padding: 20px 10px;
     font-size: global.rem(18);
   }
 }
@@ -163,30 +170,32 @@
 .c-contact_button {
   display: inline-block;
   width: global.response-length(120, 150);
-  height: 40px;
   max-width: 100%;
-  padding: 10px 10px 10px 10px;
-  border: 1px solid global.$color-lightblue;
-  background-color: global.$color-lightblue;
-  color: global.$color-white;
+  height: 40px;
+  padding: 10px;
   font-weight: bold;
-  text-decoration: none;
+  color: global.$color-white;
   text-align: center;
+  text-decoration: none;
   cursor: pointer;
-  transition: 0.25s;
+  background-color: global.$color-lightblue;
+  border: 1px solid global.$color-lightblue;
   border-radius: 10px;
+  transition: 0.25s;
+
   @include global.font-settings(14, 18, 20px, bold);
 
   &:hover,
   &:focus,
   &:active {
-    border: 1px solid global.$color-lightblue;
-    background-color: global.$color-white;
     color: global.$color-lightblue;
+    background-color: global.$color-white;
+    border: 1px solid global.$color-lightblue;
   }
 }
 
 @include global.media(sp) {
+
   .c-contact_button {
     width: 100%;
   }

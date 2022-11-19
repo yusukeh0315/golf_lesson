@@ -9,10 +9,6 @@ const Address = () => {
       inquiryTime: "10:00 - 22:00",
       businessHours: "365日 24時間営業",
     },
-    // {
-    //   dayOfWeek: "土曜日、日曜日、祝日",
-    //   timeZone: "10:00～21:00",
-    // },
   ]
 
   return (

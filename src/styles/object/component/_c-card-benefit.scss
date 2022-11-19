@@ -6,10 +6,12 @@
   align-items: center;
 
   &__title {
+    height: global.rem(72);
     margin-bottom: 10px;
     color: global.$color-blue;
-    height: global.rem(72);
+
     @include global.font-settings(22, 24, 1.5, normal);
+
     @include global.media(sp) {
       height: auto;
     }
@@ -30,10 +32,12 @@
   &__text {
     margin-bottom: 8px;
     color: global.$color-blue;
+
     @include global.font-settings(16, 16, 1.5, normal);
   }
 
   &:first-child {
+
     & .c-card-benefit__icon-wrapper img {
       object-position: center right;
     }

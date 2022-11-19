@@ -1,7 +1,7 @@
 import React from "react"
 import CampaignButton from "./campaign-button"
 
-const Campaign = ({ data }) => {
+const Campaign = () => {
   return (
     <>
       <div className="p-campaign__wrapper">
