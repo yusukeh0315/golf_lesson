@@ -8,7 +8,6 @@ import SideBannerSP from "./sidebanner-sp"
 import "../styles/main.scss"
 
 import "@fontsource/kaisei-decol/400.css"
-import "@fontsource/kaisei-decol/700.css"
 
 import BurgerMenu from "./burgermenu/menu"
 
