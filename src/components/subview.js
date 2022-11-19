@@ -64,6 +64,7 @@ const SubView = ({ title }) => {
       <div className="l-sub__inner">
         <div className="p-sub__wrapper">
           <figure className="p-sub__image-wrapper">{image}</figure>
+          <div className="p-sub__bg"></div>
           <div className="p-sub__content-inner">
             <div className="p-sub__title-wrapper">
               <h1 className="p-sub__title">{title}</h1>
