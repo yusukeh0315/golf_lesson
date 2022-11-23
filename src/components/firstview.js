@@ -1,8 +1,8 @@
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import Slider from "react-slick"
-import "../styles/slick-carousel/slick/slick-theme.css"
-import "../styles/slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import "slick-carousel/slick/slick.css"
 
 const FirstView = () => {
   const settings = {

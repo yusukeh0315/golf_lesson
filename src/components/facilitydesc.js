@@ -5,7 +5,6 @@ import React from "react"
 import Address from "./address"
 import HeadingIcon from "./heading_icon"
 
-import "../styles/react-image-gallery/css/image-gallery.css"
 import EmbedMap from "./embedmap"
 
 const FacilityDesc = () => {
