@@ -104,6 +104,18 @@
     }
   }
 
+  &__tel-note {
+    padding: 5px 20px;
+    margin-top: -15px;
+    color: global.$color-blue;
+
+    @include global.font-settings(14, 16);
+
+    @include global.media(sp) {
+      padding: 5px 0;
+    }
+  }
+
   &__map {
     height: 450px;
   }

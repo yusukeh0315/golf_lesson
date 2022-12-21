@@ -98,11 +98,11 @@ module.exports = {
     `react-hook-form`,
     `axios`,
     `body-scroll-lock`,
-    // {
-    //   resolve: `gatsby-plugin-google-tagmanager`,
-    //   options: {
-    //     id: `GTM-NNNWDDV`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: `GTM-NNNWDDV`,
+      },
+    },
   ],
 }

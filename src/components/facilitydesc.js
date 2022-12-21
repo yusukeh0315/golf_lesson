@@ -1,58 +1,14 @@
-import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import React from "react"
 
 import Address from "./address"
 import HeadingIcon from "./heading_icon"
 
+import ImageGallery from "react-image-gallery"
+import "../styles/react-image-gallery/css/image-gallery.css"
 import EmbedMap from "./embedmap"
 
-const FacilityDesc = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      facilityview: file(relativePath: { eq: "facilityview.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-      facilitydesc: file(relativePath: { eq: "facilitydesc.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-      entrance_image: file(relativePath: { eq: "entrance_image.png" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-      facilityimg_1: file(relativePath: { eq: "facilityimg_1.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-      facilityimg_2: file(relativePath: { eq: "facilityimg_2.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-      facilityimg_3: file(relativePath: { eq: "facilityimg_3.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-      facilityimg_4: file(relativePath: { eq: "facilityimg_4.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-      facilityimg_5: file(relativePath: { eq: "facilityimg_5.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-    }
-  `)
-
+const FacilityDesc = ({ data }) => {
   const image_1 = (
     <GatsbyImage
       className="p-facility-content__image"
@@ -198,7 +154,7 @@ const FacilityDesc = () => {
 
   return (
     <>
-      {/* <section className="l-subsection">
+      <section className="l-subsection">
         <div className="l-subsection__inner">
           <div className="p-section__title-wrapper">
             <h2 className="p-section__title">
@@ -227,7 +183,7 @@ const FacilityDesc = () => {
             </figure>
           </div>
         </div>
-      </section> */}
+      </section>
 
       <section className="l-subsection">
         <div className="l-subsection__inner">

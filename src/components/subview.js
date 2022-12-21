@@ -30,8 +30,7 @@ const SubView = ({ title }) => {
         placeholder="BLURRED"
       />
     )
-  } else if (title === "アクセス") {
-    // } else if (title === "施設紹介") {
+    } else if (title === "施設紹介") {
     image = (
       <StaticImage
         className="p-sub__image"
