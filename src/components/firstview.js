@@ -16,7 +16,7 @@ const FirstView = () => {
   const image_1 = (
     <StaticImage
       className="p-fv__image"
-      src="../images/firstview_1.png"
+      src="../images/firstview_1.jpg"
       alt="メインビジュアル"
       style={{ height: "100%" }}
       loading="eager"
@@ -28,7 +28,7 @@ const FirstView = () => {
   const image_2 = (
     <StaticImage
       className="p-fv__image"
-      src="../images/firstview_2.jpg"
+      src="../images/firstview_2.png"
       alt="メインビジュアル"
       style={{ height: "100%" }}
       loading="eager"
@@ -61,8 +61,21 @@ const FirstView = () => {
       placeholder="BLURRED"
     />
   )
+  const image_5 = (
+    <StaticImage
+      className="p-fv__image"
+      src="../images/firstview_5.jpg"
+      alt="メインビジュアル"
+      style={{ height: "100%" }}
+      loading="eager"
+      backgroundColor="transparent"
+      quality={10}
+      placeholder="BLURRED"
+    />
+  )
 
-  const images = [image_1, image_2, image_3, image_4]
+
+  const images = [image_1, image_2, image_3, image_4, image_5]
 
   return (
     <section className="l-fv">

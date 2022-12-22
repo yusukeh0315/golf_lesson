@@ -49,6 +49,22 @@ const FacilityDesc = ({ data }) => {
       style={{ height: "100%" }}
     />
   )
+  const image_6 = (
+    <GatsbyImage
+      className="p-facility-content__image"
+      image={data.facilityimg_6.childImageSharp.gatsbyImageData}
+      alt="facility6"
+      style={{ height: "100%" }}
+    />
+  )
+  const image_7 = (
+    <GatsbyImage
+      className="p-facility-content__image"
+      image={data.facilityimg_7.childImageSharp.gatsbyImageData}
+      alt="facility7"
+      style={{ height: "100%" }}
+    />
+  )
 
   function getSrcWebp(str, size) {
     let imgsArray = str.split(",")
@@ -103,7 +119,22 @@ const FacilityDesc = ({ data }) => {
     image_5.props.image.images.sources[0].srcSet,
     "750w"
   )
-
+  const img6_org = getSrcWebp(
+    image_6.props.image.images.sources[0].srcSet,
+    "750w"
+  )
+  const img6_thb = getSrcWebp(
+    image_6.props.image.images.sources[0].srcSet,
+    "750w"
+  )
+    const img7_org = getSrcWebp(
+    image_7.props.image.images.sources[0].srcSet,
+    "750w"
+  )
+  const img7_thb = getSrcWebp(
+    image_7.props.image.images.sources[0].srcSet,
+    "750w"
+  )
   const images = [
     {
       original: img1_org,
@@ -150,6 +181,24 @@ const FacilityDesc = ({ data }) => {
       thumbnailAlt: "facility5",
       loading: "lazy",
     },
+    {
+      original: img6_org,
+      thumbnail: img6_thb,
+      originalClass: "p-facility-content__image",
+      thumbnailClass: "p-facility-content__thumbnail",
+      originalAlt: "facility6",
+      thumbnailAlt: "facility6",
+      loading: "lazy",
+    },
+    {
+      original: img7_org,
+      thumbnail: img7_thb,
+      originalClass: "p-facility-content__image",
+      thumbnailClass: "p-facility-content__thumbnail",
+      originalAlt: "facility7",
+      thumbnailAlt: "facility7",
+      loading: "lazy",
+    },
   ]
 
   return (
@@ -165,7 +214,9 @@ const FacilityDesc = ({ data }) => {
           <div className="p-facility-content__wrapper p-facility-content__wrapper--reverse">
             <div className="p-facility-content__body-wrapper">
               <div className="p-body__wrapper">
-                <p className="p-body__text">施設内の説明と、施設内の写真。</p>
+                <p className="p-body__text">
+                  ココレアゴルフスタジオでは「リラックスした雰囲気でゴルフを上達していただきたい」という思いで、白を基調としたゆったりとした店内の作りとなっております。もちろん打席には最新シュミレーターを完備していますので画像を解析しデータに基づいた科学的な練習も可能です。練習前や練習後には広い受付スペースで楽しくゴルフ談義をしましょう。また、広々とした更衣室をご用意していますのでお仕事前やお仕事終わりにもお気軽にお越しください。
+                </p>
               </div>
             </div>
             <div className="u-margin-center"></div>
