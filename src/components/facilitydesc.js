@@ -214,7 +214,7 @@ const FacilityDesc = ({ data }) => {
           <div className="p-facility-content__wrapper p-facility-content__wrapper--reverse">
             <div className="p-facility-content__body-wrapper">
               <div className="p-body__wrapper">
-                <p className="p-body__text">
+                <p className="p-body__text p-body__text--col2">
                   ココレアゴルフスタジオでは「リラックスした雰囲気でゴルフを上達していただきたい」という思いで、白を基調としたゆったりとした店内の作りとなっております。もちろん打席には最新シュミレーターを完備していますので画像を解析しデータに基づいた科学的な練習も可能です。練習前や練習後には広い受付スペースで楽しくゴルフ談義をしましょう。また、広々とした更衣室をご用意していますのでお仕事前やお仕事終わりにもお気軽にお越しください。
                 </p>
               </div>

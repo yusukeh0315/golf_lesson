@@ -8,10 +8,15 @@
 
   &__text {
     width: 90%;
+
     // padding: global.response-length(10, 15) global.response-length(10, 40);
     margin: 0 auto;
     margin-bottom: 20px;
     color: global.$color-blue;
+
+    &--col2 {
+      width: 100%;
+    }
 
     @include global.font-settings(18, 20, 1.5, normal);
 
@@ -24,6 +29,7 @@
 
   &__text-h3 {
     width: 90%;
+
     // padding: 0 global.response-length(12, 64);
     margin: 0 auto;
     color: global.$color-black;
