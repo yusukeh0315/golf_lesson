@@ -53,7 +53,7 @@ const Header = ({ page }) => {
                   page === "facility" ? "current" : ""
                 }`}
               >
-                施設紹介
+                施設紹介とアクセス
               </Link>
             </li>
             <li className="p-header-nav__item">
@@ -63,7 +63,7 @@ const Header = ({ page }) => {
                   page === "contact" ? "current" : ""
                 }`}
               >
-                お問い合わせ
+                お問い合わせとよくある質問
               </Link>
             </li>
             <li className="p-header-nav__item">
