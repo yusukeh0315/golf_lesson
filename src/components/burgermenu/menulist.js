@@ -31,13 +31,13 @@ const MenuList = ({ close }) => {
           aria-hidden="true"
           onClick={closeMenu}
         >
-          <Link to={`/facility/`}>施設紹介とアクセス</Link>
+          <Link to={`/facility/`}>施設紹介</Link>
         </li>
         <li // eslint-disable-line jsx-a11y/no-static-element-interactions
           aria-hidden="true"
           onClick={closeMenu}
         >
-          <Link to={`/contact/`}>お問い合わせとよくある質問</Link>
+          <Link to={`/contact/`}>お問い合わせ</Link>
         </li>
         <li // eslint-disable-line jsx-a11y/no-static-element-interactions
           aria-hidden="true"
