@@ -42,11 +42,14 @@ $layer: (
 );
 
 // breakpoint
+$min-breakpoints: 350;
 $sp-breakpoints: 767;
 $tb-breakpoints: 1023;
+$min-breakpoints-px: $min-breakpoints * 1px;
 $sp-breakpoints-px: $sp-breakpoints * 1px;
 $tb-breakpoints-px: $tb-breakpoints * 1px;
 $breakpoints: (
+  min: "only screen and (max-width: #{$min-breakpoints-px})",
   sp: "only screen and (max-width: #{$sp-breakpoints-px})",
   tb: "only screen and (max-width: #{$tb-breakpoints-px})",
 );

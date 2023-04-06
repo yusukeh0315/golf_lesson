@@ -1,0 +1,7 @@
+@use "../../global" as global;
+
+.pc-return {
+  @include global.media(sp) {
+    display: none;
+  }
+}

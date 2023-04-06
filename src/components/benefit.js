@@ -4,58 +4,57 @@ import React from "react"
 const Benefit = ({ data }) => {
   const benefits = [
     {
-      jaName: "駅チカで24時間営業！",
+      jaName: ["飛距離アップに特化した", "マンツーマン指導"],
       image: (
         <StaticImage
           className="c-card-benefit__image"
           src="../images/benefit_1.jpg"
-          alt="駅チカで24時間営業！"
+          alt="飛距離アップに特化したマンツーマン指導"
           style={{ height: "100%" }}
           loading="eager"
           backgroundColor="transparent"
-          quality={10}
+          quality={80}
           placeholder="BLURRED"
         />
       ),
       desc: [
-        "東京メトロ新橋駅1番出口から徒歩1分！銀座中央通り沿いの黒いビルの地下1階です。",
-        "駅近なので、仕事帰りや、ちょっと空いた時間にいつでも練習ができて通いやすいです。もちろんレンタル道具は揃っているのて手ぶらでOK!!",
+        "飛距離アップに特化したマンツーマン指導を行っています。一人ひとりの特徴や課題に合わせた的確なアドバイスを行い、飛距離アップにつながる美スイングを身につけることができます。プロのアドバイスによって、確実な飛距離アップを実現しましょう。",
       ],
     },
     {
-      jaName: "超少人数制だから楽しく短期間でメキメキ上達！",
+      jaName: ["スイング改善に", "効果的な最新設備を完備"],
       image: (
         <StaticImage
           className="c-card-benefit__image"
           src="../images/benefit_2.jpg"
-          alt="超少人数制だから楽しく短期間でメキメキ上達！"
+          alt="スイング改善に効果的な最新設備"
           style={{ height: "100%" }}
           loading="eager"
           backgroundColor="transparent"
-          quality={10}
+          quality={80}
           placeholder="BLURRED"
         />
       ),
       desc: [
-        "レッスンは最大2名だからじっくりレッスンを受けてじっくり反復練習することができます。",
+        "最新のシミュレーターとビデオ解析システムを使って、あなたのスイングを徹底的に診断します。シミュレーターは、飛距離や方向性だけでなく、スピン量など細かく計測し、超高精度カメラでクラブや体の動きを細部まで分析します。それらのデータをもとに科学的で効率的に練習を行うことができます。",
       ],
     },
     {
-      jaName: "全打席最新のシュミレーター完備で打ち放題！",
+      jaName: ["あなたに合った", "オリジナルカリキュラム"],
       image: (
         <StaticImage
           className="c-card-benefit__image"
           src="../images/benefit_3.jpg"
-          alt="全打席最新のシュミレーター完備で打ち放題！"
+          alt="あなたに合ったオリジナルカリキュラム"
           style={{ height: "100%" }}
           loading="eager"
           backgroundColor="transparent"
-          quality={10}
+          quality={80}
           placeholder="BLURRED"
         />
       ),
       desc: [
-        "超高性能カメラ内蔵だからスイングからインパクトの瞬間まで丸見えに！スピン量、打ち出し角などの数値を参考に科学的な練習が可能です。",
+        "一人ひとりに合わせたオリジナルカリキュラムを提供しています。初心者の方から上級者まで、目的やレベルに応じたカリキュラムを用意しているため、無理なくレッスンを受けることができます。",
       ],
     },
   ]
@@ -71,7 +70,13 @@ const Benefit = ({ data }) => {
                   {benefit.image}
                 </figure>
                 <div className="card__body">
-                  <h3 className="c-card-benefit__title">{benefit.jaName}</h3>
+                  <h3
+                    className="c-card-benefit__title"
+                    style={{ whiteSpace: "pre-line" }}
+                  >
+                    {benefit.jaName.join("\n")}
+                    {/* {benefit.jaName} */}
+                  </h3>
                   {benefit.desc.map(text => (
                     <p className="c-card-benefit__text">{text}</p>
                   ))}

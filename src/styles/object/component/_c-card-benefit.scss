@@ -9,6 +9,7 @@
     height: global.rem(72);
     margin-bottom: 10px;
     color: global.$color-blue;
+    text-align: center;
 
     @include global.font-settings(22, 24, 1.5, normal);
 
@@ -21,7 +22,7 @@
     width: 280px;
     height: 280px;
     margin-top: global.response-length(20, 40);
-    margin-bottom: global.response-length(30, 50);
+    margin-bottom: global.response-length(10, 30);
 
     & img {
       border-radius: 50%;
@@ -33,7 +34,7 @@
     margin-bottom: 8px;
     color: global.$color-blue;
 
-    @include global.font-settings(16, 16, 1.5, normal);
+    @include global.font-settings(16, 16, 1.8, normal);
   }
 
   &:first-child {

@@ -53,9 +53,9 @@ const Instructors = () => {
                       <p className="c-card-instructors__title">
                         {instructor.title}
                       </p>
-                      <p className="c-card-instructors__text">
+                      {/* <p className="c-card-instructors__text">
                         {instructor.desc}
-                      </p>
+                      </p> */}
                     </div>
                   </div>
                 </div>

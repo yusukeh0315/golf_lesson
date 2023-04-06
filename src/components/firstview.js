@@ -28,7 +28,7 @@ const FirstView = () => {
   const image_2 = (
     <StaticImage
       className="p-fv__image"
-      src="../images/firstview_2.png"
+      src="../images/firstview_2.jpg"
       alt="メインビジュアル"
       style={{ height: "100%" }}
       loading="eager"
@@ -73,9 +73,20 @@ const FirstView = () => {
       placeholder="BLURRED"
     />
   )
+  const image_6 = (
+    <StaticImage
+      className="p-fv__image"
+      src="../images/firstview_6.jpg"
+      alt="メインビジュアル"
+      style={{ height: "100%" }}
+      loading="eager"
+      backgroundColor="transparent"
+      quality={10}
+      placeholder="BLURRED"
+    />
+  )
 
-
-  const images = [image_1, image_2, image_3, image_4, image_5]
+  const images = [image_1, image_2, image_3, image_4, image_5, image_6]
 
   return (
     <section className="l-fv">
@@ -90,11 +101,11 @@ const FirstView = () => {
           <div className="p-fv__content-inner">
             <div className="p-fv__title-wrapper">
               <h1 className="p-fv__title">
-                ココから始まる
+                銀座・新橋で最高のマンツーマンゴルフレッスン！
                 <br />
-                ココだけの
+                飛距離アップ、美スイングを目指すなら
                 <br />
-                ココロを込めたおもてなし
+                ココレアゴルフスタジオ！!
               </h1>
             </div>
           </div>

@@ -7,7 +7,7 @@ const Address = () => {
   const telNumber2 = "090-6484-5501"
   const businessDays = [
     {
-      inquiryTime: "10:00 - 22:00",
+      inquiryTime: "10:00 - 20:00",
       businessHours: "365日 24時間営業",
     },
   ]

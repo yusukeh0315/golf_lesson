@@ -53,6 +53,10 @@
       top: 35%;
       height: calc(100vh - 60px);
     }
+
+    @include global.media(min) {
+      top: 30%;
+    }
   }
 
   &__title-wrapper {
@@ -66,7 +70,7 @@
     color: global.$color-white;
     text-shadow: 2px 2px 3px #808080;
 
-    @include global.font-settings(28, 48, 1.2, 900);
+    @include global.font-settings(28, 42, 1.6, 900);
   }
 
   &__text {

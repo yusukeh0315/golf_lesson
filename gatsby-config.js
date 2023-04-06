@@ -11,8 +11,8 @@ require("dotenv").config({
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `CocoLea Golf Studio`,
-    description: `ココレアゴルフスタジオ`,
+    title: `【新橋・銀座】ココレアゴルフスタジオ | 飛距離アップのためのゴルフレッスン！`,
+    description: `新橋・銀座で飛距離アップのためのゴルフレッスンをお探しの方におすすめ！ココレアゴルフスタジオでは、初心者から上級者まで、経験豊富なプロインストラクターがあなたサポートします。`,
     lang: `ja`,
     siteUrl: `https://cocolea-golf.com/`,
     local: `ja_JP`,
@@ -44,8 +44,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `CocoLea GOLF Studio`,
-        short_name: `CocoLea GOLF Studio`,
+        name: `ココレアゴルフスタジオ`,
+        short_name: `ココレアゴルフスタジオ`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#4eb331`,

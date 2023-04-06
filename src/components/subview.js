@@ -47,7 +47,7 @@ const SubView = ({ title }) => {
     image = (
       <StaticImage
         className="p-sub__image"
-        src="../images/contactview.jpg"
+        src="../images/contactview.png"
         alt="メインビジュアル"
         style={{ height: "100%" }}
         loading="eager"

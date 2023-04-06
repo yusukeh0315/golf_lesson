@@ -8,6 +8,7 @@ import Flow from "../components/flow"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import TopBgImg from "../components/topbgimg"
+import TopMessage from "../components/topmessage"
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <section className="l-campaign">
         <Campaign />
       </section>
+      <TopMessage />
       <Benefit />
       <Flow />
       <Customer />

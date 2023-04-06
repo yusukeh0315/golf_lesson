@@ -16,6 +16,12 @@
   }
 
   &__text {
-    @include global.font-settings(16, 18);
+    text-align: center;
+
+    @include global.font-settings(16, 18, 1.9, normal);
+
+    @include global.media(sp) {
+      text-align: start;
+    }
   }
 }

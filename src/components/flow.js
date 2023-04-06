@@ -19,7 +19,7 @@ const Flow = () => {
   const flows = [
     {
       step: "01",
-      name: "WEBでお申し込みください",
+      name: "WEB申込み",
       image: (
         <StaticImage
           className="c-card-flow__image"
@@ -28,18 +28,18 @@ const Flow = () => {
           style={{ height: "100%" }}
           loading="eager"
           backgroundColor="transparent"
-          quality={10}
+          quality={80}
           placeholder="BLURRED"
         />
       ),
       desc: [
-        "ココレアゴルフではWEB予約システムを採用しております。WEBからお申込みをお願いいたします。",
-        "お電話はレッスン等で出ることができない場合がございますのでご了承ください。",
+        "ココレアゴルフスタジオでは、24時間いつでもWEBから簡単にお申し込みいただける予約システムをご利用いただけます。",
+        "お電話でのお問合せは、レッスン中などで応答できない場合がございますので、ご了承ください。",
       ],
     },
     {
       step: "02",
-      name: "体験レッスン当日",
+      name: "ご来店",
       image: (
         <StaticImage
           className="c-card-flow__image"
@@ -48,18 +48,18 @@ const Flow = () => {
           style={{ height: "100%" }}
           loading="eager"
           backgroundColor="transparent"
-          quality={10}
+          quality={80}
           placeholder="BLURRED"
         />
       ),
       desc: [
-        "当日はお時間10分ほど前にお越しください。ご予約時間の30分前に入退室管理システムから届くカギを使用して入室ください。",
-        "ゴルフクラブ、シューズはご用意がございます。感染症対策の観点でグローブはご持参いただけますと安心です。更衣室がございますので、動きやすい格好をご準備ください。",
+        "体験レッスン当日は、ご予約時間の30分前に届く入退室管理システムのカギを使用して入室していただきます。",
+        "当スタジオでは、レンタルゴルフクラブ、シューズ、手袋などご用意をしておりますので、手ぶらでお越しいただけます。また、更衣室も完備しておりますので、動きやすい格好をご準備ください。",
       ],
     },
     {
       step: "03",
-      name: "事前面談・レッスン",
+      name: "カウンセリング・レッスン",
       image: (
         <StaticImage
           className="c-card-flow__image"
@@ -68,19 +68,18 @@ const Flow = () => {
           style={{ height: "100%" }}
           loading="eager"
           backgroundColor="transparent"
-          quality={10}
+          quality={80}
           placeholder="BLURRED"
         />
       ),
       desc: [
-        "先ずはカウンセリングでお悩みや目標をお聞かせください。",
-        "その後レッスン開始です。現在の問題点を浮き彫りにし改善方法や練習方法をお伝えします。",
-        "ココレアゴルフでどのようにレッスンが行われているのか体験してください。",
+        "体験レッスンでは、まずはカウンセリングを行い、お客様のゴルフに対する悩みや目標をお聞かせいただきます。",
+        "その後実際にレッスンを受けていただき、お客様のスイングの問題点を発見し、改善方法や練習方法をお伝えいたします。実際にこちらでどのようなレッスンを受けることができるのかを体験してください。",
       ],
     },
     {
       step: "04",
-      name: "フィードバック",
+      name: "アフターフォロー・ご予約",
       image: (
         <StaticImage
           className="c-card-flow__image"
@@ -89,12 +88,13 @@ const Flow = () => {
           style={{ height: "100%" }}
           loading="eager"
           backgroundColor="transparent"
-          quality={10}
+          quality={80}
           placeholder="BLURRED"
         />
       ),
       desc: [
-        "最後に、今後の課題とココレアゴルフのカリキュラム、システムなどについてご説明いたします。",
+        "レッスン終了後には、フィードバックを行い、今後の課題や当スタジオのカリキュラムやシステムなどもご説明いたします。ご希望があれば、次回のレッスンのご予約も承ります。",
+        "体験レッスンを通じて、ココレアゴルフスタジオでのレッスンスタイルや効果を実感していただけます。",
       ],
     },
   ]
