@@ -9,7 +9,17 @@ const Instructors = () => {
       jaName: "若林　孝典",
       enName: "Takanori Wakabayashi",
       title: "ココレアゴルフ代表",
-      desc: "プロゴルファー猿を観て友人の誘いでゴルフを始め学生時代には競技ゴルフに没頭する。5年間の海外生活では、ミニツアーや地方トーナメントにも挑戦。基本を大切に、わかりやすくとにかく楽しいレッスンがモットーで、北海道から関西まで多くの生徒さんを抱える。英語でのレッスンも可能ですのでご相談ください。",
+      desc: [
+        "10歳よりゴルフを始め、学生時代は競技ゴルフに没頭し東海TV杯争奪学生ゴルフ選手権などのタイトルを獲得。大学卒業後は5年間の海外生活にて多くの有名スクールで学びミニツアーなどに参戦。日本に帰国後はAUSプロゴルファーの日本ツアー参戦のサポートに携わりゴルフレッスン業に従事。2023年に港区新橋にココレアゴルフを主宰。",
+        "　",
+        "保有資格：USGTFティーチングプロライセンス（2004年1月アメリカ、サンディエゴにて1st Place Medalist として合格）",
+        "　",
+        "ゴルフを学んだ主なスクール、コーチ",
+        "ROYAL FREMANTLE GC（AUSパース）Andy Mowatt氏（AUS PGAトップ100コーチ）Jim McLean Golf School（USAラキンタ）など",
+        "　",
+        "皆様へのメッセージ",
+        "クラブを全く握ったことのない方から80切りを目指す上級者の方、そしてYouTubeの見過ぎでお悩みの方まで私にお任せください。延べ10,000人以上のレッスン経験と海外で学んだ最新理論に裏付けられた楽しくわかりやすいレッスンで上達をお約束します。",
+      ],
       image: (
         <StaticImage
           className="c-card-instructors__logo"
@@ -34,7 +44,7 @@ const Instructors = () => {
             インストラクター紹介
           </h2>
         </div>
-        <div className="p-cards p-cards--col2">
+        <div className="p-cards p-cards--col1">
           {instructors.map(instructor => {
             return (
               <>
@@ -53,9 +63,9 @@ const Instructors = () => {
                       <p className="c-card-instructors__title">
                         {instructor.title}
                       </p>
-                      {/* <p className="c-card-instructors__text">
-                        {instructor.desc}
-                      </p> */}
+                      {instructor.desc.map(text => (
+                        <p className="c-card-instructors__text">{text}</p>
+                      ))}
                     </div>
                   </div>
                 </div>
