@@ -71,6 +71,10 @@
     text-shadow: 2px 2px 3px #808080;
 
     @include global.font-settings(28, 42, 1.6, 900);
+
+    @include global.media(height) {
+      @include global.font-settings(20, 36, 1.3, 900);
+    }
   }
 
   &__text {

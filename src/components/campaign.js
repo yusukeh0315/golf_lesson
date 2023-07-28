@@ -7,7 +7,7 @@ const Campaign = () => {
       <div className="p-campaign__wrapper">
         <div className="p-campaign__content-inner">
           <div className="p-campaign__container">
-            <p className="p-campaign__text">春の入会キャンペーン!!</p>
+            <p className="p-campaign__text">ただいま入会キャンペーン中！！</p>
             <div className="p-campaign__content">
               <div className="p-campaign__label-wrapper">
                 <span className="c-label c-label--campaign">

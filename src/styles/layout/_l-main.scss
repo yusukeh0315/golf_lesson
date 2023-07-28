@@ -1,7 +1,8 @@
 @use "../global" as global;
 
 .l-main {
-  min-width: 300px;
+  min-width: 375px;
+  min-height: 550px;
 }
 
 // Top page settings
@@ -134,5 +135,6 @@
   position: absolute;
   top: 50vh;
   width: 100%;
-  min-width: 300px;
+  min-width: 375px;
+  min-height: 550px;
 }

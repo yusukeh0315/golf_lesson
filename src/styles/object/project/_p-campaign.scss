@@ -48,6 +48,10 @@
       global.response-length(10, 20);
     background-color: rgba(global.$color-campaign-orange, 1);
     filter: drop-shadow(0 1px 6px rgb(0 0 0 / 25%));
+
+    @include global.media(height) {
+      padding: 5px;
+    }
   }
 
   &__text {
@@ -58,6 +62,10 @@
 
     @include global.media(sp) {
       padding-bottom: 0;
+    }
+
+    @include global.media(height) {
+      @include global.font-settings(18, 28, 1.1, 800);
     }
   }
 
@@ -102,6 +110,16 @@
     @include global.media(sp) {
       padding-bottom: 0;
     }
+
+    @include global.media(height) {
+      @include global.font-settings(14, 16, 1.1, 400);
+
+      margin-bottom: 5px;
+
+      &--large {
+        @include global.font-settings(20, 26, 1.2, 600);
+      }
+    }
   }
 
   &__price {
@@ -114,6 +132,16 @@
       color: global.$color-orange;
 
       @include global.font-settings(28, 38, 1.2, 600);
+    }
+
+    @include global.media(height) {
+      @include global.font-settings(14, 16, 1.1, 400);
+
+      margin-bottom: 5px;
+
+      &--large {
+        @include global.font-settings(20, 26, 1.2, 600);
+      }
     }
   }
 }
