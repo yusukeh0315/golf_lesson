@@ -6,6 +6,7 @@ import Customer from "../components/customer"
 import FirstView from "../components/firstview"
 import Flow from "../components/flow"
 import Layout from "../components/layout"
+import News from "../components/news"
 import Seo from "../components/seo"
 import TopBgImg from "../components/topbgimg"
 import TopMessage from "../components/topmessage"
@@ -21,6 +22,7 @@ const Home = () => {
       <TopMessage />
       <Benefit />
       <Flow />
+      <News />
       <Customer />
       <Access />
       <TopBgImg />
