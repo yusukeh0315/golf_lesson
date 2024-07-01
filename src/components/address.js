@@ -21,12 +21,6 @@ const Address = () => {
       <tel className="p-access__tel">
         <a href={`tel:${telNumber1}`}>{telNumber1}</a>
       </tel>
-      <p className="p-access__tel-note">
-        繋がらない場合には、下記の番号にお問い合わせください。
-      </p>
-      <tel className="p-access__tel">
-        <a href={`tel:${telNumber2}`}>{telNumber2}</a>
-      </tel>
 
       <table className="p-access__table">
         <tbody className="p-access__tbody">

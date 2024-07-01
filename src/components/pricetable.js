@@ -285,7 +285,7 @@ const PriceTable = () => {
           </div>
           <div className="p-body__wrapper">
             <p className="p-body__text">
-              <Link to={`https://cocolea.riber.jp/`}>
+              <Link to={`https://cocolea.yamadataro.jp/login`}>
                 <button className="c-schedule_button">
                   インストラクター予定表はこちら
                 </button>

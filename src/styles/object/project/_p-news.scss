@@ -1,0 +1,43 @@
+@use "../../global" as global;
+
+.p-news {
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__content {
+    width: 100%;
+    padding: 40px;
+    border: 1px solid rgb(0 0 0 / 20%);
+    border-radius: 10px;
+  }
+
+  &__title {
+    padding-bottom: 0;
+    margin-bottom: 20px;
+
+    @include global.font-settings(18, 20);
+
+    & a {
+      display: inline;
+      border-bottom: 1px black solid;
+
+      &:link,
+      &:visited,
+      &:active {
+        color: black;
+      }
+    }
+  }
+
+  &__text {
+    @include global.font-settings(16, 18, 1.9, normal);
+
+    @include global.media(sp) {
+      text-align: start;
+    }
+  }
+}

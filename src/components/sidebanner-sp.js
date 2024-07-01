@@ -6,7 +6,7 @@ const SideBannerSP = ({}) => {
     <>
       <div className="p-side-banner-sp">
         <Link
-          to={`https://cocolea.riber.jp/`}
+          to={`https://cocolea.yamadataro.jp`}
           className="p-side-banner-sp__link"
         >
           <div className="p-side-banner-sp__text">体験レッスンを申し込む</div>
